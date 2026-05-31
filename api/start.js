@@ -81,7 +81,7 @@ module.exports = async (req, res) => {
     }
 
     // Load question bank
-    const bankPath = path.join(process.cwd(), 'data', 'question_bank.json');
+    const bankPath = path.join(__dirname, '..', 'data', 'question_bank.json');
     const bank = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
 
     // Select and shuffle questions
