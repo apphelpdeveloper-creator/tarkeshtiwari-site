@@ -113,7 +113,7 @@ module.exports = async (req, res) => {
     return res.status(200).json({ questions, token });
 
   } catch (err) {
-    console.error(err);
+    console.error("DETAILED ERROR:", err.message, err.stack);
     return res.status(500).json({ error: 'Internal server error' });
   }
 };
