@@ -298,6 +298,52 @@
     padding-top: 32px; border-top: 1px solid var(--line-soft);
   }
 
+  /* tendency card */
+  .tendency-card {
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 28px; margin-bottom: 32px;
+  }
+  .tendency-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+  }
+  .tendency-label { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+  .tendency-desc { font-size: 15px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 24px; }
+  .tendency-bars { display: flex; flex-direction: column; gap: 8px; }
+  .t-bar-row { display: flex; align-items: center; gap: 10px; }
+  .t-bar-label { font-size: 12px; color: var(--muted); width: 120px; flex-shrink: 0; }
+  .t-bar-track { flex: 1; height: 6px; background: var(--line-soft); border-radius: 99px; overflow: hidden; }
+  .t-bar-fill { height: 100%; border-radius: 99px; transition: width .5s ease; }
+  .t-bar-count { font-size: 12px; font-weight: 600; color: var(--ink-soft); width: 24px; text-align: right; flex-shrink: 0; }
+
+  /* badge */
+  .badge-section { margin-bottom: 40px; }
+  .badge-preview {
+    border: 1px solid var(--line); border-radius: 12px;
+    overflow: hidden; margin-bottom: 16px;
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  }
+  .badge-inner { padding: 28px 32px; }
+  .badge-top { margin-bottom: 16px; }
+  .badge-brand { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .badge-by { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .badge-name { font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--ink); margin-bottom: 4px; }
+  .badge-role { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+  .badge-stats { display: flex; align-items: center; gap: 0; flex-wrap: wrap; }
+  .badge-stat { padding: 0 24px 0 0; }
+  .badge-stat:first-child { padding-left: 0; }
+  .badge-stat-num { font-size: 20px; font-weight: 600; color: var(--ink); line-height: 1.2; }
+  .badge-stat-lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .badge-stat-div { width: 1px; height: 36px; background: var(--line); margin-right: 24px; flex-shrink: 0; }
+  .badge-url { font-size: 11px; color: var(--muted); margin-top: 20px; }
+  .btn-download-badge {
+    padding: 12px 24px; border-radius: 999px;
+    background: var(--accent); color: #fff; border: none;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    cursor: pointer; transition: background .2s;
+  }
+  .btn-download-badge:hover { background: #000; }
+
   /* ---------- terminated screen ---------- */
   .terminated-wrap {
     max-width: var(--maxw); margin: 0 auto;
@@ -449,7 +495,7 @@
   let terminated = false;
   let submitted = false;
 
-  const API_BASE = 'https://tarkeshtiwari-site.vercel.app/api';
+  const API_BASE = '/api';
 
   // ─── Start ───────────────────────────────────────────────────────────────────
   async function startAssessment() {
@@ -662,10 +708,11 @@
     else if (pct >= 50) overallDesc = 'A mixed result. You demonstrated strength in certain areas while others warrant focused development.';
     else overallDesc = 'Your result indicates significant development opportunity across several domains. Use this as a baseline.';
 
-    // SVG ring
     const radius = 44;
     const circ = 2 * Math.PI * radius;
     const offset = circ - (pct / 100) * circ;
+    const tp = r.tendencyProfile;
+    const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 
     const html = `
       <div class="intro-eyebrow" style="margin-bottom:8px">Competency Self-Assessment</div>
@@ -719,11 +766,144 @@
         </div>
       </div>
 
+      <!-- TENDENCY CARD -->
+      <div class="tendency-card" style="border-top: 3px solid ${tp.colour}">
+        <div class="tendency-eyebrow">Your leadership tendency</div>
+        <div class="tendency-label" style="color:${tp.colour}">${tp.label}</div>
+        <p class="tendency-desc">${tp.description}</p>
+        <div class="tendency-bars">
+          ${Object.entries(tp.counts).map(([k, v]) => {
+            const labels = { COURAGEOUS:'Courageous', AVOIDER:'Avoider', PLEASER:'Pleaser', ROBOT:'Process Purist', ESCALATOR:'Over-escalator' };
+            const colours = { COURAGEOUS:'#2d7a4f', AVOIDER:'#7a6a2d', PLEASER:'#4a6a9a', ROBOT:'#6a4a9a', ESCALATOR:'#9a4a4a' };
+            const maxVal = Math.max(...Object.values(tp.counts));
+            const pctBar = maxVal > 0 ? Math.round((v / maxVal) * 100) : 0;
+            return `<div class="t-bar-row">
+              <div class="t-bar-label">${labels[k]}</div>
+              <div class="t-bar-track"><div class="t-bar-fill" style="width:${pctBar}%;background:${colours[k]}"></div></div>
+              <div class="t-bar-count">${v}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- LINKEDIN BADGE -->
+      <div class="badge-section">
+        <div class="results-section-title" style="margin-bottom:16px">Share your result</div>
+        <canvas id="badgeCanvas" width="800" height="420" style="display:none"></canvas>
+        <div class="badge-preview" id="badgePreview">
+          <div class="badge-inner">
+            <div class="badge-top">
+              <div class="badge-brand">Competency Self-Assessment</div>
+              <div class="badge-by">by Tarkesh Tiwari · HR Leader</div>
+            </div>
+            <div class="badge-name">${r.participant.name}</div>
+            <div class="badge-role">${r.participant.position} · ${r.participant.company}</div>
+            <div class="badge-stats">
+              <div class="badge-stat"><div class="badge-stat-num">${pct}%</div><div class="badge-stat-lbl">Overall Score</div></div>
+              <div class="badge-stat-div"></div>
+              <div class="badge-stat"><div class="badge-stat-num" style="color:${tp.colour}">${tp.label}</div><div class="badge-stat-lbl">Leadership Tendency</div></div>
+              <div class="badge-stat-div"></div>
+              <div class="badge-stat"><div class="badge-stat-num">${date}</div><div class="badge-stat-lbl">Completed</div></div>
+            </div>
+            <div class="badge-url">www.tarkeshtiwari.com</div>
+          </div>
+        </div>
+        <button class="btn-download-badge" onclick="downloadBadge('${r.participant.name}', '${r.participant.position}', '${r.participant.company}', ${pct}, '${tp.label}', '${tp.colour}', '${date}')">
+          ↓ Download certificate for LinkedIn
+        </button>
+      </div>
+
       <div class="results-footer">
         <strong>Important:</strong> This assessment is a professional development tool, not a validated psychometric instrument. Results reflect your responses to this particular set of questions and should be used as a reflective input, not a definitive measure of competence. See the <a href="disclaimer.html" style="color:var(--ink)">Disclaimer</a> for full methodology and limitations.
       </div>
+      <div style="display:flex;gap:12px;margin-top:32px;flex-wrap:wrap">
+        <a href="index.html" style="padding:12px 24px;border:1px solid var(--line);border-radius:999px;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;">← Back to profile</a>
+        <a href="assessment.html" style="padding:12px 24px;background:var(--accent);border-radius:999px;font-family:var(--sans);font-size:14px;font-weight:600;color:#fff;text-decoration:none;">Retake assessment</a>
+      </div>
     `;
     document.getElementById('resultsContent').innerHTML = html;
+  }
+
+  function downloadBadge(name, position, company, pct, tendencyLabel, tendencyColour, date) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1200;
+    canvas.height = 630;
+    const ctx = canvas.getContext('2d');
+
+    // Background
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, 1200, 630);
+
+    // Top accent bar
+    ctx.fillStyle = '#16161a';
+    ctx.fillRect(0, 0, 1200, 8);
+
+    // Left accent
+    ctx.fillStyle = tendencyColour;
+    ctx.fillRect(0, 0, 6, 630);
+
+    // Brand header
+    ctx.fillStyle = '#76767f';
+    ctx.font = '500 22px "Source Sans 3", sans-serif';
+    ctx.fillText('COMPETENCY SELF-ASSESSMENT', 60, 70);
+    ctx.fillStyle = '#b0b0b8';
+    ctx.font = '400 18px "Source Sans 3", sans-serif';
+    ctx.fillText('by Tarkesh Tiwari · HR Leader · www.tarkeshtiwari.com', 60, 100);
+
+    // Divider
+    ctx.strokeStyle = '#e6e6e6';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(60, 120);
+    ctx.lineTo(1140, 120);
+    ctx.stroke();
+
+    // Name
+    ctx.fillStyle = '#16161a';
+    ctx.font = '300 64px Georgia, serif';
+    ctx.fillText(name, 60, 210);
+
+    // Role
+    ctx.fillStyle = '#76767f';
+    ctx.font = '400 24px "Source Sans 3", sans-serif';
+    ctx.fillText(`${position} · ${company}`, 60, 255);
+
+    // Stats row
+    const stats = [
+      { value: `${pct}%`, label: 'Overall Score', colour: '#16161a' },
+      { value: tendencyLabel, label: 'Leadership Tendency', colour: tendencyColour },
+      { value: date, label: 'Completed', colour: '#16161a' }
+    ];
+
+    let x = 60;
+    stats.forEach((stat, i) => {
+      ctx.fillStyle = stat.colour;
+      ctx.font = i === 1 ? `600 28px "Source Sans 3", sans-serif` : `300 48px Georgia, serif`;
+      ctx.fillText(stat.value, x, 370);
+      ctx.fillStyle = '#76767f';
+      ctx.font = '400 18px "Source Sans 3", sans-serif';
+      ctx.fillText(stat.label, x, 400);
+      x += 380;
+    });
+
+    // Bottom divider
+    ctx.strokeStyle = '#e6e6e6';
+    ctx.beginPath();
+    ctx.moveTo(60, 440);
+    ctx.lineTo(1140, 440);
+    ctx.stroke();
+
+    // Footer
+    ctx.fillStyle = '#b0b0b8';
+    ctx.font = '400 16px "Source Sans 3", sans-serif';
+    ctx.fillText('This certificate reflects completion of a professional development self-assessment. It is not a validated psychometric instrument.', 60, 480);
+    ctx.fillText('Take the assessment at www.tarkeshtiwari.com', 60, 506);
+
+    // Download
+    const link = document.createElement('a');
+    link.download = `HR-Assessment-${name.replace(/\s+/g, '-')}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
   }
 
   // ─── Utilities ───────────────────────────────────────────────────────────────
