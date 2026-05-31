@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competency Self-Assessment · Tarkesh Tiwari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #16161a;
+    --ink-soft: #3a3a42;
+    --muted: #76767f;
+    --line: #e6e6e6;
+    --line-soft: #f0f0f0;
+    --accent: #1a1a1a;
+    --serif: 'Newsreader', Georgia, serif;
+    --sans: 'Source Sans 3', -apple-system, sans-serif;
+    --maxw: 760px;
+    --green: #2d7a4f;
+    --amber: #b45309;
+    --red: #b91c1c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* ---------- topbar ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-inner {
+    max-width: 1080px; margin: 0 auto;
+    padding: 0 32px; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand {
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 500;
+    text-decoration: none; color: var(--ink);
+  }
+  .brand span { color: var(--muted); font-weight: 400; }
+  .timer-bar {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 600; color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .timer-bar svg { width: 16px; height: 16px; }
+  .timer-bar.warning { color: var(--amber); }
+  .timer-bar.critical { color: var(--red); }
+
+  /* ---------- screens ---------- */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* ---------- intro screen ---------- */
+  .intro-wrap {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 72px 32px 96px;
+  }
+  .intro-eyebrow {
+    font-size: 12px; font-weight: 500; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  }
+  .intro-wrap h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(28px,4vw,40px); margin-bottom: 20px;
+  }
+  .intro-meta {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    background: #f9f9f9; border: 1px solid var(--line);
+    border-radius: 10px; padding: 20px 24px; margin-bottom: 28px;
+  }
+  .meta-item { font-size: 14px; color: var(--ink-soft); }
+  .meta-item strong { display: block; color: var(--ink); font-weight: 600; margin-bottom: 2px; }
+  .rules {
+    margin-bottom: 32px;
+  }
+  .rules h3 {
+    font-size: 15px; font-weight: 600; margin-bottom: 12px;
+  }
+  .rules ul { list-style: none; }
+  .rules li {
+    font-size: 15px; color: var(--ink-soft); padding: 8px 0;
+    border-bottom: 1px solid var(--line-soft);
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .rules li:last-child { border-bottom: none; }
+  .rules li::before { content: "—"; color: var(--muted); flex-shrink: 0; }
+  .rule-critical { color: var(--red) !important; font-weight: 600; }
+
+  /* ---------- form ---------- */
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+  label { font-size: 13px; font-weight: 600; color: var(--ink); }
+  input {
+    font-family: var(--sans); font-size: 15px;
+    padding: 10px 14px; border: 1px solid var(--line);
+    border-radius: 8px; outline: none; color: var(--ink);
+    transition: border-color .15s;
+  }
+  input:focus { border-color: var(--ink); }
+  .btn-start {
+    width: 100%; padding: 14px;
+    background: var(--accent); color: #fff;
+    font-family: var(--sans); font-size: 16px; font-weight: 600;
+    border: none; border-radius: 8px; cursor: pointer;
+    transition: background .2s;
+  }
+  .btn-start:hover { background: #000; }
+  .btn-start:disabled { background: #ccc; cursor: not-allowed; }
+
+  /* ---------- assessment screen ---------- */
+  .assessment-wrap {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 48px 32px 96px;
+  }
+  .progress-bar-wrap {
+    height: 3px; background: var(--line-soft);
+    border-radius: 99px; margin-bottom: 40px;
+  }
+  .progress-bar-fill {
+    height: 100%; background: var(--ink);
+    border-radius: 99px; transition: width .3s ease;
+  }
+  .q-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px;
+  }
+  .q-counter { font-size: 13px; color: var(--muted); font-weight: 500; }
+  .q-section { font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
+  .q-text {
+    font-size: 18px; line-height: 1.65; color: var(--ink);
+    margin-bottom: 32px; font-weight: 400;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }
+  .option {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 14px 18px; border: 1px solid var(--line);
+    border-radius: 10px; cursor: pointer;
+    transition: all .15s; user-select: none;
+  }
+  .option:hover { border-color: var(--ink); background: #fafafa; }
+  .option.selected {
+    border-color: var(--ink); background: var(--ink);
+    color: #fff;
+  }
+  .option-letter {
+    font-size: 13px; font-weight: 700;
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+  }
+  .option-text { font-size: 15px; line-height: 1.55; }
+
+  .nav-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 24px; border-top: 1px solid var(--line-soft);
+  }
+  .btn-nav {
+    padding: 10px 24px; border-radius: 999px;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    cursor: pointer; transition: all .2s; border: 1px solid var(--line);
+    background: transparent; color: var(--ink);
+  }
+  .btn-nav:hover { background: #f5f5f5; }
+  .btn-nav:disabled { opacity: .3; cursor: not-allowed; }
+  .btn-submit-final {
+    padding: 10px 28px; border-radius: 999px;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    background: var(--accent); color: #fff; border: none; cursor: pointer;
+    transition: background .2s;
+  }
+  .btn-submit-final:hover { background: #000; }
+  .answered-count { font-size: 13px; color: var(--muted); }
+
+  /* ---------- confirm submit modal ---------- */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,.5); z-index: 100;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: #fff; border-radius: 16px;
+    padding: 36px; max-width: 440px; width: 90%;
+    box-shadow: 0 24px 64px rgba(0,0,0,.15);
+  }
+  .modal h2 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 22px; margin-bottom: 12px;
+  }
+  .modal p { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; line-height: 1.6; }
+  .modal-btns { display: flex; gap: 12px; }
+  .btn-cancel {
+    flex: 1; padding: 11px; border-radius: 8px;
+    border: 1px solid var(--line); background: transparent;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    cursor: pointer; color: var(--ink);
+  }
+  .btn-confirm {
+    flex: 1; padding: 11px; border-radius: 8px;
+    border: none; background: var(--accent); color: #fff;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* ---------- loading screen ---------- */
+  .loading-wrap {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 120px 32px; text-align: center;
+  }
+  .spinner {
+    width: 40px; height: 40px; border: 2.5px solid var(--line);
+    border-top-color: var(--ink); border-radius: 50%;
+    animation: spin .8s linear infinite; margin: 0 auto 24px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-wrap p { color: var(--muted); font-size: 15px; }
+
+  /* ---------- results screen ---------- */
+  .results-wrap {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 64px 32px 96px;
+  }
+  .results-wrap h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(26px,4vw,38px); margin-bottom: 6px;
+  }
+  .results-subtitle { font-size: 16px; color: var(--muted); margin-bottom: 48px; }
+
+  .overall-ring-wrap {
+    display: flex; align-items: center; gap: 32px;
+    padding: 32px; border: 1px solid var(--line);
+    border-radius: 16px; margin-bottom: 48px;
+  }
+  .ring-svg { flex-shrink: 0; }
+  .ring-label { font-size: 13px; color: var(--muted); margin-bottom: 4px; font-weight: 500; }
+  .ring-score {
+    font-family: var(--serif); font-size: 48px;
+    font-weight: 300; line-height: 1; margin-bottom: 4px;
+  }
+  .ring-desc { font-size: 14px; color: var(--ink-soft); max-width: 32ch; line-height: 1.5; }
+
+  .results-section-title {
+    font-size: 12px; font-weight: 600; letter-spacing: .07em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .section-bars { display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
+  .section-bar-row { display: flex; align-items: center; gap: 14px; }
+  .section-bar-label { font-size: 14px; color: var(--ink); width: 260px; flex-shrink: 0; }
+  .section-bar-track {
+    flex: 1; height: 8px; background: var(--line-soft);
+    border-radius: 99px; overflow: hidden;
+  }
+  .section-bar-fill {
+    height: 100%; border-radius: 99px;
+    transition: width .6s ease;
+  }
+  .fill-strength { background: var(--green); }
+  .fill-proficient { background: var(--ink); }
+  .fill-develop { background: #d1d1d6; }
+  .section-bar-pct { font-size: 13px; font-weight: 600; color: var(--ink); width: 36px; text-align: right; flex-shrink: 0; }
+
+  .results-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 48px; }
+  .results-card {
+    padding: 22px 24px; border-radius: 12px;
+    border: 1px solid var(--line);
+  }
+  .results-card.strengths { border-top: 3px solid var(--green); }
+  .results-card.develop { border-top: 3px solid var(--line); }
+  .results-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+  .results-card ul { list-style: none; }
+  .results-card li {
+    font-size: 13px; color: var(--ink-soft);
+    padding: 5px 0; border-bottom: 1px solid var(--line-soft);
+    line-height: 1.4;
+  }
+  .results-card li:last-child { border-bottom: none; }
+
+  .results-footer {
+    font-size: 13px; color: var(--muted); line-height: 1.6;
+    padding-top: 32px; border-top: 1px solid var(--line-soft);
+  }
+
+  /* ---------- terminated screen ---------- */
+  .terminated-wrap {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 120px 32px; text-align: center;
+  }
+  .terminated-wrap h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 32px; margin-bottom: 16px; color: var(--red);
+  }
+  .terminated-wrap p { font-size: 16px; color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* ---------- responsive ---------- */
+  @media(max-width: 640px) {
+    .topbar-inner { padding: 0 18px; }
+    .intro-wrap, .assessment-wrap, .results-wrap { padding-left: 20px; padding-right: 20px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .intro-meta { grid-template-columns: 1fr; }
+    .results-cards { grid-template-columns: 1fr; }
+    .section-bar-label { width: 160px; font-size: 12px; }
+    .overall-ring-wrap { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Tarkesh&nbsp;Tiwari <span>· Global HR Leader</span></a>
+    <div class="timer-bar" id="timerDisplay" style="display:none">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span id="timerText">55:00</span>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO SCREEN -->
+<div class="screen active" id="screenIntro">
+  <div class="intro-wrap">
+    <div class="intro-eyebrow">Competency Self-Assessment</div>
+    <h1>Before you begin</h1>
+
+    <div class="intro-meta">
+      <div class="meta-item"><strong>75 Questions</strong>Drawn randomly from a wider bank</div>
+      <div class="meta-item"><strong>55 Minutes</strong>Total time — auto-submits at zero</div>
+      <div class="meta-item"><strong>Free Navigation</strong>Move back and forward freely</div>
+      <div class="meta-item"><strong>On-Screen Results</strong>Shown immediately on submission</div>
+    </div>
+
+    <div class="rules">
+      <h3>Assessment rules</h3>
+      <ul>
+        <li>This is a self-assessment tool for professional development purposes only. It is not a validated psychometric instrument.</li>
+        <li>Answer each question independently — based on your own knowledge and judgment.</li>
+        <li>You may navigate freely between questions using the Back and Next buttons.</li>
+        <li>The timer counts down from 55:00. The assessment will auto-submit when it reaches zero.</li>
+        <li>You may submit early at any time using the Submit Assessment button on the final question.</li>
+        <li class="rule-critical">Switching to another browser tab or window will immediately and permanently terminate your session. There is no warning and no second chance. This rule is stated once.</li>
+        <li>Results are displayed on-screen only. Nothing is stored or emailed.</li>
+      </ul>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-field">
+        <label for="fname">Full name</label>
+        <input type="text" id="fname" placeholder="Your name" autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="fposition">Current position</label>
+        <input type="text" id="fposition" placeholder="e.g. HR Business Partner">
+      </div>
+      <div class="form-field">
+        <label for="fcompany">Organisation</label>
+        <input type="text" id="fcompany" placeholder="Your company name">
+      </div>
+      <div class="form-field">
+        <label for="femail">Work email</label>
+        <input type="email" id="femail" placeholder="you@company.com" autocomplete="email">
+      </div>
+    </div>
+
+    <button class="btn-start" id="btnStart" onclick="startAssessment()">Begin Assessment</button>
+    <p id="startError" style="color:var(--red);font-size:14px;margin-top:12px;display:none"></p>
+  </div>
+</div>
+
+<!-- LOADING SCREEN -->
+<div class="screen" id="screenLoading">
+  <div class="loading-wrap">
+    <div class="spinner"></div>
+    <p>Preparing your assessment…</p>
+  </div>
+</div>
+
+<!-- ASSESSMENT SCREEN -->
+<div class="screen" id="screenAssessment">
+  <div class="assessment-wrap">
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="q-meta">
+      <span class="q-counter" id="qCounter">Question 1 of 75</span>
+      <span class="q-section" id="qSection"></span>
+    </div>
+    <div class="q-text" id="qText"></div>
+    <div class="options" id="optionsContainer"></div>
+    <div class="nav-row">
+      <button class="btn-nav" id="btnBack" onclick="goBack()">← Back</button>
+      <span class="answered-count" id="answeredCount"></span>
+      <button class="btn-nav" id="btnNext" onclick="goNext()">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIRM SUBMIT MODAL -->
+<div class="modal-overlay" id="modalConfirm">
+  <div class="modal">
+    <h2>Submit assessment?</h2>
+    <p id="modalMsg">You have answered all 75 questions. Once submitted you cannot return to review or change your answers.</p>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">Go back</button>
+      <button class="btn-confirm" onclick="submitAssessment()">Submit Assessment</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS SCREEN -->
+<div class="screen" id="screenResults">
+  <div class="results-wrap" id="resultsContent"></div>
+</div>
+
+<!-- TERMINATED SCREEN -->
+<div class="screen" id="screenTerminated">
+  <div class="terminated-wrap">
+    <h1>Assessment terminated</h1>
+    <p>Your session was ended because you switched to another tab or window.</p>
+    <p>This rule was stated before the assessment began. Your answers have not been submitted.</p>
+    <p style="margin-top:24px"><a href="assessment.html" style="color:var(--ink);font-weight:600">Return to start</a></p>
+  </div>
+</div>
+
+<script>
+  // ─── State ───────────────────────────────────────────────────────────────────
+  let questions = [];
+  let answers = {};   // { questionId: optionIndex }
+  let currentIdx = 0;
+  let token = null;
+  let timerInterval = null;
+  let secondsLeft = 55 * 60;
+  let terminated = false;
+  let submitted = false;
+
+  const API_BASE = '/api';
+
+  // ─── Start ───────────────────────────────────────────────────────────────────
+  async function startAssessment() {
+    const name = document.getElementById('fname').value.trim();
+    const position = document.getElementById('fposition').value.trim();
+    const company = document.getElementById('fcompany').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    const errEl = document.getElementById('startError');
+
+    if (!name || !position || !company || !email) {
+      errEl.textContent = 'Please complete all fields before beginning.';
+      errEl.style.display = 'block';
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errEl.textContent = 'Please enter a valid email address.';
+      errEl.style.display = 'block';
+      return;
+    }
+    errEl.style.display = 'none';
+    document.getElementById('btnStart').disabled = true;
+
+    showScreen('screenLoading');
+
+    try {
+      const res = await fetch(`${API_BASE}/start`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, position, company, email })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to start');
+
+      questions = data.questions;
+      token = data.token;
+      currentIdx = 0;
+      answers = {};
+
+      setupTabGuard();
+      startTimer();
+      renderQuestion();
+      showScreen('screenAssessment');
+      document.getElementById('timerDisplay').style.display = 'flex';
+
+    } catch (err) {
+      showScreen('screenIntro');
+      document.getElementById('btnStart').disabled = false;
+      document.getElementById('startError').textContent = 'Could not start the assessment. Please try again.';
+      document.getElementById('startError').style.display = 'block';
+    }
+  }
+
+  // ─── Tab guard ───────────────────────────────────────────────────────────────
+  function setupTabGuard() {
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && !submitted && !terminated) {
+        terminate();
+      }
+    });
+    window.addEventListener('blur', () => {
+      if (!submitted && !terminated) {
+        terminate();
+      }
+    });
+  }
+
+  function terminate() {
+    terminated = true;
+    clearInterval(timerInterval);
+    document.getElementById('timerDisplay').style.display = 'none';
+    showScreen('screenTerminated');
+  }
+
+  // ─── Timer ───────────────────────────────────────────────────────────────────
+  function startTimer() {
+    updateTimerDisplay();
+    timerInterval = setInterval(() => {
+      secondsLeft--;
+      updateTimerDisplay();
+      if (secondsLeft <= 0) {
+        clearInterval(timerInterval);
+        submitAssessment(true);
+      }
+    }, 1000);
+  }
+
+  function updateTimerDisplay() {
+    const m = Math.floor(secondsLeft / 60);
+    const s = secondsLeft % 60;
+    const text = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    document.getElementById('timerText').textContent = text;
+    const el = document.getElementById('timerDisplay');
+    el.className = 'timer-bar' + (secondsLeft <= 300 ? ' critical' : secondsLeft <= 600 ? ' warning' : '');
+  }
+
+  // ─── Render question ─────────────────────────────────────────────────────────
+  function renderQuestion() {
+    const q = questions[currentIdx];
+    const total = questions.length;
+    const answered = Object.keys(answers).length;
+
+    document.getElementById('qCounter').textContent = `Question ${currentIdx + 1} of ${total}`;
+    document.getElementById('qSection').textContent = q.sectionLabel;
+    document.getElementById('qText').textContent = q.question;
+    document.getElementById('progressFill').style.width = `${((currentIdx + 1) / total) * 100}%`;
+    document.getElementById('answeredCount').textContent = `${answered} of ${total} answered`;
+
+    const container = document.getElementById('optionsContainer');
+    container.innerHTML = '';
+    const letters = ['A', 'B', 'C', 'D'];
+
+    q.options.forEach((optText, i) => {
+      const div = document.createElement('div');
+      div.className = 'option' + (answers[q.id] === i ? ' selected' : '');
+      div.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optText}</span>`;
+      div.onclick = () => selectOption(q.id, i);
+      container.appendChild(div);
+    });
+
+    // Back button
+    document.getElementById('btnBack').disabled = currentIdx === 0;
+
+    // Next / Submit button
+    const navRow = document.querySelector('.nav-row');
+    // Remove existing submit button if present
+    const existingSubmit = document.getElementById('btnSubmitFinal');
+    if (existingSubmit) existingSubmit.remove();
+
+    if (currentIdx === total - 1) {
+      document.getElementById('btnNext').style.display = 'none';
+      const submitBtn = document.createElement('button');
+      submitBtn.className = 'btn-submit-final';
+      submitBtn.id = 'btnSubmitFinal';
+      submitBtn.textContent = 'Submit Assessment';
+      submitBtn.onclick = showConfirmModal;
+      navRow.appendChild(submitBtn);
+    } else {
+      document.getElementById('btnNext').style.display = 'inline-block';
+    }
+  }
+
+  function selectOption(questionId, optionIndex) {
+    answers[questionId] = optionIndex;
+    renderQuestion();
+  }
+
+  function goNext() {
+    if (currentIdx < questions.length - 1) {
+      currentIdx++;
+      renderQuestion();
+    }
+  }
+
+  function goBack() {
+    if (currentIdx > 0) {
+      currentIdx--;
+      renderQuestion();
+    }
+  }
+
+  // ─── Submit ──────────────────────────────────────────────────────────────────
+  function showConfirmModal() {
+    const answered = Object.keys(answers).length;
+    const total = questions.length;
+    const unanswered = total - answered;
+    const msgEl = document.getElementById('modalMsg');
+    if (unanswered > 0) {
+      msgEl.textContent = `You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Unanswered questions will be scored as incorrect. Once submitted you cannot return to your answers.`;
+    } else {
+      msgEl.textContent = `You have answered all ${total} questions. Once submitted you cannot return to review or change your answers.`;
+    }
+    document.getElementById('modalConfirm').classList.add('show');
+  }
+
+  function closeModal() {
+    document.getElementById('modalConfirm').classList.remove('show');
+  }
+
+  async function submitAssessment(autoSubmit = false) {
+    if (submitted || terminated) return;
+    submitted = true;
+    clearInterval(timerInterval);
+    closeModal();
+    document.getElementById('timerDisplay').style.display = 'none';
+    showScreen('screenLoading');
+    document.querySelector('#screenLoading p').textContent = 'Scoring your assessment…';
+
+    try {
+      const res = await fetch(`${API_BASE}/submit`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, answers })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Scoring failed');
+      renderResults(data.results);
+      showScreen('screenResults');
+    } catch (err) {
+      // Fallback — show generic error
+      document.querySelector('#screenLoading p').textContent = 'Something went wrong scoring your assessment. Please contact the administrator.';
+    }
+  }
+
+  // ─── Results ─────────────────────────────────────────────────────────────────
+  function renderResults(r) {
+    const pct = r.overall.pct;
+    let overallDesc = '';
+    if (pct >= 80) overallDesc = 'Strong overall performance across the assessment. Your results show well-developed HR competency.';
+    else if (pct >= 65) overallDesc = 'A solid result with clear areas of strength. Some domains offer meaningful development opportunities.';
+    else if (pct >= 50) overallDesc = 'A mixed result. You demonstrated strength in certain areas while others warrant focused development.';
+    else overallDesc = 'Your result indicates significant development opportunity across several domains. Use this as a baseline.';
+
+    // SVG ring
+    const radius = 44;
+    const circ = 2 * Math.PI * radius;
+    const offset = circ - (pct / 100) * circ;
+
+    const html = `
+      <div class="intro-eyebrow" style="margin-bottom:8px">Competency Self-Assessment</div>
+      <h1>Your results, ${r.participant.name.split(' ')[0]}</h1>
+      <p class="results-subtitle">${r.participant.position} · ${r.participant.company}</p>
+
+      <div class="overall-ring-wrap">
+        <svg class="ring-svg" width="120" height="120" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="${radius}" fill="none" stroke="#f0f0f0" stroke-width="10"/>
+          <circle cx="60" cy="60" r="${radius}" fill="none" stroke="#16161a" stroke-width="10"
+            stroke-dasharray="${circ}" stroke-dashoffset="${offset}"
+            stroke-linecap="round" transform="rotate(-90 60 60)"/>
+          <text x="60" y="65" text-anchor="middle" font-family="'Newsreader',serif" font-size="22" font-weight="300" fill="#16161a">${pct}%</text>
+        </svg>
+        <div>
+          <div class="ring-label">Overall score</div>
+          <div class="ring-score">${r.overall.correct} / ${r.overall.total}</div>
+          <div class="ring-desc">${overallDesc}</div>
+        </div>
+      </div>
+
+      <div class="results-section-title">Performance by section</div>
+      <div class="section-bars">
+        ${r.sections.map(s => `
+          <div class="section-bar-row">
+            <div class="section-bar-label">${s.label}</div>
+            <div class="section-bar-track">
+              <div class="section-bar-fill fill-${s.tier}" style="width:${s.pct}%"></div>
+            </div>
+            <div class="section-bar-pct">${s.pct}%</div>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="results-cards">
+        <div class="results-card strengths">
+          <h3>Strengths (≥80%)</h3>
+          <ul>
+            ${r.strengths.length > 0
+              ? r.strengths.map(s => `<li>${s.label} — ${s.pct}%</li>`).join('')
+              : '<li style="color:var(--muted)">No sections above 80% this time</li>'}
+          </ul>
+        </div>
+        <div class="results-card develop">
+          <h3>Areas to develop (&lt;60%)</h3>
+          <ul>
+            ${r.develop.length > 0
+              ? r.develop.map(s => `<li>${s.label} — ${s.pct}%</li>`).join('')
+              : '<li style="color:var(--muted)">No sections below 60% — well done</li>'}
+          </ul>
+        </div>
+      </div>
+
+      <div class="results-footer">
+        <strong>Important:</strong> This assessment is a professional development tool, not a validated psychometric instrument. Results reflect your responses to this particular set of questions and should be used as a reflective input, not a definitive measure of competence. See the <a href="disclaimer.html" style="color:var(--ink)">Disclaimer</a> for full methodology and limitations.
+      </div>
+    `;
+    document.getElementById('resultsContent').innerHTML = html;
+  }
+
+  // ─── Utilities ───────────────────────────────────────────────────────────────
+  function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+</body>
+</html>
