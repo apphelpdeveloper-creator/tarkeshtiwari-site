@@ -3541,10 +3541,22 @@
           "difficulty": "medium",
           "question": "Which of the following best describes the concept of employment at will in the United States?",
           "options": [
-            "An employee can resign at any time without notice, but the employer must provide 30 days notice before termination",
-            "Either the employer or the employee can terminate the employment relationship at any time for any reason, except for legally prohibited reasons such as discrimination or retaliation",
-            "Employment continues indefinitely unless a formal performance management process has been completed",
-            "Employers can only terminate employment at will during a probationary period"
+            {
+              "text": "An employee can resign at any time without providing notice to the employer, but the employer must provide a minimum of 30 days written notice before terminating the employment relationship under most state laws",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Either party can terminate the employment relationship at any time for any reason or no reason, except where the reason is specifically prohibited by law such as discrimination, retaliation, or violation of a recognised public policy exception",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Employment continues indefinitely unless the employer has completed a formal performance management process resulting in documented evidence of failure to meet defined performance standards over a reasonable and sustained period",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The at-will doctrine applies exclusively during the probationary period of employment, after which dismissal requires either a documented performance or conduct reason or a genuine redundancy that eliminates the employee's role from the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3554,10 +3566,22 @@
           "difficulty": "hard",
           "question": "Your company is expanding into a new country for the first time. The business wants to hire five employees in that market within 60 days. HR has no existing knowledge of local employment law. What is your approach?",
           "options": [
-            "Use the company's standard employment contract with a clause specifying the home country's law as governing law",
-            "Engage local employment counsel to advise on mandatory employment law requirements, determine the appropriate legal entity or employer of record structure, ensure contracts, benefits, and processes are compliant with local law before any offer is made, and build a go-live checklist that covers payroll, data protection, and statutory obligations",
-            "Mirror the employment terms used in the geographically closest country where the company already operates",
-            "Hire the employees as independent contractors to avoid the complexity of local employment law"
+            {
+              "text": "Use the company's standard employment contract template with an added clause specifying the home country's law as the governing law, since using a familiar and legally reviewed document is safer than creating local documents without specialist input",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Engage local employment counsel to advise on mandatory requirements, determine the appropriate entity or employer of record structure, ensure contracts and processes are locally compliant before any offer is made, and build a compliance go-live checklist",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Mirror the employment terms used in the geographically closest country where the company already operates since employment law in proximate markets is often broadly similar and this approach allows the 60-day timeline to be met without external legal cost",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Hire the employees initially as independent contractors to avoid the complexity of establishing local employment law compliance, then convert them to employment status once the company has had adequate time to understand the local regulatory framework",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -3567,10 +3591,22 @@
           "difficulty": "medium",
           "question": "What is the primary obligation of employers under GDPR in relation to employee personal data?",
           "options": [
-            "To obtain explicit written consent from employees before processing any of their personal data",
-            "To process employee personal data lawfully, fairly, and transparently; collect only what is necessary for specified purposes; retain it no longer than necessary; and protect it with appropriate security measures",
-            "To store all employee data on servers located within the EU",
-            "To provide employees with an annual data audit report"
+            {
+              "text": "To obtain explicit written consent from employees before processing any category of their personal data, since consent is the lawful basis that provides the strongest protection for both the employee and the organisation in the event of a data challenge",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To process employee personal data lawfully, fairly, and transparently; collect only what is necessary for specified purposes; retain it no longer than necessary; and protect it with appropriate technical and organisational security measures",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To store all employee personal data on servers physically located within the European Union, since cross-border data transfers outside the EU are restricted and the most straightforward compliance approach is to avoid them entirely",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To provide employees with a comprehensive annual data audit report detailing every category of personal data held about them, the purposes for which it is processed, and the third parties with whom it has been shared during the year",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3580,10 +3616,22 @@
           "difficulty": "hard",
           "question": "A manager wants to monitor employee productivity by installing software that captures screenshots of employees' screens every five minutes without their knowledge. The business operates in the EU. What is your advice?",
           "options": [
-            "Approve the monitoring \u2014 the company owns the equipment and has a legitimate interest in productivity",
-            "Advise that covert monitoring of this nature is likely unlawful under GDPR and potentially under national data protection law, recommend a transparent monitoring policy that is proportionate to the business need, requires employee notification, and is subject to a data protection impact assessment",
-            "Allow the monitoring but limit it to working hours only",
-            "Seek IT security clearance before responding to the manager"
+            {
+              "text": "Approve the monitoring since the company owns the equipment employees use for work and has a legitimate business interest in assessing productivity, which is sufficient lawful basis for monitoring work activity on company-owned devices",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise that covert monitoring of this nature is likely unlawful under GDPR, recommend a transparent monitoring policy that is proportionate to the business need, requires prior employee notification, and is subject to a data protection impact assessment",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Allow the monitoring on the condition that it is limited to working hours only and that screenshots are retained for no more than 30 days, since time and retention limitations make the monitoring more proportionate and therefore more legally defensible",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refer the request to IT security for a technical assessment of whether the proposed software can be implemented within the existing system infrastructure before HR makes any assessment of whether the monitoring is legally permissible",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -3593,10 +3641,22 @@
           "difficulty": "hard",
           "question": "What is the concept of joint employment and when is it most likely to create legal risk for a company?",
           "options": [
-            "When two companies share the cost of employing a single employee across both organisations",
-            "When a company exercises sufficient control over workers employed by a third party \u2014 such as a staffing agency or outsourced service provider \u2014 to be treated as a co-employer, creating exposure for employment law obligations including anti-discrimination, wage and hour, and collective bargaining",
-            "When employees in a joint venture are employed by both parent companies simultaneously",
-            "When a company acquires another and inherits its employment obligations"
+            {
+              "text": "A formal arrangement where two companies agree to share the employment costs of a single employee who performs work for both organisations simultaneously, with employment rights and obligations divided proportionally between the two employers",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A legal finding that a company exercises sufficient control over workers employed by a third party \u2014 such as a staffing agency or outsourced provider \u2014 to be treated as a co-employer, creating liability for employment rights, anti-discrimination obligations, and collective bargaining",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A contractual arrangement used in joint ventures where employees of both parent companies are assigned to work on the venture, with employment continuing under their original employer but accountability shared between the JV leadership and the original entity",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A post-acquisition situation where an acquiring company inherits the employment contracts and liabilities of the acquired business, creating a period of dual employer responsibility until the acquired employees are formally transferred to the new entity",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3606,10 +3666,22 @@
           "difficulty": "medium",
           "question": "An employee in your APAC region reports that their manager has been accessing their private messages on the company messaging platform and sharing them with other team members. How do you respond?",
           "options": [
-            "Advise the employee that company-owned platforms are subject to monitoring and the manager has not breached policy",
-            "Investigate whether the monitoring was within the bounds of any existing monitoring policy, whether the employee was notified of potential monitoring, and whether the sharing of messages with third parties was justified \u2014 treating the manager's conduct as a potential data protection and privacy breach pending the outcome",
-            "Escalate to IT to review the manager's access logs",
-            "Advise the employee to stop using the company messaging platform for private communications"
+            {
+              "text": "Advise the employee that company-owned communication platforms are subject to employer monitoring rights and that the manager has not necessarily breached any policy by accessing messages on a system the company administers and owns",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Investigate whether the monitoring fell within the bounds of any existing policy, whether the employee was notified of monitoring possibilities, and whether sharing messages with third parties was justified \u2014 treating the manager's conduct as a potential privacy breach pending investigation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate immediately to IT to pull the manager's full system access logs for the past three months so that HR has a complete picture of what was accessed before any conversation with either the manager or the employee takes place",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Advise the employee to stop using the company messaging platform for any communications they consider private and to use personal devices and accounts for messages they do not want their employer to potentially access in future",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3619,10 +3691,22 @@
           "difficulty": "medium",
           "question": "What triggers an obligation for collective information and consultation with employee representatives under EU law in a restructuring context?",
           "options": [
-            "Any restructuring that results in a change to an employee's reporting line",
-            "Collective redundancies meeting defined thresholds (typically 10 or more redundancies within a 30-90 day period depending on jurisdiction), transfer of undertakings, or other major changes to working conditions, triggering mandatory consultation with recognised employee representatives",
-            "Any restructuring affecting employees in more than one EU member state",
-            "A restructuring that results in a reduction in overall headcount of more than 5%"
+            {
+              "text": "Any restructuring that results in a change to an employee's direct reporting line, role title, or team assignment, since these changes affect individual employment conditions in a way that requires collective awareness if not formal consultation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Collective redundancies meeting defined thresholds, transfers of undertakings, or other substantial changes to working conditions, triggering mandatory consultation with recognised employee representatives before decisions are implemented",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Any restructuring affecting employees in more than one EU member state simultaneously, since multi-jurisdictional restructures automatically trigger European Works Council consultation requirements regardless of the number of employees affected in each country",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Any restructuring resulting in an overall headcount reduction of more than 5% of the total workforce, regardless of how that reduction is distributed across business units, countries, or employment contract types within the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3632,10 +3716,22 @@
           "difficulty": "hard",
           "question": "The company is being acquired. As part of the due diligence process, the acquiring company requests a full data room of employee personal data including performance ratings, salaries, and HR records. How do you advise on the data sharing?",
           "options": [
-            "Provide the full data room as requested \u2014 M&A due diligence is a legitimate business process",
-            "Provide only aggregated, anonymised workforce data at due diligence stage, share identifiable personal data only when legally required and at the appropriate stage of the transaction under a data sharing agreement with appropriate confidentiality provisions, and conduct a data protection impact assessment before any personal data is transferred",
-            "Refuse to share any employee data until the acquisition is legally completed",
-            "Seek employee consent before sharing any personal data with the acquiring company"
+            {
+              "text": "Provide the complete data room as requested since M&A due diligence is a recognised legitimate business purpose under GDPR and other data protection frameworks, and the acquiring company requires full people data visibility to price the transaction accurately",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Provide only aggregated anonymised workforce data at due diligence stage, share identifiable personal data only at the appropriate transaction stage under a data sharing agreement with proper confidentiality provisions, and conduct a data protection impact assessment before any transfer",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Refuse to share any employee data until the acquisition is legally completed and the change of ownership formally registered, since data sharing with a party that does not yet own the business creates a risk the data will be misused if the transaction does not proceed",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Seek written consent from all employees before sharing their personal data with the acquiring company, since consent is the most straightforward lawful basis for the transfer and provides the clearest protection for both employees and the organisation",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -3645,10 +3741,22 @@
           "difficulty": "medium",
           "question": "What is TUPE (Transfer of Undertakings Protection of Employment) and what are the primary obligations it creates for the incoming employer?",
           "options": [
-            "A UK and EU framework requiring employers to consult unions before any redundancy",
-            "A framework that protects employees' terms and conditions when a business or service transfers to a new employer \u2014 the incoming employer inherits all existing employment contracts on their current terms, is prohibited from making TUPE-connected changes to terms, and must inform and consult employee representatives about the transfer",
-            "A framework requiring the outgoing employer to make employees redundant before a transfer to avoid inheriting liabilities",
-            "A voluntary best-practice standard for managing business acquisitions"
+            {
+              "text": "A UK and EU framework requiring employers to consult with recognised trade unions before making any employees redundant, applying regardless of whether the redundancy is connected to a business transfer or a standalone restructuring exercise",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A framework that protects employees' terms and conditions when a business transfers to a new employer \u2014 the incoming employer inherits all contracts on their current terms, cannot make TUPE-connected changes, and must inform and consult employee representatives",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A framework that requires the outgoing employer to make affected employees redundant before a business transfer to prevent the incoming employer from inheriting employment liabilities that would make the transaction economically unviable",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A voluntary best practice standard developed by the UK CIPD and adopted by the European Commission setting guidance for how employers should manage the people aspects of business acquisitions and outsourcing transitions",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3656,12 +3764,24 @@
           "id": "S5Q010",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "Your organisation operates a global HR system that stores employee data from employees in 40 countries on servers in the US. Several of those countries are in the EU. What compliance risk does this create and how should it be addressed?",
+          "question": "Your organisation operates a global HR system that stores employee data from 40 countries on servers in the US. Several of those countries are in the EU. What compliance risk does this create and how should it be addressed?",
           "options": [
-            "No risk \u2014 US law applies to US-based servers regardless of where the data originates",
-            "GDPR restricts transfers of EU personal data to third countries without adequate protections \u2014 this requires either binding corporate rules, standard contractual clauses, or adequacy decisions covering the transfer, and the organisation should ensure compliant transfer mechanisms are in place and documented",
-            "The risk can be managed by anonymising all EU employee data before it is transferred to US servers",
-            "Notify EU employees that their data is stored in the US and obtain their consent"
+            {
+              "text": "No material compliance risk exists since US law governs data stored on US-based servers regardless of where the data originates, and US data protection standards are broadly equivalent to GDPR requirements for most practical employment data purposes",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "GDPR restricts transfers of EU personal data to third countries without adequate protections \u2014 binding corporate rules, standard contractual clauses, or adequacy decisions must be in place and documented before EU employee data is stored on US servers",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The risk can be managed by anonymising all EU employee data before it is processed on US servers, since anonymised data falls outside the scope of GDPR and therefore does not require any additional transfer mechanism or protective safeguard",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Notify all EU-based employees that their data is stored on US servers and obtain their explicit informed consent for the transfer, since consent is the most straightforward mechanism for legitimising international data transfers under GDPR",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3671,10 +3791,22 @@
           "difficulty": "hard",
           "question": "What is the concept of indirect discrimination in an employment context, and how does it differ from direct discrimination?",
           "options": [
-            "Direct discrimination is intentional; indirect discrimination is unintentional. Both are unlawful",
-            "Direct discrimination occurs when someone is treated less favourably because of a protected characteristic; indirect discrimination occurs when a seemingly neutral provision, criterion, or practice puts people sharing a protected characteristic at a particular disadvantage compared to others \u2014 and cannot be justified as a proportionate means of achieving a legitimate aim",
-            "Indirect discrimination only applies to hiring decisions; direct discrimination applies to all employment decisions",
-            "The distinction is primarily relevant in jurisdictions with equality legislation \u2014 it has no application in at-will employment states in the US"
+            {
+              "text": "Direct discrimination is intentional and driven by conscious prejudice; indirect discrimination is unintentional and driven by unconscious bias. The legal distinction matters because intent affects the remedies available to a successful claimant at employment tribunal",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Direct discrimination is treating someone less favourably because of a protected characteristic; indirect discrimination is applying a neutral provision, criterion, or practice that puts people sharing a protected characteristic at a particular disadvantage without objective justification",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Indirect discrimination applies exclusively to hiring and selection decisions where neutral criteria produce demographic disparities; direct discrimination encompasses all adverse employment decisions where a protected characteristic is the explicit stated reason",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The distinction is primarily relevant in EU member states and the UK which have specific indirect discrimination provisions; US anti-discrimination law uses the concept of disparate impact which achieves a similar outcome through different legal framing",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3684,10 +3816,22 @@
           "difficulty": "medium",
           "question": "A line manager tells you they are planning to put a pregnant employee on a performance improvement plan because her productivity has declined. What is your immediate response?",
           "options": [
-            "Support the PIP \u2014 performance standards apply equally to all employees regardless of pregnancy",
-            "Advise the manager to wait until after maternity leave to begin any performance process",
-            "Advise the manager to pause immediately, assess whether the productivity decline is related to the pregnancy or any associated health condition, explore whether reasonable adjustments are required, and seek legal advice before taking any formal performance action \u2014 given the significant risk of pregnancy discrimination claims",
-            "Allow the PIP to proceed but document that HR advised caution"
+            {
+              "text": "Support the PIP since performance standards apply equally to all employees regardless of personal circumstances and treating a pregnant employee differently from other underperformers would itself constitute discrimination on the grounds of pregnancy",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise the manager to wait until after the employee's return from maternity leave before addressing any performance concerns, since initiating a formal process during pregnancy creates legal risk even where the performance concern is genuine and documented",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise the manager to pause immediately, assess whether the productivity decline is related to the pregnancy or an associated health condition, explore whether reasonable adjustments are required, and seek legal advice before taking any formal action given the significant discrimination risk",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Allow the PIP to proceed but ensure HR documents formally that the manager was advised of the pregnancy discrimination risk, creating a record that accountability for the decision rests with the manager rather than with HR's recommendation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 2
         },
@@ -3697,10 +3841,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a non-compete clause in an employment contract, and what limits its enforceability?",
           "options": [
-            "To prevent former employees from starting competing businesses; enforceability is limited by the size of the business",
-            "To protect legitimate business interests such as trade secrets and client relationships by restricting the employee's activities after termination; enforceability is limited by requirements of reasonableness in scope, geography, and duration \u2014 with courts frequently striking down overly broad restrictions",
-            "To prevent employees from soliciting colleagues after leaving; enforceability depends on seniority",
-            "Non-compete clauses are not enforceable in most jurisdictions and serve only as a deterrent"
+            {
+              "text": "To prevent former employees from establishing competing businesses within a defined period of leaving; enforceability is limited primarily by the size of the business and whether the employer can demonstrate that the restriction is proportionate to its scale",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To protect legitimate business interests such as confidential information and customer relationships by restricting the employee's activities after termination; enforceability is limited by requirements of reasonableness in scope, geography, and duration",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To prevent employees from soliciting former colleagues to join competing organisations after leaving; enforceability depends on the seniority of the employee and whether they had direct management responsibility over the colleagues they are restricted from approaching",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Non-compete clauses are unenforceable in most jurisdictions following recent legislative changes and serve only as a deterrent, with employers relying on confidentiality obligations and garden leave provisions as the practical protection for business interests",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3710,10 +3866,22 @@
           "difficulty": "hard",
           "question": "Your company operates in a jurisdiction that has recently introduced mandatory pay gap reporting. Initial analysis shows a significant gender pay gap in two business units. The CFO wants to delay publication to allow time to address the underlying issues. What is your advice?",
           "options": [
-            "Support the delay \u2014 addressing root causes before publication is better for the company's reputation",
-            "Advise that where reporting is legally mandatory, delaying publication creates regulatory and reputational risk that exceeds the reputational risk of an honest gap \u2014 recommend publishing with a clear narrative explaining the causes and a credible, time-bound action plan",
-            "Publish the report with the gap data removed from the two affected business units",
-            "Seek legal advice on whether a delay is permissible before advising the CFO"
+            {
+              "text": "Support the delay since addressing the root causes of the pay gap before publishing the data is strategically sensible \u2014 publishing a gap without a credible remediation plan creates more reputational damage than publishing later with progress already made",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Advise that where reporting is legally mandatory, delaying publication creates regulatory and reputational risk that exceeds the reputational risk of honest disclosure \u2014 recommend publishing with a clear narrative explaining the causes and a credible time-bound action plan",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Publish the report with the gender pay gap data for the two affected business units excluded, presenting only the aggregated organisational data and noting that unit-level data is being reviewed for accuracy before inclusion in the report",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Seek formal legal opinion on whether the mandatory reporting deadline allows any flexibility or extension for organisations that have identified data quality concerns, before advising the CFO on whether a delay is legally permissible in the circumstances",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -3723,10 +3891,22 @@
           "difficulty": "medium",
           "question": "What is a settlement agreement and what must it include to be legally binding in most common law jurisdictions?",
           "options": [
-            "A non-binding letter of intent between employer and employee to resolve a dispute informally",
-            "A legally binding contract in which the employee agrees to waive specified employment claims in exchange for agreed compensation; to be valid it typically requires the employee to have received independent legal advice, the agreement to identify the claims being waived, and both parties to sign",
-            "An agreement reached through ACAS or equivalent conciliation service \u2014 these are automatically binding without legal advice",
-            "A document signed by the employee confirming they have no outstanding grievances at the point of resignation"
+            {
+              "text": "A non-binding letter of intent between employer and employee documenting an informal agreement to resolve a workplace dispute, which becomes binding only if both parties sign a subsequent formal contract within an agreed and defined timeframe",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A legally binding contract in which the employee waives specified employment claims in exchange for agreed consideration; to be valid it typically requires the employee to have received independent legal advice, the agreement to identify the claims being waived, and both parties to sign",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "An agreement reached through a conciliation service such as ACAS in the UK, which is automatically legally binding once the conciliator records agreement and does not require the employee to take separate independent legal advice before signing",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A document signed by the employee at the point of voluntary resignation confirming that they have no outstanding claims, grievances, or complaints against the employer and that the employment relationship is ending on mutually agreed terms",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3736,10 +3916,22 @@
           "difficulty": "medium",
           "question": "A manager asks HR to conduct a reference check on a current employee without the employee's knowledge because they suspect the employee is job searching. What do you do?",
           "options": [
-            "Conduct the reference check \u2014 the manager has a legitimate business interest in retention planning",
-            "Decline \u2014 covertly investigating whether an employee is job searching is a privacy violation and could constitute a breach of trust that itself triggers a constructive dismissal risk, advise the manager to address any performance or engagement concerns directly with the employee",
-            "Advise the manager to monitor the employee's activity on company systems instead",
-            "Consult Legal before taking any action"
+            {
+              "text": "Conduct the reference check discreetly since the manager has a legitimate interest in workforce planning and understanding whether a key employee is likely to leave is a reasonable input to the team's succession and contingency planning",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Decline and advise the manager that covertly investigating whether an employee is job searching is a privacy violation that could itself give rise to a constructive dismissal claim \u2014 recommend addressing any engagement or retention concerns directly with the employee instead",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Advise the manager to monitor the employee's activity on company systems and professional networking profiles instead, since digital activity monitoring of a current employee is within the employer's rights where a company monitoring policy is in place",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Consult Legal before taking any action since a manager's request to investigate a current employee's job search activity creates legal and ethical complexity that requires legal advice before HR determines the appropriate response",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -3749,10 +3941,22 @@
           "difficulty": "hard",
           "question": "Under EU Working Time Directive principles, what is the most significant obligation on employers regarding rest periods and maximum working hours?",
           "options": [
-            "Employees must not work more than 40 hours per week under any circumstances",
-            "Workers are entitled to a minimum daily rest of 11 consecutive hours, a weekly rest of 24 hours, and in most cases a maximum average working week of 48 hours \u2014 though opt-outs are possible in some jurisdictions \u2014 and employers must maintain records to demonstrate compliance",
-            "Overtime is prohibited for all employees unless explicitly agreed in the employment contract",
-            "Rest period requirements apply only to manual and factory workers"
+            {
+              "text": "Employees must not work more than 40 hours per week under any circumstances including where the employee voluntarily chooses to work additional hours, and any excess above 40 hours must be compensated through time off in lieu regardless of the employee's preference",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Workers are entitled to minimum daily rest of 11 consecutive hours, weekly rest of 24 hours, and in most cases a maximum average working week of 48 hours \u2014 with opt-outs possible in some jurisdictions \u2014 and employers must maintain records to demonstrate compliance",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Overtime working is prohibited for all employees unless explicitly agreed in writing in the employment contract at the point of hire, and any working time in excess of contracted hours requires a formal written variation agreement before the hours can be worked",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Working time rest period requirements apply exclusively to manual, factory, and shift workers whose roles involve physical labour or machinery operation and are not applicable to knowledge workers or managers who control their own working time",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3762,10 +3966,22 @@
           "difficulty": "hard",
           "question": "An employee discloses to HR that they are experiencing domestic violence and that their abuser, who works at the same company, has been sending threatening messages through the internal communications platform. What is HR's responsibility?",
           "options": [
-            "Advise the employee to report the matter to the police as it is a personal matter outside HR's remit",
-            "Take the disclosure seriously as both a safeguarding and workplace safety matter \u2014 secure evidence from the platform, apply appropriate interim safety measures such as access controls or shift changes, engage Legal and if required law enforcement, provide access to employee support services, and manage the process with strict confidentiality to protect the disclosing employee",
-            "Open a standard harassment investigation following the normal ER process",
-            "Advise both employees to take annual leave until the situation is resolved"
+            {
+              "text": "Advise the employee to report the threatening messages to the police since the conduct described is a criminal matter that falls outside HR's jurisdiction and HR cannot intervene in what is fundamentally a personal situation between two individuals",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Take the disclosure seriously as both a safeguarding and workplace safety matter \u2014 secure evidence from the platform, implement appropriate interim safety measures, engage Legal and if appropriate law enforcement, provide access to support services, and manage the process with strict confidentiality",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Open a standard harassment investigation following the normal ER investigation process since the conduct of sending threatening messages through company communication platforms constitutes a workplace conduct matter regardless of the personal relationship between the parties",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise both employees to take annual leave for a minimum of two weeks while HR assesses the situation, since physical separation of the parties is the most immediate practical step to reduce the risk of an incident occurring on company premises",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3775,10 +3991,22 @@
           "difficulty": "medium",
           "question": "What is the concept of reasonable adjustment in employment law, and when does the obligation to make adjustments typically arise?",
           "options": [
-            "Any change to working conditions requested by an employee \u2014 the obligation arises when the employee submits a formal adjustment request",
-            "Changes to working arrangements, tools, or processes that remove or reduce a substantial disadvantage experienced by a disabled employee \u2014 the obligation typically arises when the employer knows or should know the employee has a disability that puts them at a disadvantage, and it applies unless the adjustment would be disproportionately burdensome",
-            "Flexible working arrangements available to all employees under flexible working legislation",
-            "Adjustments required under health and safety law when a workplace risk assessment identifies a hazard"
+            {
+              "text": "Any modification to working conditions or job design requested by any employee for any personal reason \u2014 the obligation arises when an employee submits a written reasonable adjustment request through the formal HR process established for this purpose",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Changes to working arrangements, tools, or processes that remove or reduce a substantial disadvantage experienced by a disabled employee \u2014 the obligation typically arises when the employer knows or should know the employee has a disability placing them at a disadvantage",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The flexible working arrangements available to all employees under flexible working legislation, including requests for reduced hours, compressed weeks, or hybrid working patterns, which employers must consider within a defined statutory response period",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Adjustments required under health and safety legislation when a workplace risk assessment identifies a physical hazard that disproportionately affects an employee with a particular health condition or physical characteristic requiring protective measures",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3786,12 +4014,24 @@
           "id": "S5Q020",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "Your organisation has not updated its employment contracts for five years. A legal review finds several clauses that are either unenforceable or non-compliant with recent legislative changes in two jurisdictions. The business wants to re-paper all contracts simultaneously with a covering letter saying they are administrative updates. How do you advise?",
+          "question": "Your organisation has not updated its employment contracts for five years. A legal review finds several clauses that are unenforceable or non-compliant with recent legislative changes in two jurisdictions. The business wants to re-paper all contracts simultaneously with a covering letter saying they are administrative updates. What is your advice?",
           "options": [
-            "Support the approach \u2014 presenting contract changes as administrative is standard practice",
-            "Advise that presenting substantive contractual changes as administrative updates is legally risky and potentially dishonest \u2014 employees have the right to understand what is changing; recommend a transparent communication that identifies changes clearly, provides a reasonable acceptance period, and offers access to HR for questions \u2014 with Legal advice obtained for the jurisdictions with compliance gaps before any contract is issued",
-            "Re-paper only the non-compliant jurisdictions first and address the rest over time",
-            "Seek employee consent through a mass digital signature process before reviewing the contract content"
+            {
+              "text": "Support the approach since presenting contract updates as administrative is standard practice in the industry and the covering letter framing helps reduce employee anxiety and the volume of queries that a more detailed explanation of changes would generate",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Advise that presenting substantive contractual changes as administrative updates is both legally risky and dishonest \u2014 employees have the right to understand what is changing, and recommend a transparent communication with adequate time for questions before any contract is issued",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Re-paper only the contracts of employees in the two non-compliant jurisdictions immediately and address the remaining contracts in the next annual review cycle, prioritising the compliance risk while avoiding the scale of a simultaneous full-organisation exercise",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Implement a mass digital signature process for all employees to accept the new contracts within a defined deadline, using the acceptance rate as a measure of how clearly the administrative nature of the updates has been communicated to the workforce",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3801,10 +4041,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a data retention policy for HR records?",
           "options": [
-            "To ensure employee records are accessible to managers at all times during employment",
-            "To define how long different categories of HR data are retained after their primary purpose is fulfilled, ensuring compliance with data protection law by not retaining data longer than necessary and enabling systematic deletion of expired records",
-            "To back up HR data in multiple locations for business continuity purposes",
-            "To document which HR records require physical versus digital storage"
+            {
+              "text": "To ensure that all employee records are continuously accessible to managers and HR teams throughout the employment relationship and for a reasonable period following the employee's departure from the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To define how long different categories of HR data must be retained after their primary purpose is fulfilled, ensuring compliance with data protection law by not holding data longer than necessary and enabling systematic deletion of expired records",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To establish backup and disaster recovery requirements for HR data, ensuring that all employment records can be restored within a defined recovery time objective in the event of a system failure, data loss, or cyber security incident",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To document which categories of HR records must be retained in physical paper format versus digital format, creating a clear storage classification system that meets both legal admissibility requirements and data protection obligations",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3814,10 +4066,22 @@
           "difficulty": "medium",
           "question": "An employee contacts you saying they were passed over for a promotion and believe it was because of their age. The successful candidate is 15 years younger. How do you handle this?",
           "options": [
-            "Advise the employee there is no evidence of discrimination and close the matter",
-            "Take the concern seriously as a potential age discrimination allegation, conduct a fact-find examining the selection process, criteria applied, documentation of the decision, and whether the selection panel received bias awareness training \u2014 and advise the employee of their right to raise a formal grievance",
-            "Ask the hiring manager to explain their decision and pass the explanation to the employee",
-            "Advise the employee to focus on their own development for future opportunities"
+            {
+              "text": "Advise the employee that there is no evidence of discrimination since the organisation made a legitimate selection decision and age difference alone does not constitute age discrimination without additional evidence that age was a factor in the decision",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Take the concern seriously as a potential age discrimination allegation, conduct a fact-find examining the selection process, criteria applied, and documentation of the decision, and advise the employee of their right to raise a formal grievance",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Ask the hiring manager to provide a written explanation of their selection decision and pass that explanation directly to the employee, since giving the employee access to the decision rationale is the most transparent and efficient way to address their concern",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Advise the employee to focus on developing the capabilities that differentiated the successful candidate and to use the feedback from this process as the basis for their preparation for the next promotional opportunity when it arises",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3827,10 +4091,22 @@
           "difficulty": "hard",
           "question": "What is the doctrine of implied terms in an employment contract, and which implied term is most commonly invoked in constructive dismissal claims?",
           "options": [
-            "Implied terms are terms that are not written into the contract but are imported by statute; the most commonly invoked is the implied term of equal pay",
-            "Implied terms are terms that are treated as part of the contract even if not expressly written \u2014 because they are obvious, customary, or necessary to give the contract business efficacy; the most commonly invoked in constructive dismissal is the implied term of mutual trust and confidence",
-            "Implied terms are verbal agreements made during the hiring process; the most common in dismissal claims is an implied promise of job security",
-            "Implied terms apply only to senior employment contracts where parties have not addressed every eventuality"
+            {
+              "text": "Implied terms are statutory provisions automatically incorporated into every employment contract by legislation; the most commonly invoked in constructive dismissal claims is the implied statutory right to a minimum notice period which the employer has breached",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Implied terms are treated as part of the contract even without being written \u2014 because they are obvious, customary, or necessary for business efficacy; the most commonly invoked in constructive dismissal is the implied duty of mutual trust and confidence",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Implied terms are verbal promises made during recruitment or negotiation that are subsequently denied by the employer; the most commonly invoked in dismissal claims is an implied promise of job security or career progression communicated during the hiring process",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Implied terms apply exclusively to senior and executive employment arrangements where the parties have not addressed every eventuality in writing; the most commonly invoked relates to confidentiality obligations that continue to apply after the employment ends",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3840,10 +4116,22 @@
           "difficulty": "hard",
           "question": "Your organisation acquires a business whose employees have significantly better employment terms than your own. Post-acquisition, the business wants to harmonise terms downward to reduce cost. What are the primary legal and people risks?",
           "options": [
-            "Harmonisation is standard post-acquisition practice and carries limited risk if done transparently",
-            "Downward harmonisation of terms protected by TUPE or equivalent legislation is prohibited for a specified period and may remain restricted beyond that period; even where legally permissible, it creates flight risk among the acquired workforce, potential constructive dismissal claims, and can undermine the cultural integration needed for the acquisition to succeed \u2014 recommend a phased, legally advised approach that distinguishes between what must be harmonised and what should be preserved",
-            "Seek employee consent through a ballot \u2014 majority acceptance makes harmonisation legally safe",
-            "Immediately harmonise pay and benefits to reduce the financial liability of the acquisition"
+            {
+              "text": "Harmonisation is standard and legally routine post-acquisition practice that carries limited risk when communicated transparently and implemented with an adequate transition period that allows employees to adjust their financial planning to the new terms",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Downward harmonisation of TUPE-protected terms is prohibited for a specified period and potentially beyond; it creates flight risk among the acquired workforce, potential constructive dismissal claims, and can undermine the cultural integration the acquisition requires",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Seek employee consent through a workforce ballot since majority acceptance of downward harmonisation through a democratic vote creates a legally safe basis for the change and removes the risk of individual claims from employees who voted against",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Harmonise pay and benefits immediately following legal completion of the acquisition since the earlier harmonisation occurs the shorter the period of dual-term complexity and the lower the total financial cost of running two different employment frameworks",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3853,10 +4141,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a workplace health and safety risk assessment from an HR perspective?",
           "options": [
-            "To comply with annual reporting requirements for occupational health incidents",
-            "To systematically identify hazards in the workplace, evaluate the risk of harm, and implement controls to eliminate or mitigate those risks \u2014 with HR playing a role in ensuring people-related risks such as stress, violence, and ergonomic issues are addressed alongside physical hazards",
-            "To provide a defence against personal injury claims",
-            "To document the organisation's insurance coverage for workplace accidents"
+            {
+              "text": "To comply with annual statutory reporting requirements for workplace accidents and near-miss incidents, providing the data that HR must submit to relevant regulatory authorities as part of the organisation's occupational health obligations",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To systematically identify hazards, evaluate the risk of harm, and implement controls to eliminate or mitigate those risks \u2014 with HR playing a role in ensuring that people-related risks such as stress, workload, and interpersonal dynamics are assessed alongside physical hazards",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To create a documented legal defence for the organisation in the event of a personal injury claim, establishing that the employer took all reasonably practicable steps to identify and address workplace risks before any incident occurred",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To provide the insurance function with the detailed workplace risk information it needs to accurately price employer liability and public liability coverage and to identify areas where additional insurance coverage may be required to protect the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3866,10 +4166,22 @@
           "difficulty": "hard",
           "question": "A business leader requests that HR screen job applicants by checking their social media profiles, including personal posts unrelated to work, before shortlisting. The company operates in the EU. What is your advice?",
           "options": [
-            "Support the practice \u2014 social media is publicly available and provides useful insight into candidate character",
-            "Advise that systematic social media screening of personal accounts creates significant GDPR risk \u2014 particularly where protected characteristics may be visible \u2014 and could constitute unlawful pre-employment discrimination; recommend a clearly scoped approach limited to professional profiles where directly relevant to the role, with a documented lawful basis and consistent application",
-            "Allow the screening but instruct HR not to record what was found",
-            "Conduct the screening after offer acceptance so it is a post-hire rather than selection activity"
+            {
+              "text": "Support the practice since social media profiles are publicly accessible information that any member of the public including a prospective employer can legitimately view, and using publicly available information in hiring decisions is not regulated under GDPR",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise that systematic personal social media screening creates significant GDPR risk \u2014 particularly where protected characteristics are visible \u2014 and could constitute unlawful discrimination; recommend a narrowly scoped approach limited to professional profiles where directly relevant to the role",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Allow the screening on the condition that the HR team does not record any information observed on personal social media profiles, since keeping no record of what was viewed prevents the screening from being challenged in a data protection complaint or employment tribunal",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Conduct the social media screening after offer acceptance rather than at the shortlisting stage, since post-offer screening reduces the risk that screening influenced the initial selection decision and makes any adverse finding easier to frame as a background check",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3879,10 +4191,22 @@
           "difficulty": "medium",
           "question": "What is the primary distinction between an employee and an independent contractor from an employment law perspective, and why does it matter?",
           "options": [
-            "Employees work exclusively for one employer; contractors may work for multiple clients. The distinction affects tax treatment only",
-            "The distinction turns on the degree of control, integration, and economic dependence \u2014 employees are entitled to employment rights including minimum wage, holiday pay, and unfair dismissal protection; misclassifying workers as contractors to avoid these obligations creates legal exposure and back-payment liability",
-            "Contractors are always paid more than employees for equivalent work due to the absence of benefits",
-            "The distinction only matters in jurisdictions with strong union representation"
+            {
+              "text": "Employees work exclusively for a single employer and are prohibited from taking on other paid work without consent; contractors may work for multiple clients simultaneously. The distinction primarily affects tax treatment and National Insurance contributions",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The distinction turns on the degree of control, integration, and economic dependence \u2014 employees are entitled to employment rights including minimum wage, holiday pay, and unfair dismissal protection; misclassification creates legal exposure and back-payment liability",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Independent contractors are always compensated at a higher rate than employees performing equivalent work because they bear their own overhead costs, employment taxes, and the economic risk of project-based rather than guaranteed ongoing income",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The distinction is primarily relevant in jurisdictions with strong trade union representation where misclassification affects the bargaining unit composition; in non-unionised environments the practical distinction has limited legal significance for most purposes",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3892,10 +4216,22 @@
           "difficulty": "medium",
           "question": "An employee returns from a 12-month maternity leave and is told her role no longer exists due to a restructure that happened during her absence. She is offered a different role at a lower grade. What is your advice to the business?",
           "options": [
-            "Proceed with the role change \u2014 restructuring is a legitimate business reason that applies equally to employees on leave",
-            "Advise that employees returning from maternity leave have a right to return to the same or an equivalent role \u2014 not a lesser one \u2014 and that offering a lower-grade role is likely to constitute maternity discrimination; recommend exploring whether a genuinely equivalent alternative is available and seek legal advice before making any offer",
-            "Ask the employee to accept the lower role on a temporary basis while the business considers options",
-            "Make the employee redundant and pay the statutory redundancy entitlement"
+            {
+              "text": "Proceed with the role change since restructuring is a legitimate business activity that applies equally to all employees including those on maternity leave, and the existence of a genuine business reason for the restructure protects the employer from a discrimination claim",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise that employees returning from maternity leave have a right to return to the same or an equivalent role \u2014 not a lesser one \u2014 and that offering a lower-grade role is likely to constitute maternity discrimination; recommend exploring whether a genuinely equivalent alternative is available",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Ask the employee to accept the lower-grade role on a temporary basis for a defined period while the business explores whether a more suitable role can be found for her within the restructured organisation",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Make the employee redundant and pay the statutory redundancy entitlement, since if the original role genuinely no longer exists the most legally defensible outcome is a genuine redundancy rather than an offer of a role at a different and lower grade",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3905,10 +4241,22 @@
           "difficulty": "hard",
           "question": "What is the concept of territorial jurisdiction in employment law, and why does it matter for globally mobile employees?",
           "options": [
-            "It determines which courts have authority to hear employment disputes \u2014 relevant only when employees litigate",
-            "It determines which country's employment law applies to a worker \u2014 relevant for globally mobile employees because their legal entitlements, protections, and the employer's obligations may be governed by the law of the country where work is performed, habitual residence, or contract governing law, and these may conflict \u2014 requiring careful analysis to avoid compliance gaps or unexpected liabilities",
-            "It applies only to employees who hold a work visa in a foreign jurisdiction",
-            "Territorial jurisdiction is always determined by the governing law clause in the employment contract"
+            {
+              "text": "Territorial jurisdiction determines which national courts have authority to hear employment disputes and is primarily relevant only when an employee decides to litigate rather than as a day-to-day employment management consideration for HR teams",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Territorial jurisdiction determines which country's employment law applies to a worker \u2014 for globally mobile employees this may be the country where work is performed, where the employee is habitually resident, or the contract governing law, and these may conflict",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Territorial jurisdiction applies only to employees who hold a work visa or permit in a foreign jurisdiction and is not relevant to short-term business travellers or employees who work remotely from a country where they hold citizenship",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Territorial jurisdiction is always and unambiguously determined by the governing law clause in the employment contract, making it a straightforward matter of contractual interpretation that does not require country-specific legal analysis",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3918,10 +4266,22 @@
           "difficulty": "hard",
           "question": "Your company has been asked by a government authority in one of your operating countries to provide personal data of specific employees as part of a law enforcement investigation. What is HR's role in responding?",
           "options": [
-            "Provide the data immediately \u2014 government requests must be complied with",
-            "Do not provide data and refuse to cooperate until the investigation is complete",
-            "Engage Legal immediately, verify the legitimacy and legal basis of the request, assess whether a valid legal compulsion exists in the relevant jurisdiction, provide only the minimum data legally required, document the request and response, and notify employees only if legally permissible and advisable",
-            "Refer the authority directly to the IT team to manage the data extraction"
+            {
+              "text": "Provide the data immediately since government authorities have the legal power to compel disclosure and compliance with a lawful government request is both legally required and the most straightforward way to protect the organisation from regulatory consequences",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refuse to cooperate entirely and direct the authority to the company's Legal team, since employee data disclosure decisions of this nature should never be made by HR and HR should have no direct involvement in the response to a law enforcement request",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Engage Legal immediately, verify the legitimacy and legal basis of the request, assess whether lawful compulsion exists, provide only the minimum data legally required, document the request and response, and notify employees only if legally permissible",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Refer the authority directly to the IT team to manage the data extraction technically, since IT has the system access and technical capability to fulfil data requests efficiently and HR's involvement in data extraction is limited to providing context about record structures",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -3931,10 +4291,22 @@
           "difficulty": "medium",
           "question": "What is the primary risk of failing to conduct adequate pre-employment background checks for roles in regulated industries?",
           "options": [
-            "The organisation may hire employees who are poorly suited to the role's culture",
-            "The organisation may be in breach of regulatory requirements that mandate fitness checks, creating legal liability, regulatory sanction, and reputational damage \u2014 as well as potential negligent hiring liability if the employee subsequently causes harm",
-            "Background check failures primarily create onboarding delays rather than legal exposure",
-            "The risk is primarily reputational and does not create legal liability"
+            {
+              "text": "The organisation may hire employees who are a poor cultural fit or whose previous experience is less relevant than their CV suggested, increasing the likelihood of early attrition and the cost of a repeat recruitment process for the same role",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The organisation may breach regulatory requirements mandating fitness and propriety checks, creating legal liability, regulatory sanction, reputational damage, and potential negligent hiring liability if the employee subsequently causes harm",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Background check failures primarily create delays in the onboarding process rather than legal exposure, since regulators in most sectors allow provisional employment to begin while checks are completed provided the organisation documents the delay appropriately",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The primary risk is reputational \u2014 if a new hire is later found to have had a problematic history that a background check would have revealed, the story becomes a media and employee trust issue rather than a formal legal liability for the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3944,10 +4316,22 @@
           "difficulty": "medium",
           "question": "A manager tells you they have decided to change the working hours of all employees in their team from 9-5 to 7-3, starting next month, to better serve an Asian client base. The employees have standard contracts specifying 9-5. What is your advice?",
           "options": [
-            "Support the change \u2014 business needs justify scheduling adjustments",
-            "Advise the manager that unilaterally changing contractual working hours is a breach of contract that could give rise to constructive dismissal claims \u2014 recommend a transparent consultation with the team, an exploration of whether the change can be achieved through voluntary agreement, and if the change is business-critical, a proper variation process with reasonable notice and appropriate support",
-            "Allow a trial period of two months before formalising the change",
-            "Advise the manager to update the contracts after the change is implemented"
+            {
+              "text": "Support the change since business needs justify operational scheduling adjustments and the manager has legitimate authority to manage their team's working arrangements in response to genuine and documented client-driven requirements",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Advise that unilaterally changing contractual working hours constitutes a breach of contract and could give rise to constructive dismissal claims \u2014 recommend a transparent consultation with the team, exploration of voluntary agreement, and a proper contractual variation process",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Allow the manager to implement the new hours on a two-month trial basis to assess employee willingness before formalising the change through a contractual variation, using the trial period to gauge team sentiment without triggering a formal consultation process",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise the manager to update the employment contracts after the new hours have been in operation for three months, at which point the changed hours will have become established custom and practice that can be documented in the contracts retrospectively",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3957,10 +4341,22 @@
           "difficulty": "hard",
           "question": "What is the concept of positive action in equality legislation and how does it differ from positive discrimination?",
           "options": [
-            "They are the same concept with different names in different jurisdictions",
-            "Positive action refers to targeted measures to enable underrepresented groups to compete on equal terms \u2014 such as targeted outreach, mentoring, or training \u2014 and is lawful; positive discrimination means selecting a less-qualified candidate solely because of a protected characteristic and is unlawful in most jurisdictions",
-            "Positive action is lawful in the US but unlawful in the EU; positive discrimination is the reverse",
-            "Positive action applies to hiring; positive discrimination applies to promotion and development decisions"
+            {
+              "text": "Positive action and positive discrimination are the same concept described by different terms in different legal jurisdictions \u2014 the former is used in UK law and the latter in US law, but both refer to the same targeted efforts to increase demographic representation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Positive action involves targeted measures to help underrepresented groups compete on equal terms \u2014 such as outreach, mentoring, or development programmes \u2014 and is lawful; positive discrimination means selecting a less-qualified candidate solely based on a protected characteristic and is unlawful",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Positive action is lawful in the United States under affirmative action requirements but unlawful in most EU member states; positive discrimination is lawful in some EU states as a proportionate means of achieving workforce diversity targets in regulated sectors",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Positive action applies exclusively to the recruitment and selection process; positive discrimination applies to promotion, development, and pay decisions \u2014 the distinction matters because the legal framework for each is different and applies at different lifecycle stages",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3970,10 +4366,22 @@
           "difficulty": "medium",
           "question": "A manager wants to give a long-serving employee a contractual commitment that they will not be made redundant as long as they continue to perform well. They want this in writing. What is your advice?",
           "options": [
-            "Support the commitment \u2014 it will significantly improve employee loyalty and retention",
-            "Advise the manager that no-redundancy commitments create significant legal and operational risk, are likely unenforceable if circumstances change, and could expose the organisation to breach of contract claims if a genuine redundancy situation subsequently arises \u2014 recommend an honest conversation about the employee's value and development rather than a commitment the organisation may not be able to honour",
-            "Draft a letter of intent rather than a contractual commitment to reduce legal exposure",
-            "Allow the commitment but include a force majeure clause to protect the company"
+            {
+              "text": "Support the commitment since a written no-redundancy undertaking to a long-serving employee who has demonstrated sustained performance is a legitimate and proportionate retention tool that reflects a genuine business intent to protect the employment relationship",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Advise that no-redundancy commitments create significant legal and operational risk, are likely unenforceable if genuine business circumstances change, and could expose the organisation to breach of contract claims \u2014 recommend an honest conversation about value and development instead",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Draft a letter of intent rather than a contractual commitment, since a non-binding expression of the manager's intention to retain the employee communicates the same goodwill without creating the legal obligations a contractual no-redundancy clause would impose",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Allow the commitment to be made but include a broadly drafted force majeure clause covering any significant change in business circumstances, since a well-drafted exception clause provides sufficient protection while honouring the spirit of the commitment",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3983,10 +4391,22 @@
           "difficulty": "medium",
           "question": "What does it mean for an employment contract to be void versus voidable?",
           "options": [
-            "Void contracts are legally unenforceable from the outset; voidable contracts are valid until one party elects to rescind them on grounds such as misrepresentation, duress, or incapacity",
-            "Void contracts can be renegotiated; voidable contracts must be terminated immediately",
-            "The distinction only applies to executive-level employment contracts",
-            "Voidable contracts require court approval to rescind; void contracts can be rescinded by HR"
+            {
+              "text": "A void contract is legally unenforceable from the outset; a voidable contract is valid until one party elects to rescind it on grounds such as misrepresentation, duress, undue influence, or incapacity \u2014 giving the innocent party a choice about whether to continue or end it",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A void contract can be renegotiated by either party to remove the offending terms and create a valid replacement; a voidable contract must be terminated immediately once the vitiating factor is identified since it cannot be cured through negotiation or amendment",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The distinction between void and voidable contracts applies only to executive and director-level employment arrangements where the commercial value of the contract justifies detailed legal analysis of validity \u2014 standard employment contracts are neither void nor voidable",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Voidable contracts require a court order to rescind and become void only when the court has formally declared them invalid; void contracts are automatically without legal effect and do not require any court or tribunal intervention to establish their invalidity",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 0
         }
