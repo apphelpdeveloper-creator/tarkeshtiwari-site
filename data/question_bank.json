@@ -5303,10 +5303,22 @@
           "difficulty": "medium",
           "question": "What is the primary difference between using AI as an automation tool versus using AI as a decision-support tool in HR?",
           "options": [
-            "Automation tools are more expensive to implement than decision-support tools",
-            "Automation tools replace human execution of defined, repeatable tasks; decision-support tools augment human judgment by providing data, patterns, or options \u2014 but the decision remains with the human; the distinction matters because conflating the two can lead to inappropriate automation of decisions that require human judgment and accountability",
-            "Decision-support tools are used only at senior HR levels; automation tools are for operational HR teams",
-            "There is no meaningful distinction \u2014 AI tools serve the same purpose regardless of how they are framed"
+            {
+              "text": "Automation tools are significantly more expensive to implement than decision-support tools because they require deeper system integration, process re-engineering, and ongoing technical maintenance that decision-support tools typically do not need",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Automation tools replace human execution of defined repeatable tasks; decision-support tools augment human judgment by providing data and options while the decision remains with the human \u2014 conflating the two leads to inappropriate automation of decisions requiring human accountability",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Decision-support tools are used exclusively at senior HR leadership levels while automation tools are deployed at the operational and transactional levels of HR service delivery where the work is routine and the stakes of any individual decision are relatively low",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "There is no meaningful distinction since AI tools serve the same fundamental purpose regardless of how they are framed \u2014 they process data and produce outputs that HR professionals use to inform decisions or execute tasks more efficiently at scale",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5316,10 +5328,22 @@
           "difficulty": "hard",
           "question": "An HR leader wants to implement an AI chatbot to handle all Tier 0 and Tier 1 HR queries. The vendor claims the chatbot can handle 85% of queries without human intervention. What are the critical questions you must answer before approving implementation?",
           "options": [
-            "Which vendor has the highest market share and what is the implementation timeline?",
-            "What data was the chatbot trained on and does it reflect your organisation's specific policies, what is the escalation path for queries the chatbot cannot handle, how will the tool manage emotionally sensitive queries, what governance exists if the chatbot gives incorrect information, and how will you measure quality rather than just volume resolution?",
-            "What is the cost saving versus the current human team and when is break-even?",
-            "Has the chatbot been implemented by comparable organisations and what are their satisfaction scores?"
+            {
+              "text": "Which vendor has the highest market share among comparable HR functions, what is the typical implementation timeline for an organisation of this size, and what is the standard commercial structure for the licensing arrangement",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "What data was the chatbot trained on, what is the escalation path for queries it cannot handle, how will it manage emotionally sensitive queries, what governance exists if it gives incorrect information, and how will quality rather than just volume resolution be measured",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "What is the projected cost saving versus the current human team and what is the break-even timeline, since the primary justification for a Tier 0 AI investment is the financial return it generates through reduced headcount and faster query resolution",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Which other organisations of a comparable size and sector have implemented the same chatbot and what satisfaction scores they have achieved, since peer adoption and outcomes are the most reliable predictor of whether the tool will work in this context",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5329,10 +5353,22 @@
           "difficulty": "hard",
           "question": "What is algorithmic bias in the context of AI-powered HR tools, and why is it particularly difficult to detect?",
           "options": [
-            "Intentional programming errors inserted by vendors to favour certain demographic groups \u2014 detected through independent code review",
-            "Systematic patterns in AI outputs that disadvantage certain groups, typically arising from biased training data or proxy variables that correlate with protected characteristics \u2014 difficult to detect because the AI may appear to make neutral decisions while reproducing historical patterns of inequity, and standard accuracy metrics do not surface demographic disparities",
-            "Technical errors in AI systems that produce incorrect outputs \u2014 detected through quality assurance testing",
-            "Bias introduced by HR practitioners who override AI recommendations with their own preferences"
+            {
+              "text": "Intentional programming errors inserted by vendors to favour certain demographic groups in outputs \u2014 detected through independent code review and source code auditing by technical experts who can identify deliberate manipulation of the model's decision logic",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Systematic patterns in AI outputs that disadvantage certain groups, typically arising from biased training data or proxy variables correlating with protected characteristics \u2014 difficult to detect because the AI may appear neutral while reproducing historical patterns of inequity",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Technical errors in AI systems that produce systematically incorrect outputs across all user groups \u2014 detected through standard quality assurance testing and performance benchmarking that organisations routinely conduct during the tool evaluation and procurement process",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Bias introduced by HR practitioners who consistently override AI recommendations with their own preferences, creating a pattern of human interference that corrupts the objectivity of the AI system's outputs over time through repeated manual adjustment",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5342,10 +5378,22 @@
           "difficulty": "hard",
           "question": "Your organisation's AI-powered performance prediction tool has flagged 12 employees as flight risks with 78% confidence. A business leader wants to use this list to immediately begin managed exits for the highest-risk employees before they resign. What is your position?",
           "options": [
-            "Support the approach \u2014 proactive talent management is better than reactive retention",
-            "Reject the use of the tool for this purpose entirely \u2014 AI should not be used in HR",
-            "Advise that acting on a predictive list to manage out employees who have not demonstrated performance issues conflates flight risk with performance risk, creates significant legal exposure, and undermines the trust and culture the tool was intended to protect \u2014 recommend using the predictions to trigger targeted retention conversations and development interventions instead",
-            "Use the list to prioritise which employees receive additional development investment"
+            {
+              "text": "Support the approach since proactive talent management is better than reactive retention and using predictive analytics to make anticipatory people decisions is exactly the kind of data-driven HR leadership that creates competitive advantage in tight talent markets",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Reject the use of the tool for this purpose entirely and remove it from the HR technology stack, since an AI tool that produces outputs that can be misused in this way demonstrates a fundamental design flaw that makes it unsuitable for HR deployment",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Advise that acting on a predictive list to manage out employees who have not demonstrated performance issues conflates flight risk with performance risk, creates significant legal exposure, and undermines the trust the tool was intended to protect \u2014 recommend targeted retention conversations instead",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Use the list to prioritise which employees receive additional development investment and stretch opportunities, treating the flight risk prediction as a trigger for positive retention intervention rather than as a basis for any adverse employment action against the flagged individuals",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -5355,10 +5403,22 @@
           "difficulty": "medium",
           "question": "What does it mean to prompt engineer an AI language model, and why is this skill relevant for HR professionals?",
           "options": [
-            "Writing the code that trains an AI model \u2014 relevant for HR tech teams building custom AI tools",
-            "Crafting inputs to an AI model in a way that reliably produces high-quality, structured, and contextually appropriate outputs \u2014 relevant for HR professionals because well-engineered prompts dramatically increase the usefulness of AI tools for tasks like policy drafting, job description writing, communication design, and scenario testing",
-            "Reviewing AI-generated HR content for accuracy \u2014 a basic quality assurance task",
-            "Managing the vendor relationship for AI platforms used in HR"
+            {
+              "text": "Writing the software code that trains an AI model on domain-specific data \u2014 relevant for HR technology teams that are building custom AI tools internally rather than purchasing pre-built solutions from established commercial vendors",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Crafting inputs to an AI model that reliably produce high-quality structured and contextually appropriate outputs \u2014 relevant for HR professionals because well-engineered prompts dramatically increase the usefulness of AI tools for policy drafting, communication design, and scenario testing",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Reviewing AI-generated HR content for factual accuracy and regulatory compliance before it is published or used \u2014 a basic quality assurance task that any HR professional can perform without any specific technical training or AI expertise",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Managing the commercial relationship with AI platform vendors on behalf of the HR function, including contract negotiation, service level monitoring, and escalation of performance issues to the vendor account management team",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5368,10 +5428,22 @@
           "difficulty": "hard",
           "question": "A product team has built an AI tool that analyses employee sentiment from internal communication channels including Slack messages and emails. The tool is ready to deploy but employees have not been informed it exists. The product lead says informing employees will compromise the data quality. What is your position?",
           "options": [
-            "Support the covert deployment \u2014 the business interest in authentic data is legitimate",
-            "Advise that covert sentiment analysis of private communications is almost certainly unlawful under data protection frameworks including GDPR, creates a profound breach of employee trust if discovered, and will cause significantly more harm to employee relations than transparent disclosure \u2014 recommend a lawful, transparent implementation or abandonment of the tool",
-            "Allow a limited pilot with senior leaders only before making a final decision",
-            "Consult Legal and implement whatever they advise without HR input"
+            {
+              "text": "Support the covert deployment since the business interest in authentic unfiltered data is legitimate and employees who know they are being monitored will change their communication behaviour in ways that make the sentiment analysis less representative and useful",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise that covert sentiment analysis of private communications is almost certainly unlawful under GDPR, creates a profound breach of employee trust if discovered, and will cause significantly more harm to employee relations than transparent disclosure \u2014 recommend lawful transparent implementation or abandonment",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Allow a limited pilot with senior leaders only before making a final decision about full deployment, since a contained pilot group reduces legal exposure while generating evidence about whether the sentiment data is sufficiently valuable to justify the transparency investment",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Consult Legal and implement whatever approach they advise without further HR input, since the question of whether this monitoring is lawful is a legal rather than an HR question and the legal team's assessment should determine the deployment decision",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5381,10 +5453,22 @@
           "difficulty": "medium",
           "question": "What is a large language model (LLM) and how does it differ from a traditional rule-based HR system?",
           "options": [
-            "An LLM is a cloud-hosted HR system; rule-based systems are on-premise",
-            "An LLM is a type of AI trained on large amounts of text data that can generate human-like language, synthesise information, and respond flexibly to open-ended inputs \u2014 unlike rule-based systems which execute predefined logic and can only handle inputs within their programmed parameters",
-            "LLMs replace HRIS systems for data storage and workforce analytics",
-            "LLMs are used exclusively for chatbot and employee self-service applications"
+            {
+              "text": "An LLM is a cloud-hosted HR system that processes data through internet-connected servers; rule-based systems are hosted on-premise and process data within the organisation's own technical infrastructure without any external connectivity",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "An LLM is a type of AI trained on large volumes of text data that can generate human-like language and respond flexibly to open-ended inputs \u2014 unlike rule-based systems which execute predefined logic and can only handle inputs within their programmed parameters",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "LLMs are designed to replace HRIS systems by providing a natural language interface to workforce data, removing the need for traditional structured data storage and enabling employees to access HR information through conversational queries",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "LLMs are used exclusively for chatbot and employee self-service applications within HR technology stacks, while rule-based systems handle all other HR technology functions including workflow automation, approvals, and structured data processing",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5394,10 +5478,22 @@
           "difficulty": "medium",
           "question": "You are building the requirement specification for an AI tool that will generate first-draft job descriptions from a brief manager input. What are the three most important requirements you would include?",
           "options": [
-            "Speed of generation, formatting consistency, and integration with the ATS",
-            "That outputs are reviewed by HR before posting, that the tool is tested for gendered or exclusionary language in its outputs, and that it can be fine-tuned to reflect the organisation's EVP and language standards rather than producing generic descriptions",
-            "That the tool generates descriptions in multiple languages, that it is mobile-compatible, and that it is integrated with LinkedIn",
-            "That the tool is SOC 2 compliant, that it has a free trial period, and that it has positive reviews from other HR teams"
+            {
+              "text": "Speed of generation to meet recruiter productivity targets, formatting consistency with existing job description templates, and integration capability with the applicant tracking system currently in use across the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "That outputs must be reviewed by HR before posting, that the tool must be tested for gendered or exclusionary language in its outputs, and that it can be fine-tuned to reflect the organisation's EVP and language standards rather than producing generic descriptions",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "That the tool generates descriptions in multiple languages to support international recruitment, that it is mobile-compatible for use by managers in field-based roles, and that it integrates with LinkedIn for direct posting from within the tool",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "That the tool is SOC 2 compliant to meet information security standards, that it includes a free trial period before commercial commitment, and that it has a sufficient number of positive reviews from other HR teams in comparable organisations",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5407,10 +5503,22 @@
           "difficulty": "hard",
           "question": "What is the concept of human-in-the-loop (HITL) in AI system design, and why is it particularly important in HR applications?",
           "options": [
-            "A design principle where AI systems periodically request human feedback to improve their outputs over time",
-            "A design principle ensuring that human judgment is maintained as an active checkpoint in AI-assisted decision processes \u2014 particularly important in HR because employment decisions affect people's livelihoods and rights, carry legal accountability that cannot be delegated to an algorithm, and involve contextual nuance that current AI systems cannot reliably handle",
-            "A regulatory requirement mandating that all AI hiring tools be reviewed by a human HR professional",
-            "A method for integrating AI recommendations into HRIS workflows without requiring retraining of HR staff"
+            {
+              "text": "A design principle where AI systems periodically request human feedback to improve their outputs over time through a supervised learning process that refines the model's accuracy based on corrections provided by domain experts",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A design principle ensuring human judgment is maintained as an active checkpoint in AI-assisted decision processes \u2014 particularly important in HR because employment decisions affect people's livelihoods, carry legal accountability, and involve contextual nuance current AI cannot reliably handle",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A regulatory requirement in most jurisdictions mandating that all AI hiring tools be reviewed by a qualified human HR professional before any output is used as an input to an employment decision that affects an individual candidate or employee",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A method for integrating AI recommendations into HRIS workflow systems without requiring additional retraining of HR staff, enabling AI adoption without disrupting established ways of working or requiring significant change management investment",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5420,10 +5528,22 @@
           "difficulty": "hard",
           "question": "You are the HR leader responsible for evaluating an AI-powered psychometric tool that the talent team wants to use in the executive hiring process. The vendor claims 91% predictive validity. What is your evaluation approach?",
           "options": [
-            "Accept the vendor's claim \u2014 91% validity is statistically robust and the tool should be approved",
-            "Request the underlying validation study, assess the sample characteristics and whether they are comparable to your own population, commission an independent bias audit for the demographic groups relevant to your hiring pipeline, evaluate whether the legal framework in your jurisdictions permits AI-assisted psychometric assessment in hiring, and pilot with human oversight before full deployment",
-            "Ask other organisations using the tool for their experience before making a decision",
-            "Approve a pilot with three to five executive hires and evaluate outcomes before committing"
+            {
+              "text": "Accept the vendor's claim since 91% predictive validity represents a statistically robust performance level that exceeds the typical reliability of human interviewer assessments, making the tool a clear improvement on the current selection process",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Request the underlying validation study, assess whether the sample is comparable to your population, commission an independent bias audit for relevant demographic groups, evaluate the legal framework in your jurisdictions, and pilot with human oversight before full deployment",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Ask other organisations currently using the tool for their practical experience and outcome data, since real-world implementation experience in comparable contexts is more useful than vendor-supplied validation studies when assessing whether a tool will perform as claimed",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Approve a pilot with three to five executive hires and evaluate the quality of the appointments after six months in role, using actual performance outcomes as the practical validation test before committing to full deployment across the executive hiring programme",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -5433,10 +5553,22 @@
           "difficulty": "medium",
           "question": "What is an employer of record (EOR) and in what circumstances is it most relevant for an HR operations team?",
           "options": [
-            "The legal entity that appears on an employee's payslip \u2014 relevant for all international employees",
-            "A third-party organisation that acts as the legal employer for workers in a jurisdiction where the hiring company does not have a legal entity \u2014 most relevant when a company wants to hire in a new country quickly without the time and cost of setting up a local entity",
-            "A regulatory body that maintains records of employer compliance with employment law",
-            "An internal HR role responsible for maintaining accurate employee records across all jurisdictions"
+            {
+              "text": "The legal entity name that appears on an employee's payslip and employment contract \u2014 relevant for all international employees since the payroll entity may differ from the operational entity for which the employee actually performs their day-to-day work",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A third-party organisation that acts as the legal employer for workers in a jurisdiction where the hiring company does not have a legal entity \u2014 most relevant when a company wants to hire in a new country quickly without the time and cost of setting up a local entity",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A regulatory body in each jurisdiction that maintains the official register of employer compliance with employment law, health and safety obligations, and payroll tax requirements for all organisations operating within that particular legal territory",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "An internal HR role responsible for maintaining accurate and current employee records across all jurisdictions in which the organisation operates, ensuring that the master employee data is consistent across all HR and payroll systems",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5446,10 +5578,22 @@
           "difficulty": "hard",
           "question": "Your HR team is piloting an AI assistant that helps draft employee communications. A team member uses it to draft a sensitive redundancy communication. The output is factually accurate but emotionally tone-deaf and contains two policy inaccuracies. What does this incident tell you about your AI governance and what do you do?",
           "options": [
-            "Stop using AI for sensitive communications entirely",
-            "Continue using the tool but add a disclaimer to all AI-generated content",
-            "The incident reveals that the team has not been trained on appropriate use cases for the tool, that there is no review protocol for sensitive outputs, and that the tool has not been fine-tuned for policy accuracy \u2014 implement a use case framework that identifies where AI assistance is appropriate, require human review for all sensitive communications, and retrain the tool on current policy content",
-            "Report the incident to the vendor as a product quality failure"
+            {
+              "text": "Stop using AI for sensitive communications entirely since the incident demonstrates that AI tools are not capable of producing appropriate output for emotionally complex HR situations and the reputational risk of further incidents outweighs any efficiency benefit",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Continue using the tool but add a standard disclaimer to all AI-generated communications informing recipients that the message was produced with AI assistance, so that any tone or accuracy issues are contextualised for the reader",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The incident reveals missing use case boundaries, no review protocol for sensitive outputs, and no fine-tuning on current policy \u2014 implement a use case framework, require human review for all sensitive communications, and update the tool on current policy content",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Report the incident to the vendor as a product quality failure and request that they update the tool's outputs for HR-specific sensitive communications, since the vendor is responsible for ensuring the tool produces appropriate outputs across all use cases it supports",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 2
         },
@@ -5459,10 +5603,22 @@
           "difficulty": "easy",
           "question": "What is the primary ethical concern with using AI tools that were trained predominantly on English-language data for HR processes in multilingual or non-Western cultural contexts?",
           "options": [
-            "Translation quality \u2014 AI tools may produce inaccurate translations for non-English speakers",
-            "Cultural and linguistic bias \u2014 models trained on English-dominant data encode Western cultural assumptions about communication style, professional norms, and appropriate behaviour, which may produce outputs that are inappropriate, inaccurate, or inequitable for employees in different cultural contexts",
-            "Compliance risk \u2014 AI tools must be certified in each country before use",
-            "There is no ethical concern provided the tool can generate outputs in the local language"
+            {
+              "text": "Translation quality \u2014 AI tools trained on English data may produce inaccurate translations for non-English speakers, creating communication errors that could affect employees' understanding of important HR policies and processes",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Cultural and linguistic bias \u2014 models trained on English-dominant data encode Western assumptions about communication style and professional norms, which may produce outputs that are inappropriate, inaccurate, or inequitable for employees in different cultural contexts",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Regulatory compliance \u2014 AI tools must be individually certified in each country before they can be used for HR processes, and tools trained on English data will typically not have the required certifications for deployment in non-English-speaking markets",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "There is no meaningful ethical concern provided the tool is capable of generating outputs in the local language, since language capability is the primary indicator of whether an AI tool is appropriate for use in a particular cultural and geographic context",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5470,12 +5626,24 @@
           "id": "S7Q014",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "A CEO asks you to explore whether AI can be used to screen CVs at scale to reduce time-to-hire. You know the company's historical hiring data has demographic gaps. What is your recommended approach?",
+          "question": "A CEO asks you to explore whether AI can be used to screen CVs at scale to reduce time-to-hire. You know the company's historical hiring data has significant demographic gaps. What is your recommended approach?",
           "options": [
-            "Implement AI CV screening using the historical data \u2014 speed and scale benefits outweigh risks",
-            "Reject AI CV screening entirely \u2014 the demographic gap disqualifies it",
-            "Explore AI screening using bias-corrected criteria rather than historical acceptance patterns, commission a pre-deployment bias audit across demographic groups, implement with mandatory human review for all rejected applications in the first six months, and build a monitoring framework to detect emerging bias patterns before they scale",
-            "Use AI screening only for roles where the demographic gap is less severe"
+            {
+              "text": "Implement AI CV screening using the historical hiring data since the speed and scale benefits to the recruitment function substantially outweigh the demographic risk, which can be monitored and addressed reactively if patterns emerge post-implementation",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Reject AI CV screening entirely since the existence of demographic gaps in historical data disqualifies it from use as training data and no AI screening tool can be safely deployed in this organisation without first achieving demographic parity in hiring outcomes",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Explore AI screening using bias-corrected criteria rather than historical acceptance patterns, commission a pre-deployment bias audit across demographic groups, implement with mandatory human review for all rejected applications in the first six months, and build ongoing monitoring into the operating model",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Use AI screening only for roles where the demographic gap in historical data is demonstrably smaller than average, treating those roles as a lower-risk entry point for AI screening while continuing manual review for the role categories with the most significant historical gaps",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -5485,10 +5653,22 @@
           "difficulty": "hard",
           "question": "What does it mean to fine-tune a large language model for an HR use case, and what is the primary risk of doing so with proprietary employee data?",
           "options": [
-            "Fine-tuning means configuring the model's user interface for HR workflows \u2014 the primary risk is integration complexity",
-            "Fine-tuning means continuing to train a pre-trained model on domain-specific data to improve its performance on targeted tasks \u2014 the primary risk is that proprietary employee data used for fine-tuning may be exposed through the model's outputs, violating data protection obligations if the data was not collected for this purpose and employees did not consent",
-            "Fine-tuning is a vendor responsibility and not an HR concern",
-            "The primary risk is the cost of fine-tuning relative to the performance improvement achieved"
+            {
+              "text": "Fine-tuning means configuring the model's user interface and workflow integrations for HR-specific use cases \u2014 the primary risk is integration complexity and the technical maintenance burden of keeping the configuration current as the underlying model is updated by the vendor",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Fine-tuning means continuing to train a pre-trained model on domain-specific data to improve its performance on targeted tasks \u2014 the primary risk is that proprietary employee data used for fine-tuning may be exposed through model outputs, violating data protection obligations",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Fine-tuning is exclusively a vendor responsibility that organisations should not attempt internally \u2014 the primary risk of any organisation-led fine-tuning is introducing errors into the model that compromise the quality of outputs across all use cases the tool supports",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The primary risk of fine-tuning with proprietary data is the cost of the compute resources required to retrain the model, which makes fine-tuning financially viable only for large enterprises with significant AI infrastructure investment already in place",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5498,10 +5678,22 @@
           "difficulty": "hard",
           "question": "Your organisation wants to build an internal HR product that provides employees with an AI-powered career development coach. The product team asks you to specify what the tool should and should not do. What are your three non-negotiable requirements?",
           "options": [
-            "It should be available 24/7, it should integrate with the LMS, and it should generate development plans automatically",
-            "It must not store sensitive personal disclosures beyond the session without explicit consent, it must be transparent with users that they are interacting with AI rather than a human, and it must escalate clearly to a human HR contact when queries involve distress, performance management, or legal matters",
-            "It should be mobile-compatible, available in multiple languages, and connected to the job posting system for internal mobility",
-            "It should have gamification features to drive engagement, send weekly nudges, and benchmark users against anonymised peer groups"
+            {
+              "text": "It should be available 24 hours a day seven days a week to maximise accessibility for a global workforce, it should integrate with the learning management system to recommend specific courses, and it should generate development plans automatically without requiring HR input",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "It must not store sensitive personal disclosures beyond the session without explicit consent, it must be transparent with users that they are interacting with AI rather than a human, and it must escalate clearly to a human HR contact when queries involve distress, performance management, or legal matters",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "It should be mobile-compatible for use on personal devices, available in multiple languages to support the global workforce, and connected to the internal job posting system to surface relevant internal mobility opportunities when users discuss their career interests",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "It should include gamification features to drive engagement and consistent usage, send weekly nudges to employees who have not logged in recently, and benchmark individual development progress against anonymised peer groups at the same grade level",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5511,10 +5703,22 @@
           "difficulty": "medium",
           "question": "What is the difference between AI replacing HR roles and AI augmenting HR roles, and which is more accurate in the current landscape?",
           "options": [
-            "AI is replacing HR roles at all levels \u2014 the profession will shrink significantly in the next decade",
-            "AI is primarily augmenting HR roles by automating high-volume, repeatable tasks and providing decision-support, freeing HR professionals to focus on judgment-intensive, relational, and strategic work \u2014 while creating new roles around AI governance, tool design, and data interpretation; the net effect is role transformation rather than elimination",
-            "AI is replacing HR roles at the operational level but augmenting them at the strategic level",
-            "The current landscape shows AI augmenting HR roles only in large enterprises \u2014 mid-sized companies are not yet affected"
+            {
+              "text": "AI is actively replacing HR roles at all levels of the function \u2014 the profession will shrink significantly in the next decade as automation takes over both transactional and advisory work that currently requires qualified HR professionals",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "AI is primarily augmenting HR roles by automating high-volume repeatable tasks and providing decision-support, freeing HR professionals to focus on judgment-intensive and relational work \u2014 while creating new roles around AI governance, tool design, and data interpretation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "AI is replacing HR roles at the operational and transactional level while simultaneously augmenting roles at the strategic HRBP and HR leadership level, creating a bifurcated talent market where mid-level HR generalists face the highest displacement risk",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The current landscape shows AI augmenting HR roles only in large enterprises with dedicated HR technology investment \u2014 mid-sized and smaller companies are not yet materially affected by AI adoption in HR and will not be for at least a decade",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5524,10 +5728,22 @@
           "difficulty": "hard",
           "question": "An HR tech startup pitches an AI tool that claims to detect employee burnout risk through passive monitoring of calendar density, email response times, and after-hours activity patterns. The product has impressive case study data. What questions must you answer before considering implementation?",
           "options": [
-            "What is the price per seat and what is the minimum contract term?",
-            "What is the legal basis for processing this behavioural data under applicable data protection law, how was the burnout correlation established and in what populations, what is the false positive rate and what happens to employees incorrectly flagged, how will employees be informed their activity is being monitored, what human response is triggered by a flag, and can the tool create more anxiety than it prevents by making employees feel surveilled?",
-            "Which other large companies have implemented it and what were their results?",
-            "Whether the tool integrates with your existing HRIS and what the implementation timeline is"
+            {
+              "text": "What is the price per seat, what is the minimum contract term, and does the vendor offer a pilot period that allows the organisation to validate the tool's performance in its specific context before committing to a full commercial agreement",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "What is the legal basis for processing this behavioural data under applicable data protection law, how was the burnout correlation established and in what populations, what is the false positive rate, how will employees be informed, what human response is triggered by a flag, and could the tool increase anxiety",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Which other companies of a comparable size and sector have implemented it and what measurable outcomes they have achieved, since the most reliable indicator of whether a tool will work in this context is the documented experience of comparable organisations",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Whether the tool integrates with the existing HRIS and communication platforms, what the implementation timeline is for an organisation of this size, and whether the vendor provides ongoing customer success support after the initial deployment period",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5537,10 +5753,22 @@
           "difficulty": "medium",
           "question": "What is generative AI and how does it differ from predictive AI in an HR context?",
           "options": [
-            "Generative AI produces images; predictive AI produces text",
-            "Generative AI creates new content \u2014 text, structured outputs, scenarios \u2014 in response to a prompt; predictive AI analyses patterns in historical data to forecast future outcomes such as attrition, performance, or hiring success; in HR, both have applications but require different governance approaches \u2014 generative AI requires content quality and bias review, predictive AI requires statistical validity and fairness auditing",
-            "Generative AI is more advanced than predictive AI and will replace it",
-            "Predictive AI is used in HR; generative AI has no current HR application"
+            {
+              "text": "Generative AI produces images and visual content; predictive AI produces text-based outputs and recommendations \u2014 the distinction is primarily about the format of the output rather than the underlying mechanism or the appropriate governance approach",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Generative AI creates new content in response to a prompt; predictive AI analyses historical data to forecast future outcomes \u2014 in HR both have applications but require different governance: generative AI needs content quality review, predictive AI needs statistical validity and fairness auditing",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Generative AI is a more advanced and capable technology that will progressively replace predictive AI as the dominant form of artificial intelligence used in HR technology platforms and decision-support tools over the next three to five years",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Predictive AI is the primary form of AI used in HR applications today; generative AI currently has no meaningful HR application and its use in HR contexts remains largely theoretical and experimental rather than practically deployed at scale",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -5550,10 +5778,22 @@
           "difficulty": "medium",
           "question": "A junior HR team member is using an AI writing tool to draft all their policy documents, communications, and case correspondence without reviewing the outputs. The quality is inconsistent and two drafts have contained factual errors. How do you address this?",
           "options": [
-            "Ban the use of AI tools by junior team members",
-            "Address it as both a quality and professional development issue \u2014 the team member needs to understand that AI tools require expert oversight rather than replacing it, that outputs must be reviewed with the same rigour as any self-authored work, and that over-reliance on AI without developing their own judgment will limit their professional growth",
-            "Implement a review process where all AI-generated content is checked by a senior team member",
-            "Update the team's AI usage policy to specify that all outputs must be reviewed"
+            {
+              "text": "Ban the use of AI tools by junior team members entirely, restricting access to senior HR professionals who have the experience and domain knowledge to identify errors and apply appropriate judgment when reviewing AI-generated outputs",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Address it as both a quality and professional development issue \u2014 the team member needs to understand that AI tools require expert oversight rather than replacing it, and that over-reliance without developing their own judgment will limit their professional growth",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Implement a mandatory review process where a senior team member checks all AI-generated content before it is sent or published, creating a quality gate that compensates for the junior team member's current inability to review AI outputs independently",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Update the team's AI usage policy to specify that all outputs must be reviewed and edited before use, creating a documented standard that applies to all team members and provides a basis for addressing quality issues if they recur in future",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -5563,10 +5803,22 @@
           "difficulty": "hard",
           "question": "What is the EU AI Act's classification of high-risk AI, and which HR use cases fall into this category?",
           "options": [
-            "High-risk AI means any AI tool used by more than 1,000 employees \u2014 all major HRIS platforms qualify",
-            "The EU AI Act classifies AI systems used in employment, worker management, and access to self-employment as high-risk \u2014 including CV screening, performance evaluation, promotion decisions, and task allocation \u2014 requiring conformity assessments, transparency obligations, human oversight mechanisms, and technical robustness standards before deployment",
-            "High-risk AI only applies to AI used in public sector HR \u2014 private sector HR tools are exempt",
-            "The EU AI Act has not yet classified any HR tools as high-risk pending further consultation"
+            {
+              "text": "High-risk AI means any AI tool used by more than 1,000 employees simultaneously \u2014 all major HRIS platforms and AI-powered HR tools deployed at scale in large enterprises automatically qualify as high-risk under this threshold-based definition",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The EU AI Act classifies AI systems used in employment, worker management, and access to self-employment as high-risk \u2014 including CV screening, performance evaluation, promotion decisions, and task allocation \u2014 requiring conformity assessments, transparency, and human oversight",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "High-risk AI classification under the EU AI Act applies only to AI used in public sector HR and government employment contexts \u2014 private sector HR tools are assessed under a separate lower-risk framework with lighter compliance requirements",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The EU AI Act has not yet formally classified any HR tools as high-risk pending further consultation with industry stakeholders, and organisations currently using AI in HR processes are not subject to any specific regulatory obligations under the Act",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5576,10 +5828,22 @@
           "difficulty": "hard",
           "question": "You are asked to lead the HR workstream of a company-wide AI adoption programme. Employees are anxious about job security and managers are uncertain how to lead teams that work alongside AI. What is HR's specific contribution to making this adoption successful?",
           "options": [
-            "Communicating the business case for AI and managing employee resistance",
-            "HR's contribution spans role redesign to clarify how human and AI work divides, capability building so employees can work effectively alongside AI, narrative management that is honest about impact rather than reassuring, updated performance management that recognises new ways of working, and creating channels for employees to raise AI-related concerns \u2014 positioning HR as a genuine partner in a complex human transition rather than an implementation function",
-            "Training employees on how to use the specific AI tools being implemented",
-            "Updating job descriptions and employment contracts to reflect AI-augmented roles"
+            {
+              "text": "Communicating the business case for AI adoption to employees and managing their resistance through change management communications that emphasise the benefits of AI and contextualise the organisation's AI investment within the competitive landscape",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "HR's contribution spans role redesign, capability building so employees can work effectively alongside AI, honest narrative management about impact, updated performance management reflecting new ways of working, and channels for employees to raise AI-related concerns",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Delivering training to all employees on how to use the specific AI tools being implemented, ensuring adoption rates meet the targets set by the technology programme and that all employees complete the required AI literacy training within the agreed timeline",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Updating all job descriptions and employment contracts to reflect AI-augmented role designs, ensuring the legal documentation of every employee's role accurately reflects the AI-assisted nature of how the work is now expected to be performed",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5589,10 +5853,22 @@
           "difficulty": "medium",
           "question": "What does it mean for an AI system to hallucinate, and why is this particularly risky in HR applications?",
           "options": [
-            "When an AI system crashes or produces an error code \u2014 risky because it disrupts HR workflows",
-            "When an AI system generates confident, plausible-sounding content that is factually incorrect or entirely fabricated \u2014 particularly risky in HR because outputs may be used in legal documents, policy guidance, or employee communications where an undetected error could create compliance failures, unfair decisions, or reputational damage",
-            "When an AI system produces outputs that are culturally inappropriate \u2014 risky in global HR contexts",
-            "A technical term for when an AI system processes too many requests simultaneously and degrades in quality"
+            {
+              "text": "When an AI system crashes or produces a system error \u2014 risky because it disrupts HR workflows and creates a dependency on technology support teams to restore functionality before HR operations can resume normal service delivery",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "When an AI system generates confident plausible-sounding content that is factually incorrect or fabricated \u2014 particularly risky in HR because outputs may be used in legal documents, policy guidance, or employee communications where an undetected error creates compliance failures or unfair decisions",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "When an AI system produces culturally inappropriate content for a specific demographic or geographic audience \u2014 risky in global HR contexts because culturally inappropriate communications can damage employee relations and create reputational harm for the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A technical term for when an AI system processes too many simultaneous requests and degrades in output quality \u2014 risky in HR because peak usage periods such as annual review cycles create exactly this kind of demand spike that causes quality degradation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5602,10 +5878,22 @@
           "difficulty": "hard",
           "question": "You are designing an AI governance framework for your HR function. What are the four pillars your framework must include to be credible and defensible?",
           "options": [
-            "Budget control, vendor management, IT security review, and legal sign-off",
-            "Use case approval with explicit scope and exclusions, bias auditing at deployment and on an ongoing basis, human oversight requirements for decisions affecting employees, and employee transparency obligations so workers know when AI is being used in processes that affect them",
-            "Data quality standards, system integration requirements, change management plan, and user training",
-            "Executive sponsorship, HR team capability assessment, pilot programme design, and success metrics"
+            {
+              "text": "Budget control mechanisms for AI tool procurement, vendor management processes, IT security review requirements, and Legal sign-off procedures that must be completed before any AI tool is approved for use in any HR process or application",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Use case approval with explicit scope and exclusions, bias auditing at deployment and on an ongoing basis, human oversight requirements for decisions affecting employees, and employee transparency obligations so workers know when AI is used in processes affecting them",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Data quality standards for inputs to AI systems, system integration requirements for compatibility with existing HR technology, a change management plan for AI adoption, and defined success metrics for measuring the business value delivered by each AI tool",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Executive sponsorship to provide organisational authority for the AI programme, an HR team capability assessment to identify training needs, a pilot programme design standard, and a set of success metrics that can be reported to the board on a quarterly basis",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5615,10 +5903,22 @@
           "difficulty": "medium",
           "question": "What is the primary limitation of using natural language processing (NLP) to analyse open-text employee survey responses at scale?",
           "options": [
-            "NLP tools are too slow to process large volumes of text data in real time",
-            "NLP models may misclassify sentiment, miss irony, sarcasm, or culturally specific expressions, and can produce category labels that reflect the model's training data rather than the employees' actual meaning \u2014 creating false confidence in thematic analysis that requires human validation of a representative sample before decisions are made from it",
-            "Open-text responses are too short for NLP models to generate meaningful analysis",
-            "NLP tools cannot process responses in languages other than English"
+            {
+              "text": "NLP tools are too slow to process large volumes of text data in real time, making it impractical to use them for time-sensitive survey analysis where leaders expect results within days of the survey closing rather than weeks",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "NLP models may misclassify sentiment, miss irony, sarcasm, or culturally specific expressions, and produce category labels that reflect the model's training data rather than employees' actual meaning \u2014 requiring human validation of a representative sample before decisions are made",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Open-text survey responses are typically too short and unstructured for NLP models to generate meaningful thematic analysis, making quantitative survey data a more reliable input to organisational health assessments than qualitative open-text responses",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "NLP tools cannot process responses in languages other than English, making them unusable for global organisations that collect survey responses in multiple languages and need consistent thematic analysis across all geographic markets simultaneously",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5628,10 +5928,22 @@
           "difficulty": "medium",
           "question": "An HR team member asks you whether they should disclose to an employee that a first-draft response to their grievance was written using an AI tool before being reviewed and edited by HR. What is your advice?",
           "options": [
-            "No disclosure needed \u2014 HR reviewed and owns the content regardless of the drafting tool",
-            "Advise that while there is no universal legal requirement to disclose AI drafting assistance in this context, transparency with employees about how HR communicates with them builds trust \u2014 particularly in sensitive processes like grievances \u2014 and that if the employee directly asks, HR should answer honestly; consider developing a clear team standard on AI disclosure in sensitive employee communications",
-            "Disclose in every communication that AI was used \u2014 employees have a right to know",
-            "Only disclose if the employee specifically asks"
+            {
+              "text": "No disclosure is needed since HR reviewed and owns the content regardless of the drafting tool used, and disclosing AI involvement in routine administrative drafting tasks creates unnecessary complexity and potential confusion about HR's accountability for the communication",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise that while there is no universal legal requirement to disclose AI drafting assistance in this context, transparency in sensitive processes builds trust \u2014 if the employee asks directly HR should answer honestly, and the team should develop a clear standard on AI disclosure in sensitive communications",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Disclose AI involvement in every HR communication that was drafted with AI assistance since employees have a right to know how their communications are being produced, and systematic non-disclosure creates a trust risk if the practice is discovered through other means",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Disclose only if the employee specifically asks a direct question about how the communication was drafted, since proactive disclosure in a grievance context may raise questions about the quality and authenticity of HR's engagement with the employee's case",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5641,10 +5953,22 @@
           "difficulty": "hard",
           "question": "What is the concept of explainability in AI systems and why is it a compliance requirement in employment decision contexts?",
           "options": [
-            "The ability of a vendor to explain their pricing model \u2014 required for procurement compliance",
-            "The ability to articulate in human-understandable terms why an AI system reached a particular output or decision \u2014 required in employment contexts because employees have legal rights under GDPR and national law to meaningful information about solely automated decisions that affect them, and because unexplainable decisions expose the organisation to discrimination claims it cannot defend",
-            "The ability to explain AI concepts to non-technical stakeholders \u2014 a communication best practice",
-            "A technical documentation requirement for AI vendors operating in regulated industries"
+            {
+              "text": "The ability of a vendor to explain their commercial pricing model and the methodology used to calculate the cost of the AI tool \u2014 required for procurement compliance and financial governance when organisations are assessing the value for money of an AI investment",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The ability to articulate in human-understandable terms why an AI system reached a particular output \u2014 required in employment contexts because employees have legal rights to meaningful information about solely automated decisions that affect them, and unexplainable decisions cannot be legally defended",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The ability to explain AI concepts and technical architecture to non-technical stakeholders within the organisation \u2014 a communication best practice for HR technology teams but not a formal compliance requirement that creates legal obligations for the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A technical documentation requirement that applies to AI vendors operating in regulated financial services and healthcare industries \u2014 not currently applicable to HR technology tools which are assessed under general data protection requirements rather than sector-specific AI regulations",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5654,10 +5978,22 @@
           "difficulty": "hard",
           "question": "Your organisation wants to use an AI tool to automate scheduling of disciplinary hearings, including generating invitation letters, setting times, and sending reminders. Is this an appropriate use of AI in HR?",
           "options": [
-            "No \u2014 AI should never be involved in disciplinary processes",
-            "Yes \u2014 scheduling automation is fully appropriate for all HR administrative tasks regardless of context",
-            "Scheduling and administrative logistics for disciplinary hearings is an appropriate use of automation for efficiency gains \u2014 with the critical caveat that the invitation letters must be human-reviewed for accuracy and tone before sending, that the process must never appear automated to the employee, and that any personalisation required for sensitive circumstances must be applied by a human",
-            "Only appropriate if the employee consents to AI involvement in their disciplinary process"
+            {
+              "text": "No \u2014 AI should never be involved in any aspect of disciplinary processes since the sensitivity and legal complexity of employment discipline requires that every element of the process be handled directly by a human HR professional with full accountability",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Yes \u2014 scheduling automation is fully appropriate for all HR administrative tasks regardless of context or sensitivity, since the efficiency gains from automating administrative logistics apply equally whether the process is a routine query or a formal disciplinary proceeding",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Scheduling logistics is appropriate for automation with the critical caveat that invitation letters must be human-reviewed for accuracy and tone before sending, the process must not appear automated to the employee, and any personalisation for sensitive circumstances must be applied by a human",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Only appropriate if the employee who is subject to the hearing provides explicit consent to AI involvement in the administrative aspects of their disciplinary process, since employment law requires transparency about the use of automated tools in formal proceedings",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -5667,10 +6003,22 @@
           "difficulty": "medium",
           "question": "What is the primary difference between supervised and unsupervised machine learning, and give one example of each in an HR context?",
           "options": [
-            "Supervised learning requires human monitoring during operation; unsupervised learning runs autonomously. Example: supervised \u2014 chatbot responses; unsupervised \u2014 payroll processing",
-            "Supervised learning trains a model on labelled data to predict defined outcomes \u2014 for example, training an attrition prediction model on historical data where outcomes are known; unsupervised learning finds hidden patterns in unlabelled data \u2014 for example, clustering employees by behaviour patterns to identify engagement segments without predefined categories",
-            "Supervised learning is used for text analysis; unsupervised learning is used for image recognition",
-            "The distinction is technical and not relevant to HR practitioners who use pre-built AI tools"
+            {
+              "text": "Supervised learning requires a human to monitor the system during operation; unsupervised learning runs autonomously. Example: supervised \u2014 AI chatbot responses monitored by HR; unsupervised \u2014 automated payroll processing that runs without daily HR oversight",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Supervised learning trains a model on labelled data to predict defined outcomes \u2014 for example training an attrition prediction model on historical data; unsupervised learning finds patterns in unlabelled data \u2014 for example clustering employees by behaviour patterns to identify engagement segments",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Supervised learning is used exclusively for text and language analysis applications in HR; unsupervised learning is used exclusively for image recognition and visual data analysis, which has limited but growing application in HR technology contexts",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The distinction between supervised and unsupervised learning is a technical implementation detail that is not relevant to HR practitioners who use pre-built AI tools and do not need to make decisions about the underlying machine learning methodology",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5678,12 +6026,24 @@
           "id": "S7Q030",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "An AI tool your HR team has been using for six months to help write performance review summaries is found to have a systematic pattern of using more achievement-oriented language for male employees and more relational language for female employees, even when the underlying performance evidence is equivalent. What do you do?",
+          "question": "An AI tool your HR team has been using for six months to help write performance review summaries is found to have a systematic pattern of using more achievement-oriented language for male employees and more relational language for female employees, even when underlying performance evidence is equivalent. What do you do?",
           "options": [
-            "Suspend use of the tool immediately for future reviews only \u2014 past reviews are already complete and cannot be changed",
-            "Suspend the tool immediately, conduct a retrospective audit of all reviews generated using the tool to assess the scale of the bias, identify employees who may have been disadvantaged and take corrective action, report the finding to the vendor, and review your AI governance process to understand how the bias went undetected for six months",
-            "Report the bias to the vendor and await their fix before resuming use",
-            "Instruct HR reviewers to manually correct the language in all future outputs before distribution"
+            {
+              "text": "Suspend use of the tool for future reviews only since past reviews are already complete, distributed, and used as the basis for pay and development decisions that cannot practically be reversed, making retrospective action disproportionate to the harm that has occurred",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Suspend the tool immediately, conduct a retrospective audit of all reviews generated using the tool to assess the scale of the bias, identify employees who may have been disadvantaged, take corrective action, report findings to the vendor, and review your AI governance process",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Report the bias to the vendor and await their confirmation that the issue has been fixed before resuming use, since the vendor is responsible for ensuring the tool produces unbiased outputs and the organisation's obligation is to flag the issue rather than to investigate and remediate it",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Instruct HR reviewers to manually correct the language in all future outputs before they are distributed to managers, creating a human quality layer that compensates for the identified bias without requiring suspension of a tool that is otherwise functioning as intended",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -5693,10 +6053,22 @@
           "difficulty": "easy",
           "question": "What does RAG stand for in AI development and why is it relevant for HR technology teams building internal AI tools?",
           "options": [
-            "Regulated AI Governance \u2014 a compliance framework for organisations deploying AI in regulated industries",
-            "Retrieval Augmented Generation \u2014 a technique where an AI model retrieves relevant information from a defined knowledge base before generating a response, rather than relying solely on its training data; relevant for HR because it allows AI tools to be grounded in the organisation's own policies, handbooks, and processes rather than generic internet training data",
-            "Risk Assessment Guidance \u2014 an internal HR framework for evaluating new technology implementations",
-            "Real-time Analytics Generation \u2014 a method for producing live HR dashboards from HRIS data"
+            {
+              "text": "Regulated AI Governance \u2014 a compliance framework developed by the EU AI Office for organisations deploying AI in regulated industries, providing a structured methodology for assessing and documenting AI risk across different deployment contexts",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Retrieval Augmented Generation \u2014 a technique where an AI model retrieves relevant information from a defined knowledge base before generating a response, allowing AI tools to be grounded in the organisation's own policies and processes rather than generic training data",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Risk Assessment Guidelines \u2014 an internal HR framework for evaluating new technology implementations, specifying the criteria and process by which HR must assess the people, privacy, and compliance risks of any new digital tool before recommending adoption",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Real-time Analytics Generation \u2014 a method for producing live HR performance dashboards from HRIS data, enabling HR leaders to access current workforce metrics without waiting for the standard monthly or quarterly reporting cycle to produce aggregated data",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5706,10 +6078,22 @@
           "difficulty": "medium",
           "question": "A senior business leader tells you that their team has started using AI tools to complete work tasks without HR or IT knowledge, including using public AI platforms to draft HR-related documents containing employee data. What is your response?",
           "options": [
-            "Ban all use of consumer AI tools across the organisation",
-            "Acknowledge that shadow AI adoption signals unmet productivity needs \u2014 respond by developing a clear organisational AI use policy with specific guidance on what data may and may not be input into public AI tools, provide approved alternatives for common use cases, educate rather than simply prohibit, and use the incident to accelerate the development of governed internal AI capabilities",
-            "Report the data protection breach to the DPO and let them manage the response",
-            "Advise the leader to instruct their team to stop and take no further action"
+            {
+              "text": "Ban all use of consumer AI tools across the organisation immediately and implement a monitoring system to detect unauthorised AI tool usage, since the data protection breach that has already occurred requires a decisive and visible organisational response",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Acknowledge that shadow AI adoption signals unmet productivity needs \u2014 respond by developing a clear AI use policy with specific guidance on what data may not be input into public AI tools, provide approved alternatives, educate rather than simply prohibit, and accelerate internal AI capabilities",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Report the data protection breach to the Data Protection Officer and let them manage the response entirely, since the use of public AI platforms with employee data is a data protection compliance issue that falls within the DPO's accountability rather than HR's",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise the leader to instruct their team to stop using the tools immediately and take no further organisational action, since the issue is limited to one business unit and a direct instruction from the business leader is the most proportionate and least disruptive response",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -5719,10 +6103,22 @@
           "difficulty": "hard",
           "question": "What is the concept of model drift in AI systems and why does it require ongoing monitoring in HR applications?",
           "options": [
-            "When an AI model is updated by the vendor without notifying the organisation \u2014 requiring version control monitoring",
-            "The gradual degradation in an AI model's accuracy or appropriateness over time as real-world data patterns shift away from the training data \u2014 requiring ongoing monitoring in HR because a model that was accurate and unbiased at deployment may become less accurate or more biased as the workforce, job market, or organisational context changes",
-            "When employees find ways to manipulate AI-generated outputs to their advantage",
-            "The tendency for AI models to produce increasingly conservative outputs over time as they process more data"
+            {
+              "text": "When an AI model is updated by the vendor without notifying the organisation \u2014 requiring version control monitoring to ensure that changes to the model do not alter the outputs in ways that affect the reliability of decisions based on those outputs",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The gradual degradation in an AI model's accuracy or appropriateness over time as real-world data patterns shift away from the training data \u2014 requiring ongoing monitoring in HR because a model that was accurate and unbiased at deployment may become less so as the workforce and market evolve",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The tendency for employees to find ways to manipulate AI-generated outputs in their favour over time as they learn how the system works \u2014 requiring monitoring to detect gaming behaviour that undermines the objectivity the AI tool was designed to provide",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The tendency for AI models to produce increasingly conservative and risk-averse outputs over time as they process more edge cases and exceptions \u2014 relevant in HR because overly conservative AI recommendations can limit the function's ability to make bold talent and organisational decisions",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -5732,10 +6128,22 @@
           "difficulty": "hard",
           "question": "You are evaluating two proposals for an AI-powered HR tool. Proposal A has better performance metrics and a lower cost but the vendor cannot explain how the model reaches its recommendations. Proposal B is 40% more expensive, performs slightly less well on benchmarks, but provides full explainability and audit logs. Which do you recommend and why?",
           "options": [
-            "Proposal A \u2014 performance and cost are the primary evaluation criteria for technology investments",
-            "Proposal B \u2014 in HR contexts where AI recommendations affect employees, explainability is not optional; the inability to explain how a recommendation was reached exposes the organisation to legal risk, prevents meaningful human oversight, and makes it impossible to detect or correct bias \u2014 the 40% premium is the cost of responsible deployment",
-            "Commission a further procurement exercise to find a tool that combines the performance of A with the explainability of B",
-            "Proposal A with a contractual requirement for the vendor to provide explainability within 12 months"
+            {
+              "text": "Proposal A since performance and cost are the primary evaluation criteria for any technology investment and the inability to explain the model's recommendations is a theoretical concern that is unlikely to create practical problems in the day-to-day use of the tool",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Proposal B since in HR contexts where AI affects employees, explainability is not optional \u2014 the inability to explain a recommendation exposes the organisation to legal risk, prevents meaningful human oversight, and makes it impossible to detect or correct bias at scale",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Commission a further procurement exercise to find a tool that combines the performance of Proposal A with the explainability of Proposal B, since accepting a compromise on either dimension means settling for a solution that does not fully meet the function's requirements",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Proposal A with a contractual requirement for the vendor to provide full explainability functionality within 12 months of contract signature, using the commercial relationship to drive the technical improvement rather than paying a premium for capabilities available immediately from Proposal B",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -5745,10 +6153,22 @@
           "difficulty": "hard",
           "question": "A colleague argues that HR professionals who are not technically skilled in AI and data science cannot meaningfully govern AI tools and should defer all AI decisions to IT and the product team. How do you respond?",
           "options": [
-            "Agree \u2014 technical governance of AI should sit with IT and product teams",
-            "Partially agree \u2014 HR should focus on policy and people impact while IT handles technical governance",
-            "Disagree directly: HR's role in AI governance is not to make technical decisions but to define what outcomes are acceptable, identify which HR decisions must retain human accountability, evaluate tools for bias and fairness from a people expertise standpoint, and hold vendors and internal teams to ethical standards \u2014 this requires domain expertise in HR, not software engineering, and ceding it to IT produces AI deployments that are technically sound but ethically and legally compromised",
-            "Agree in the short term but argue that HR professionals should upskill in data science to reclaim governance authority"
+            {
+              "text": "Agree entirely since technical governance of AI systems requires engineering expertise that HR professionals do not have and should not be expected to develop \u2014 HR's role is to define the people policy context while IT manages all decisions about AI tool selection and deployment",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Partially agree \u2014 HR should focus on people policy and impact assessment while IT handles technical governance, and the two functions should collaborate on AI decisions rather than either claiming sole authority over a domain that genuinely requires both perspectives",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Disagree directly \u2014 HR's role in AI governance is not to make technical decisions but to define acceptable outcomes, identify decisions requiring human accountability, evaluate tools for bias and fairness from a people expertise standpoint, and hold vendors and internal teams to ethical standards \u2014 this requires HR expertise not software engineering",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Agree in the short term but argue that HR professionals should invest in developing data science and AI technical skills over the next five years so that the function can reclaim full governance authority over AI tools that affect people rather than continuing to defer to IT",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         }
