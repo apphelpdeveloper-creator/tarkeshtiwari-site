@@ -1,1 +1,10 @@
-{"version":2}
+{
+  "functions": {
+    "api/start.js": {
+      "runtime": "nodejs20.x"
+    },
+    "api/submit.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
