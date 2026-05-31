@@ -4422,10 +4422,22 @@
           "difficulty": "hard",
           "question": "You are in a senior leadership meeting and a decision is being made that you believe will significantly harm a large group of employees and carries material legal risk. You are the only HR voice in the room and the rest of the group is aligned on the decision. What do you do?",
           "options": [
-            "Say nothing in the meeting \u2014 raise your concerns separately with the CHRO afterward",
-            "Raise your concerns clearly in the meeting, name the specific risks with precision, make your position part of the record, and accept that your role is to give the best counsel available \u2014 not to control the outcome",
-            "Agree in the meeting and then work to mitigate the decision's impact after implementation",
-            "Ask for the decision to be deferred and exit the meeting to consult Legal"
+            {
+              "text": "Stay silent in the meeting and raise your concerns privately with the CHRO afterward, since challenging a room of aligned senior leaders in the moment risks appearing obstructionist and reducing your future influence in meetings where your input genuinely matters",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Raise your concerns clearly in the meeting, name the specific risks with precision and without hedging, make your position part of the formal record, and accept that your role is to give the best counsel available regardless of whether the room wants to hear it",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Agree with the decision in the meeting to preserve your relationships and operational access, then work behind the scenes to mitigate the worst impacts of the decision during the implementation phase where HR has more practical leverage",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Ask for the decision to be formally deferred and excuse yourself from the room to consult Legal by phone, since a decision that carries material legal risk requires legal input before HR can responsibly take a position on whether to support or oppose it",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -4433,12 +4445,24 @@
           "id": "S6Q002",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You have been asked to lead a company-wide culture transformation programme. The CEO is fully supportive but most of the senior leadership team see it as an HR initiative rather than a business priority and are giving it minimal airtime. What is your approach?",
+          "question": "You have been asked to lead a company-wide culture transformation programme. The CEO is fully supportive but most of the senior leadership team see it as an HR initiative rather than a business priority and are giving it minimal airtime. How do you approach this?",
           "options": [
-            "Run the programme through HR channels and measure impact through engagement surveys",
-            "Connect the culture programme to specific business outcomes each leader cares about, make leaders the face of the transformation rather than HR, build accountability into their performance objectives, and shift the narrative from culture as a value exercise to culture as a performance lever",
-            "Escalate to the CEO to mandate senior leader participation",
-            "Redesign the programme to require less senior leader involvement"
+            {
+              "text": "Run the programme through HR channels and measure impact through employee engagement surveys, since HR has the expertise, the CEO mandate, and the tools to deliver a culture programme effectively without requiring senior leader involvement in every element",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Connect the culture programme explicitly to the commercial outcomes each leader cares about most, make leaders the visible owners of culture rather than HR, embed accountability into their business objectives, and shift the narrative from values exercise to performance lever",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to the CEO and ask them to mandate senior leader participation formally through a direct instruction, since a culture transformation that lacks senior leader buy-in will fail and the CEO's authority is the most effective mechanism to secure that buy-in quickly",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Redesign the programme to reduce the time and involvement required from senior leaders, creating a version that can be delivered by middle management and HR without requiring significant senior leadership airtime or personal commitment to the process",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -4448,10 +4472,22 @@
           "difficulty": "medium",
           "question": "What is cognitive bias and how is it most likely to affect HR decision-making?",
           "options": [
-            "A deliberate decision to favour certain employees \u2014 relevant in discrimination cases",
-            "Systematic patterns in thinking that deviate from rational judgment \u2014 in HR contexts they affect hiring, performance assessment, and promotion decisions through biases such as affinity bias, confirmation bias, and the halo effect, often without the decision-maker being aware",
-            "A legal concept related to unconscious discrimination \u2014 only relevant in employment tribunal proceedings",
-            "The tendency for HR professionals to over-rely on qualitative data over quantitative analysis"
+            {
+              "text": "A deliberate decision to favour certain employees or candidates for personal or political reasons \u2014 in HR it is relevant in discrimination cases where a manager has consciously chosen to treat someone differently because of a protected characteristic",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Systematic patterns in human thinking that deviate from objective judgment \u2014 in HR they affect hiring, performance assessment, and promotion through biases such as affinity bias, confirmation bias, and the halo effect, typically without the decision-maker being aware",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A legal concept used in employment tribunal proceedings to describe a pattern of decision-making that a court finds to have been influenced by protected characteristics even when the decision-maker claims their decisions were entirely objective and evidence-based",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "The tendency for HR professionals to rely excessively on qualitative data and intuition when making people decisions rather than applying the quantitative and data-driven analytical frameworks that produce more objective and defensible outcomes",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -4461,10 +4497,22 @@
           "difficulty": "medium",
           "question": "You receive a 360-degree feedback report that includes significant criticism of your communication style from multiple stakeholders. Some of the feedback is uncomfortable and contradicts your own self-perception. What is your response?",
           "options": [
-            "Discount the feedback \u2014 360 tools are imprecise and anonymous feedback often reflects personal conflicts",
-            "Engage with the feedback seriously regardless of how uncomfortable it is, identify the specific patterns that appear across multiple raters, discuss the findings with a trusted mentor or coach, and design specific behavioural changes with observable measures rather than vague intentions",
-            "Share the feedback with your manager to get their view on whether it is accurate",
-            "Acknowledge the feedback in your development plan and revisit it at next year's review"
+            {
+              "text": "Discount the feedback since 360-degree tools are methodologically imprecise, anonymous feedback often reflects interpersonal conflicts rather than genuine developmental observations, and self-perception is a more reliable guide to actual behaviour than others' filtered impressions",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Engage with the feedback seriously regardless of personal discomfort, identify the specific patterns that appear across multiple raters, discuss the findings with a trusted mentor or coach, and design concrete behavioural changes with observable measures rather than vague intentions",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Share the feedback with your manager to get their view on whether they believe it is accurate and representative of your actual behaviour, since your manager's direct observation of your work is a more reliable data point than anonymous stakeholder perceptions",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Acknowledge the feedback formally in your annual development plan and set a general intention to improve your communication approach, revisiting the topic at the next 360 cycle to assess whether investment has shifted external perceptions over time",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -4472,12 +4520,24 @@
           "id": "S6Q005",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You are an HR leader in an organisation that is preparing to announce significant layoffs. You have been asked to keep the information confidential until the day of announcement, but you know several employees are making major financial commitments \u2014 buying houses, taking on debt \u2014 that they would not be making if they knew. What is your ethical position?",
+          "question": "You are an HR leader in an organisation that is preparing to announce significant layoffs. You have been asked to keep the information confidential until the day of announcement, but you know several employees are making major financial commitments that they would not be making if they knew. What is your ethical position?",
           "options": [
-            "Maintain strict confidentiality \u2014 it is a business obligation and not your decision to override",
-            "Leak the information selectively to the most affected employees",
-            "Maintain confidentiality while acknowledging the ethical tension privately, consider whether there is any legitimate avenue to accelerate the announcement or reduce the window of exposure, and reflect this tension in any post-announcement review of how the process was handled",
-            "Resign rather than be complicit in what you view as an ethical breach"
+            {
+              "text": "Maintain strict confidentiality without internal conflict since confidentiality of pre-announcement restructure information is a clear professional and legal obligation that HR leaders must honour regardless of the personal difficulty of doing so",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Selectively inform the employees you know are about to make significant financial commitments since the harm of allowing those commitments to proceed is both concrete and preventable, and your duty to the individual outweighs the business's confidentiality requirement",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Maintain confidentiality while acknowledging the ethical tension privately, explore whether there is any legitimate avenue to accelerate the announcement or reduce the exposure window, and surface the ethical dimension in a post-announcement review of how the process was handled",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Resign your role rather than be professionally associated with a process that you believe causes preventable financial harm to employees who are making major life decisions without the information they would need to make them differently",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -4487,10 +4547,22 @@
           "difficulty": "medium",
           "question": "What is the difference between a manager's role and a leader's role in an organisational context?",
           "options": [
-            "Managers are paid more than leaders",
-            "Management focuses on organising, planning, and controlling processes and outputs; leadership focuses on setting direction, inspiring commitment, and driving change \u2014 effective organisations need both and they are not mutually exclusive",
-            "Leaders operate at senior levels; managers operate at team level",
-            "The distinction is semantic \u2014 both roles involve directing the work of others"
+            {
+              "text": "Managers are senior in grade and compensation to leaders; the distinction is primarily a hierarchical one that reflects seniority, accountability, and the scope of budget and headcount responsibility within the organisational structure",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Management focuses on organising, planning, and controlling processes and outputs to achieve defined objectives; leadership focuses on setting direction, inspiring commitment, and enabling others to perform \u2014 both are needed and are not mutually exclusive",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Leaders operate exclusively at the senior and executive levels of the organisation while managers operate at the team and middle management levels, with the distinction reflecting different accountability profiles and different types of organisational intervention",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The distinction is largely semantic and reflects different organisational language preferences rather than meaningfully different roles \u2014 in practice both managers and leaders are responsible for directing the work of others and achieving business outcomes through people",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4498,12 +4570,24 @@
           "id": "S6Q007",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "You have been in your HR role for two years and feel you have plateaued. Your manager gives you satisfactory performance reviews but offers little development. What is your approach to your own growth?",
+          "question": "You have been in your HR role for two years and feel you have plateaued. Your manager gives you satisfactory performance reviews but offers little active development support. What is your approach to your own growth?",
           "options": [
-            "Wait for your manager to identify development opportunities \u2014 it is their responsibility",
-            "Take ownership of your development plan, identify the specific capability gaps that matter for your next career step, seek stretch assignments and exposure proactively, build a network of mentors outside your direct reporting line, and initiate the development conversation with your manager rather than waiting for it",
-            "Start looking for a new role externally \u2014 a plateau signals you have outgrown the organisation",
-            "Raise the issue through the formal performance review process"
+            {
+              "text": "Wait for your manager to identify and create development opportunities for you since professional development is a managerial responsibility and a manager who provides adequate reviews but no active development support is failing in a key part of their role",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Take full ownership of your development, identify the specific capability gaps that matter for your next career step, seek stretch assignments and exposure proactively within and beyond your current role, and build a network of mentors without waiting for permission",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Begin actively searching for a new role externally since two years without meaningful development in a role suggests you have outgrown what the organisation or manager can offer and further time investment will not change the fundamental dynamic",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Raise the lack of development formally through the performance review process, documenting your development needs and requesting a formal written response from your manager that creates an accountable commitment to providing specific growth opportunities",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -4513,10 +4597,22 @@
           "difficulty": "hard",
           "question": "What is the concept of psychological contract and why is it important for HR practitioners to understand?",
           "options": [
-            "A formal contract covering mental health support obligations \u2014 important for wellbeing programme design",
-            "The unwritten set of mutual expectations between an employee and employer \u2014 covering perceived obligations around job security, development, recognition, and fair treatment \u2014 important because breaches of the psychological contract are a primary driver of disengagement and voluntary attrition even when formal terms are unchanged",
-            "A legal concept used in constructive dismissal claims to describe implied terms",
-            "The emotional contract between an HRBP and their business unit leader"
+            {
+              "text": "A formal documented agreement covering the employer's mental health support obligations, the employee assistance programmes available, and the conditions under which mental health leave can be taken \u2014 important for wellbeing programme design and manager capability building",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The unwritten set of mutual expectations between employer and employee covering job security, development, recognition, and fair treatment \u2014 important because breaches of these expectations are a primary driver of disengagement and voluntary attrition even when formal contract terms are unchanged",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A legal concept used in constructive dismissal cases to describe the implied terms of trust and confidence that exist in all employment relationships and which the employer must not unilaterally breach without triggering a formal claim",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "The working relationship between an HRBP and their allocated business unit leader, defined by the expectations each party has of the other regarding availability, proactivity, and the types of issues that warrant HR involvement versus those the leader should manage independently",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -4526,10 +4622,22 @@
           "difficulty": "hard",
           "question": "You are leading a team of six HR professionals. Two of your strongest performers tell you privately that a third team member is creating friction, missing deadlines, and being passive-aggressive in team interactions. The third team member has not been formally counselled. What is your approach?",
           "options": [
-            "Have a direct, private conversation with the team member about the specific behaviours you have observed or had reliably reported to you, give clear feedback on the impact, listen to their perspective, agree specific changes, and set a clear follow-up timeline \u2014 not as a formal process but as a genuine and serious conversation",
-            "Hold a team meeting to address the dynamics without singling out any individual",
-            "Begin a formal performance improvement process immediately",
-            "Monitor for further evidence before taking any action to avoid acting on secondhand feedback"
+            {
+              "text": "Have a direct private conversation with the team member about the specific behaviours you have observed or had reliably reported, give clear feedback on the impact without ambiguity, listen to their perspective, and agree specific changes with a follow-up timeline",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Hold a team session to address team dynamics and communication patterns without singling out any individual, creating a context in which everyone reflects on their contribution to team effectiveness rather than one person feeling targeted or singled out",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Begin a formal performance improvement plan immediately since the conduct described \u2014 missed deadlines and passive-aggressive behaviour \u2014 constitutes underperformance that requires a documented formal process to protect the organisation if the relationship later needs to end",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Gather additional independent evidence of the behaviour over a further four to six weeks before acting, since acting on secondhand feedback without corroborating direct observation risks being unfair to the team member and damaging your own credibility as a manager",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 0
         },
@@ -4539,10 +4647,22 @@
           "difficulty": "hard",
           "question": "You are presenting your HR function's annual performance to the executive team. Most of the metrics are positive, but attrition in one business unit is significantly above target and you did not identify or address it early enough. How do you handle this in the presentation?",
           "options": [
-            "Omit the underperforming metric from the main presentation and include it in an appendix",
-            "Present the full picture \u2014 including the attrition shortfall \u2014 with an honest account of what was missed and why, the lessons learned, and the specific actions now in place to address it",
-            "Frame the metric as an industry-wide trend rather than an internal performance issue",
-            "Attribute the attrition primarily to external market factors outside HR's control"
+            {
+              "text": "Omit the underperforming metric from the main presentation and include it as a data point in an appendix, presenting it only if an executive specifically asks rather than drawing attention to it in a format that may invite disproportionate scrutiny of the function",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Present the full picture including the attrition shortfall, give an honest account of what was missed and why, share the specific lessons learned, and present the concrete actions now in place \u2014 demonstrating accountability through transparency rather than managing the narrative",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Frame the attrition metric as a market-wide trend driven by external factors outside the organisation's control, contextualising the performance against industry benchmarks rather than internal targets to reduce the perception that this represents an internal management failure",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Attribute the attrition primarily to the business unit leader's management approach and decisions rather than to HR's monitoring and intervention effectiveness, positioning it as a people management failure at the business level rather than an HR oversight",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -4552,10 +4672,22 @@
           "difficulty": "medium",
           "question": "What is the difference between leading and lagging indicators in HR analytics?",
           "options": [
-            "Leading indicators are reported to senior leadership; lagging indicators go to line managers",
-            "Leading indicators measure inputs and early signals that predict future outcomes \u2014 such as engagement scores or manager effectiveness ratings; lagging indicators measure outcomes that have already occurred \u2014 such as attrition rates or time to fill \u2014 and are useful for assessing past performance but not for preventing future problems",
-            "Lagging indicators are more accurate because they are based on actual events",
-            "The distinction only applies to headcount and financial metrics, not people experience data"
+            {
+              "text": "Leading indicators are reported upward to senior leadership and board level; lagging indicators are reported to line managers and business unit leaders, reflecting the different timescales and decision-making horizons at different levels of the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Leading indicators measure early signals that predict future outcomes \u2014 such as engagement scores and manager effectiveness ratings; lagging indicators measure outcomes that have already occurred \u2014 such as attrition rates \u2014 and assess past performance rather than preventing future problems",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Lagging indicators are more reliable and accurate than leading indicators because they are based on actual recorded events rather than predicted or projected outcomes, making them the preferred data type for board-level people reporting and strategic decision-making",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The distinction between leading and lagging indicators applies only to financial and headcount metrics and is not a meaningful analytical framework for qualitative people data such as engagement, psychological safety, or inclusion measures",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4565,10 +4697,22 @@
           "difficulty": "medium",
           "question": "A colleague challenges your recommendation in a senior leadership meeting with what you believe is an inaccurate and incomplete counter-argument. The room seems to be swaying toward their view. How do you respond?",
           "options": [
-            "Back down to preserve the relationship and raise your concerns privately afterward",
-            "Hold your position clearly and respectfully, provide the specific evidence or reasoning that supports your recommendation, acknowledge what is valid in the counter-argument, and invite the group to evaluate both positions on the merits",
-            "Challenge the colleague directly on the inaccuracies in front of the group",
-            "Defer to the group consensus \u2014 leadership teams should reach aligned decisions"
+            {
+              "text": "Back down and acknowledge the colleague's perspective to preserve the relationship, raising your concerns in a private conversation afterward where you can make your case without the pressure of the group dynamic influencing how the discussion lands",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Hold your position clearly and respectfully, provide the specific evidence and reasoning that supports your recommendation, acknowledge what is valid in the counter-argument, and invite the group to evaluate both positions on the merits rather than on momentum",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Challenge the colleague directly and assertively on the specific factual inaccuracies in their argument in front of the group, since allowing a decision to be made on the basis of incorrect information is a professional failure an HR leader should not let pass unchallenged",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Defer to the group consensus and implement the decision with full commitment since aligned leadership decisions are more important than any individual's preferred recommendation and HR's credibility depends on being seen as a team player rather than an obstructionist",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -4578,10 +4722,22 @@
           "difficulty": "hard",
           "question": "What is the concept of psychological safety at the team level, and what are its measurable indicators in an organisational context?",
           "options": [
-            "The absence of workplace bullying \u2014 measured by the number of ER complaints per team",
-            "The shared belief that the team is a safe environment for interpersonal risk-taking \u2014 measurable through willingness to voice concerns, frequency of candid feedback, error reporting rates, inclusion in decision-making, and team members' self-reported comfort raising difficult topics",
-            "An individual employee's resilience and ability to manage stress \u2014 assessed through wellbeing surveys",
-            "Compliance with the organisation's mental health and wellbeing policy"
+            {
+              "text": "The absence of workplace bullying and harassment as measured by the number of formal ER complaints, disciplinary outcomes, and grievance submissions received by HR relative to the total employee population within a defined reporting period",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The shared belief that the team is a safe environment for interpersonal risk-taking \u2014 measurable through willingness to raise concerns, frequency of candid feedback, error reporting rates, and self-reported comfort challenging decisions without fear of personal consequence",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "An individual employee's emotional resilience and personal capacity to manage workplace stress, pressure, and ambiguity without adverse impact on their performance or wellbeing \u2014 assessed through self-reporting in annual engagement or wellbeing surveys",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Formal compliance with the organisation's mental health and wellbeing policy, measured by the take-up rates of employee assistance programmes, mental health first aiders, and other wellbeing resources the organisation has made available to all employees",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4591,10 +4747,22 @@
           "difficulty": "hard",
           "question": "You are asked to build the business case for investing in a new HR technology platform. The investment is significant and the CFO is sceptical. What elements must your business case include to be credible?",
           "options": [
-            "A vendor comparison and feature matrix showing why the selected platform is best in class",
-            "A quantified problem statement with current-state cost and efficiency data, a clear articulation of the measurable outcomes the investment will deliver and by when, a total cost of ownership including implementation and change management, a risk-adjusted ROI analysis, and a change adoption plan with named accountabilities",
-            "References from other companies that have implemented the same platform",
-            "A pilot programme proposal with no financial commitment required upfront"
+            {
+              "text": "A vendor comparison and feature matrix demonstrating why the selected platform is superior to alternatives, supported by analyst rankings and peer references from comparable organisations that have successfully implemented the same solution",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A quantified problem statement with current-state cost and efficiency data, measurable outcomes the investment will deliver and by when, total cost of ownership including implementation and change management, risk-adjusted ROI analysis, and a change adoption plan with named accountabilities",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Third-party references and case studies from organisations of similar size and sector that have implemented the platform, since the CFO will give more weight to proof points from comparable organisations than to internally generated projections and assumptions about future benefits",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A pilot programme proposal that requires no upfront financial commitment, offering the CFO an opportunity to evaluate the platform's performance against defined success criteria before any significant capital expenditure is formally approved by the finance committee",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4604,10 +4772,22 @@
           "difficulty": "medium",
           "question": "You are asked to deliver a training session on unconscious bias to a group of senior leaders who are openly sceptical of the topic. Several have said they do not believe bias affects their decisions. How do you approach the session?",
           "options": [
-            "Start with the organisational data \u2014 demographic gaps in hiring, promotion, and retention \u2014 and let the evidence create the case for the topic rather than opening with theory or values-based arguments that the sceptical audience will dismiss",
-            "Open with a direct challenge to the leaders' belief that they are free from bias",
-            "Use external expert videos to make the case so the message comes from a credible third party",
-            "Focus on legal compliance obligations rather than culture and behaviour to make the session more palatable"
+            {
+              "text": "Lead with organisational data \u2014 demographic gaps in hiring, promotion, and leadership representation \u2014 and let the evidence create the case for the topic rather than opening with theory or values-based arguments that the sceptical audience will intellectually dismiss",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Open the session by directly challenging the leaders' belief that they are free from bias, using psychological research on the universality of cognitive shortcuts to demonstrate that the belief in one's own objectivity is itself a recognisable form of bias",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Use external expert videos and independent academic sources to make the case, positioning the topic as evidence-based rather than an HR initiative, so that the credibility of the content comes from recognised third parties rather than an internal HR presenter",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Focus the session entirely on legal compliance obligations related to unconscious bias and discrimination, presenting the topic through a risk management lens rather than a culture and values lens to make it more palatable for a commercially oriented leadership audience",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 0
         },
@@ -4617,10 +4797,22 @@
           "difficulty": "medium",
           "question": "What is servant leadership and how does it manifest in a people management context?",
           "options": [
-            "A leadership style where the manager does whatever their team members request",
-            "A leadership philosophy where the leader's primary role is to serve the growth, wellbeing, and effectiveness of their team \u2014 manifesting through active listening, removing obstacles, developing team members' capabilities, and sharing power rather than concentrating it",
-            "A leadership style appropriate only for junior or entry-level teams",
-            "A concept from HR theory that is rarely applicable in commercial business settings"
+            {
+              "text": "A leadership style in which the manager fulfils any request made by their team members regardless of its reasonableness, prioritising team satisfaction over operational requirements and accepting a subordinate role relative to the employees they manage",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "A leadership philosophy where the leader's primary role is to serve the growth, wellbeing, and effectiveness of their team \u2014 manifesting through active listening, removing obstacles, developing team members' capabilities, and sharing rather than concentrating power",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A leadership approach appropriate primarily for junior, entry-level, or early-career teams who require more direction and support than experienced professionals, becoming less relevant as team members develop confidence and capability to lead themselves",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A theoretical concept from academic HR literature that has limited practical application in commercial business environments where leaders are expected to drive performance outcomes and financial results rather than prioritising team members' personal growth",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -4630,12 +4822,24 @@
           "difficulty": "medium",
           "question": "You are new to an HR leadership role and have identified several significant process gaps in the team you have inherited. Your predecessor is still in the organisation in a different role and is well liked. How do you make changes without creating unnecessary conflict?",
           "options": [
-            "Make changes quickly and decisively before others have time to resist",
-            "Frame the changes around future needs and the team's development rather than past failures, acknowledge what the previous approach achieved in its context, involve the team in co-designing improvements, and manage the narrative so changes are attributed to growth and not to fixing what was broken",
-            "Seek your predecessor's approval before making any significant changes",
-            "Delay changes for six months until you have established your own credibility"
+            {
+              "text": "Make the necessary changes quickly and decisively in the first 60 days before organisational loyalty to the previous leader has time to solidify into active resistance, since the window for change is narrowest once the team has formed a settled view of the new leader",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Delay all significant changes for a minimum of six months until you have established sufficient personal credibility for change recommendations to be attributed to your own judgment rather than to a critique of your predecessor's work",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Frame changes around future requirements and team development rather than past failures, acknowledge what the previous approach achieved in its context, co-design improvements with the team, and manage the narrative so changes are positioned as growth rather than correction",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Seek your predecessor's informal input and buy-in for significant changes before implementing them, using their institutional knowledge and existing relationships to build a coalition for change that feels consensual rather than imposed by an outsider",
+              "tendency": "PLEASER"
+            }
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "id": "S6Q018",
@@ -4643,10 +4847,22 @@
           "difficulty": "hard",
           "question": "What is the concept of agency in an HR ethics context, and how should HR professionals navigate situations where business interests conflict with employee interests?",
           "options": [
-            "HR professionals are agents of the employer and must always prioritise business interests over employee interests",
-            "HR professionals hold a dual accountability \u2014 to the business and to the people within it \u2014 and must navigate conflicts through transparent counsel rather than silent compliance; where a business decision causes disproportionate or unjust harm to employees, HR's role is to name the conflict, advocate for a fair approach, and document their counsel even if the final decision rests elsewhere",
-            "Agency conflicts in HR are always resolved through employment law, which defines the boundary",
-            "The conflict between business and employee interests is a management issue, not an HR ethics issue"
+            {
+              "text": "HR professionals are agents of the employer and must always prioritise business interests over employee interests \u2014 this is the fundamental nature of the employment relationship and an HR professional who advocates for employees over the business is exceeding their role",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "HR professionals hold a dual accountability to the business and to the people within it, and must navigate conflicts through transparent counsel rather than silent compliance \u2014 where a business decision causes disproportionate harm, HR's role is to name the conflict and advocate for a fair approach",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Conflicts between business and employee interests are always resolved by reference to employment law, which defines the boundaries of what employers can require \u2014 HR's role is to identify and apply the legal answer rather than exercise independent ethical judgment",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "The tension between business and employee interests is a management issue rather than an HR ethics question, since the resolution of such conflicts appropriately rests with the leaders who are accountable for both commercial performance and their people's wellbeing",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -4656,10 +4872,22 @@
           "difficulty": "hard",
           "question": "Your organisation is going through its third significant restructure in four years. Employee trust is low and change fatigue is high. You are asked to lead the people workstream of this restructure. What is your biggest risk and how do you address it?",
           "options": [
-            "The biggest risk is legal exposure from three restructures in four years \u2014 address it through Legal review",
-            "The biggest risk is change fatigue causing the restructure to fail in implementation \u2014 address it by reducing the scope of changes to minimise disruption",
-            "The biggest risk is credibility \u2014 employees who have lived through repeated change cycles will be deeply sceptical of communications and commitments; address it by being radically transparent about what is known and unknown, honouring every commitment made, and acknowledging the organisation's recent track record honestly rather than treating this as a fresh start",
-            "The biggest risk is senior leader alignment \u2014 address it by securing written commitment from all executives before any communication"
+            {
+              "text": "The biggest risk is legal exposure from three restructures in four years \u2014 address it by commissioning a Legal review of the previous processes before beginning to ensure any historical issues are identified and managed before they surface in this process",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "The biggest risk is change fatigue causing the restructure to fail in implementation \u2014 address it by reducing the scope of changes to minimise disruption and give the workforce an easier transition than the previous two restructures delivered",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The biggest risk is credibility \u2014 employees who have lived through repeated cycles will be deeply sceptical of communications and commitments; address it by being radically transparent about what is known and unknown, honouring every commitment made, and acknowledging the organisation's track record honestly",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The biggest risk is senior leader alignment \u2014 address it by securing written commitment from all executives before any employee communication goes out, ensuring that the leadership team presents a unified and consistent message throughout the entire process",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -4669,10 +4897,22 @@
           "difficulty": "hard",
           "question": "A CEO you greatly respect asks you to participate in a process that you believe crosses an ethical line \u2014 not illegal, but something you are not comfortable with. They frame it as necessary for the business and say they trust you to handle it with discretion. How do you respond?",
           "options": [
-            "Comply \u2014 the CEO's authority and your trust in their judgment supersede your personal discomfort",
-            "Decline and escalate to the board immediately",
-            "Name your discomfort directly and specifically, explain your ethical concern without lecturing, explore whether there is an alternative approach that achieves the business objective without crossing the line you cannot step over, and accept that maintaining your integrity may mean disappointing someone you respect",
-            "Comply but document your objection in writing to create a record"
+            {
+              "text": "Comply since the CEO's authority and your genuine respect for their judgment supersede your personal discomfort with what may simply be an ethical preference rather than a clear and non-negotiable professional line that you must hold",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Decline and escalate to the board immediately, since a CEO request that crosses an ethical line \u2014 even if not illegal \u2014 is a governance issue that the board needs to be aware of regardless of how the CEO frames the request",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Name your discomfort directly and specifically, explain your ethical concern without lecturing, explore whether there is an alternative approach that achieves the business objective without crossing the line you cannot step over, and accept that maintaining integrity may mean disappointing someone you respect",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Comply but document your objection formally in writing to create a clear record that you raised concerns before participating, ensuring that accountability for the decision and its consequences rests clearly with the CEO rather than with you personally",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -4682,10 +4922,22 @@
           "difficulty": "medium",
           "question": "What is the concept of influence without authority in an HR leadership context?",
           "options": [
-            "Manipulating business leaders into accepting HR recommendations without their awareness",
-            "The ability to shape decisions, behaviours, and outcomes through credibility, expertise, relationship quality, and persuasion \u2014 rather than through positional power or mandate; critical for HR leaders who must influence senior leaders who technically outrank them",
-            "Using data and analytics to override business decisions that HR disagrees with",
-            "Delegating authority to team members in the absence of formal approval processes"
+            {
+              "text": "Manipulating business leaders into accepting HR recommendations without their awareness, using indirect influence techniques to achieve outcomes that leaders would not consciously agree to if the intent were made explicit and transparent",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The ability to shape decisions, behaviours, and outcomes through credibility, expertise, relationship quality, and persuasion rather than through positional power or mandate \u2014 critical for HR leaders who must influence senior leaders who technically outrank them",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Using data and analytics to override business decisions that HR disagrees with, building such a compelling quantitative case that leaders feel they have no choice but to accept HR's recommendation despite their own commercial judgment on the matter",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Delegating authority to team members in the absence of formal approval processes, empowering HR professionals to make consequential decisions on behalf of the function without requiring the sign-off that the governance structure would normally mandate",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4695,10 +4947,22 @@
           "difficulty": "medium",
           "question": "You are responsible for a team that has just delivered a difficult project under significant pressure. The team performed well but is visibly exhausted. The next project starts in two weeks. How do you manage this?",
           "options": [
-            "Move directly to the next project \u2014 the team will recover naturally with the passage of time",
-            "Formally acknowledge the team's effort in a meaningful way, create space for genuine rest and recovery before the next project begins, assess whether the resourcing model for the next project is sustainable, and have honest individual conversations about capacity and wellbeing before committing to the next timeline",
-            "Reduce the scope of the next project to protect the team",
-            "Bring in contract resource to carry the load for the first two weeks of the next project"
+            {
+              "text": "Move directly to the next project since the team will recover naturally with the passage of time and the best way to sustain high performance is to maintain momentum rather than creating a gap that allows fatigue to become a narrative the team dwells on",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Formally acknowledge the team's effort in a meaningful way, create space for genuine rest and recovery before the next project begins, assess whether the resourcing model for the next project is sustainable, and have honest individual conversations about capacity and wellbeing",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Reduce the scope of the next project to protect the team's energy levels, since asking an exhausted team to take on a full project two weeks after completing a demanding one creates a burnout risk that will ultimately cost more than the scope reduction",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Bring in contract resource to carry the load for the first two weeks of the next project, allowing the team to re-engage gradually rather than switching immediately from one demanding delivery to another without any meaningful transition period",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4708,10 +4972,22 @@
           "difficulty": "hard",
           "question": "What is the primary limitation of personality assessments in a leadership development context?",
           "options": [
-            "Personality assessments are expensive and time-consuming to administer at scale",
-            "Personality assessments describe stable trait tendencies but do not reliably predict contextual leadership behaviour, can create fixed labels that limit growth mindset, may embed cultural and demographic bias in norm groups, and should be used as one input to development conversations rather than as definitive profiles",
-            "Most personality assessments are not validated and therefore have no value in professional settings",
-            "Personality assessments are only useful for identifying derailers, not development strengths"
+            {
+              "text": "Personality assessments are expensive and time-consuming to administer at scale, making them impractical for large-scale leadership development programmes where cost efficiency is a key constraint on the design of the development approach",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Personality assessments describe stable trait tendencies but do not reliably predict contextual leadership behaviour, can create fixed labels that limit growth mindset, may embed cultural bias in norm groups, and should be one input to development conversations rather than definitive profiles",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Most personality assessments used in organisational settings are not validated against relevant performance outcomes and therefore have no meaningful predictive value in professional settings, making any development decisions based on them fundamentally unreliable",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Personality assessments are useful only for identifying derailing behaviours and blind spots in leaders, but have no value in identifying developmental strengths or growth areas that could be actively built upon through a structured development programme",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4721,10 +4997,22 @@
           "difficulty": "hard",
           "question": "Your organisation is considering implementing an AI-powered HR decision-support tool that will recommend whether candidates should be shortlisted based on historical hiring data. You know the historical data reflects a workforce that has been predominantly male and from certain educational backgrounds. What risks do you surface before implementation?",
           "options": [
-            "Data privacy risk \u2014 candidates' data will be processed by an AI tool",
-            "Cost of implementation versus manual screening",
-            "The model will likely perpetuate and amplify the demographic bias in the historical data, effectively automating discrimination \u2014 the tool requires an independent bias audit before use, transparent disclosure to candidates, human oversight of all shortlisting decisions, and regular bias monitoring after deployment; this is an HR ethics and legal compliance issue, not just a technical one",
-            "Risk of candidates challenging decisions made by an automated system"
+            {
+              "text": "Data privacy risk \u2014 candidates' personal data will be processed by an AI tool and the organisation needs to ensure it has a lawful basis for using candidate data to train and operate the model within applicable data protection frameworks",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Cost of implementation versus the time saved through manual screening, since the primary question for any HR technology investment is whether the operational efficiency gained justifies the financial investment required to implement and maintain the tool",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The model will likely perpetuate and amplify demographic bias from the historical data \u2014 effectively automating discrimination \u2014 requiring an independent bias audit, transparent candidate disclosure, human oversight of all shortlisting decisions, and ongoing monitoring post-deployment",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Risk of candidates legally challenging decisions made by an automated system, since the increasing use of AI in hiring has attracted regulatory attention and the organisation needs Legal to assess the liability exposure before the tool is deployed for any live hiring process",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -4734,10 +5022,22 @@
           "difficulty": "medium",
           "question": "You have made a significant error in a process that has resulted in an employee receiving incorrect information about their entitlements. The error is yours and is now visible to senior stakeholders. What is your response?",
           "options": [
-            "Identify how the error occurred and take steps to prevent recurrence before acknowledging it",
-            "Own the error promptly and directly, correct the impact for the affected employee as a first priority, be transparent with relevant stakeholders about what happened and what you are doing to fix it, and use it as a learning input without excessive self-criticism",
-            "Raise a process concern that contributed to the error to share accountability",
-            "Correct the error quietly and only address it with stakeholders if they raise it"
+            {
+              "text": "Identify how the error occurred and take steps to prevent recurrence before acknowledging it publicly, since demonstrating you have already fixed the problem provides a stronger foundation for the accountability conversation than admitting fault without a solution",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Own the error promptly and directly, correct the impact for the affected employee as the first priority, be transparent with relevant stakeholders about what happened and what you are doing to fix it, and use it as a learning input without excessive self-criticism",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Raise a process or system concern that contributed to the error to create a shared accountability narrative, since errors of this nature rarely have a single cause and it is important to surface the systemic factors alongside the individual failure",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Correct the error quietly and only address it with stakeholders if they raise it directly, since proactively drawing attention to a mistake that has now been fixed creates more reputational risk than the error itself in most organisational contexts",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -4747,10 +5047,22 @@
           "difficulty": "medium",
           "question": "What does it mean for an HR leader to demonstrate business acumen?",
           "options": [
-            "Having a finance qualification and being able to read a P&L",
-            "Understanding how the business makes money, what the key value drivers and risks are, how people decisions connect to commercial outcomes, and being able to frame HR interventions in terms of business impact rather than HR activity \u2014 enabling credible engagement with non-HR leaders",
-            "Having prior experience working in a non-HR business role",
-            "Participating in business planning cycles and attending commercial leadership meetings"
+            {
+              "text": "Having a formal finance qualification and being able to read, interpret, and critique a P&L statement with the same level of analytical depth as a Finance business partner or a commercially experienced general manager",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Understanding how the business makes money, what the key value drivers and risks are, how people decisions connect to commercial outcomes, and being able to frame HR interventions in terms of business impact rather than HR activity",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Having prior experience working in a non-HR business role before transitioning into HR, since only practitioners who have operated in commercial environments can credibly claim to understand the business context in which HR decisions are made",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Participating actively in business planning cycles and attending all commercial leadership meetings as a standing member, since presence in the right forums is the primary mechanism through which HR demonstrates that it operates as a genuine business partner",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4758,12 +5070,24 @@
           "id": "S6Q027",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "You are asked to set the objectives for your HR team for the coming year. The CEO wants all objectives aligned to financial performance metrics. Most of your team's work affects financial outcomes indirectly through people outcomes. How do you design the objectives?",
+          "question": "You are asked to set the objectives for your HR team for the coming year. The CEO wants all objectives aligned to financial performance metrics. Most of your team's work affects financial outcomes only indirectly through people outcomes. How do you design the objectives?",
           "options": [
-            "Set purely financial objectives for all team members \u2014 this is what the CEO wants",
-            "Set purely HR activity objectives \u2014 the team's work is people-focused and should be measured accordingly",
-            "Design a balanced objective framework that includes leading HR indicators directly within the team's control, connects those indicators to the business outcomes they affect, and includes one or two business-level metrics where HR's contribution can be plausibly tracked \u2014 presenting the linkage clearly to the CEO",
-            "Use industry-standard HR benchmarks as objectives regardless of the business context"
+            {
+              "text": "Set purely financial objectives for all team members since this is what the CEO has requested and demonstrating that HR can hold itself accountable to the same financial metrics as every other function is an important part of building organisational credibility",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Set purely HR activity objectives since the team's work is people-focused and should be measured accordingly, and forcing financial metrics onto an HR team creates perverse incentives that do not reflect the actual nature of the contribution being made",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Design a balanced objective framework that includes leading HR indicators directly within the team's control, connects those indicators to the business outcomes they affect, and includes one or two business-level metrics where HR's contribution can be plausibly tracked",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Use industry-standard HR benchmarks as objectives regardless of the business context, since external benchmarks provide an objective and defensible baseline that avoids the political complexity of negotiating bespoke financial metrics with the CEO and Finance",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -4773,10 +5097,22 @@
           "difficulty": "hard",
           "question": "What is the concept of change saturation and what are its primary warning signs in an organisation?",
           "options": [
-            "When an organisation has invested too much in change management consultants \u2014 warning signs include budget overruns and initiative proliferation",
-            "When the volume and pace of change exceeds the organisation's capacity to absorb and adapt \u2014 warning signs include initiative abandonment, implementation fatigue, cynicism about new programmes, managers deprioritising change efforts, and increasing attrition among middle management who carry most of the implementation burden",
-            "When employees have adapted so fully to change that new initiatives no longer create resistance \u2014 warning signs are a lack of engagement in change planning",
-            "A risk that only affects organisations undergoing M&A activity"
+            {
+              "text": "When an organisation has invested too much in change management consultants \u2014 warning signs include budget overruns on change programmes, initiative proliferation, and a growing gap between the fees paid and the measurable outcomes delivered",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "When the volume and pace of change exceeds the organisation's capacity to absorb and adapt \u2014 warning signs include initiative abandonment, implementation fatigue, cynicism about new programmes, managers deprioritising change efforts, and increasing attrition among middle management",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "When employees have adapted so fully to change that new initiatives no longer create the productive tension needed for genuine transformation \u2014 warning signs include a notable absence of resistance and employees going through the motions of change without genuine engagement",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A risk that exclusively affects organisations undergoing M&A activity where multiple integration workstreams are running simultaneously, creating an overload that is distinct from the change saturation experienced in organic organisational transformation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4786,10 +5122,22 @@
           "difficulty": "hard",
           "question": "You are a newly appointed HR Director. In your first month you identify that the HR function is widely perceived as bureaucratic, reactive, and more focused on compliance than on adding value. The CHRO is aware but has not prioritised it. What do you do?",
           "options": [
-            "Wait for a formal mandate from the CHRO before making any structural changes",
-            "Accept the perception as historical and work to change it gradually through individual relationships",
-            "Build a clear diagnosis of the perception gap using stakeholder data, design a credible repositioning plan that addresses root causes rather than symptoms, secure the CHRO's active sponsorship, and begin delivering visible value in the areas of highest business pain \u2014 so that the function's reputation changes through evidence rather than communication",
-            "Present a new HR strategy to the executive team and use their response to build momentum"
+            {
+              "text": "Wait for a formal mandate from the CHRO before making any structural or cultural changes to the function, since acting without explicit direction risks overstepping your remit and creating a leadership tension that makes the repositioning harder rather than easier",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Accept the perception as historical context and work to change it gradually through individual relationships and small acts of service, since reputation change in HR takes time and cannot be accelerated through structural interventions without first building personal credibility",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Build a clear diagnosis of the perception gap using stakeholder data, design a credible repositioning plan that addresses root causes rather than symptoms, secure the CHRO's active sponsorship, and begin delivering visible value in the areas of highest business pain",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Present a new HR strategy to the executive team within the first 30 days and use their response as the mechanism to build momentum and create internal pressure on the CHRO to prioritise the repositioning with the urgency the situation requires",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -4799,10 +5147,22 @@
           "difficulty": "medium",
           "question": "You disagree with a decision made by your CHRO that you believe will negatively impact your team's credibility. The decision has already been communicated. What is your approach?",
           "options": [
-            "Implement the decision fully and say nothing \u2014 it is not your place to second-guess the CHRO",
-            "Privately brief your team that you disagreed with the decision to maintain your credibility with them",
-            "Implement the decision professionally and completely, then seek a private conversation with the CHRO to share your concerns about the impact \u2014 framing it as information they should have rather than a challenge to their authority, and accepting their response",
-            "Escalate your disagreement to the CEO to ensure your position is on the record"
+            {
+              "text": "Implement the decision fully and say nothing since it is not your place to second-guess the CHRO publicly and demonstrating loyalty to decisions made above you is an important part of building trust with senior leadership in any organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Privately brief your team that you disagreed with the decision to maintain your credibility with them and ensure they understand that the outcome was not your preference, so that they do not attribute it to your judgment or your values as their leader",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Implement the decision professionally and completely, then seek a private conversation with the CHRO to share your concerns about the impact \u2014 framing it as information they should have rather than a challenge to their authority, and accepting their response",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate your disagreement to the CEO to ensure your position is formally on the record, since a decision that negatively impacts your team's credibility is ultimately a business risk that justifies escalating beyond the CHRO to the most senior level",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -4812,10 +5172,22 @@
           "difficulty": "easy",
           "question": "What does the 70-20-10 learning and development model propose?",
           "options": [
-            "70% of learning budget should go to formal training, 20% to coaching, 10% to self-directed learning",
-            "Approximately 70% of effective learning comes from on-the-job experience, 20% from social learning and relationships, and 10% from formal structured training programmes",
-            "70% of employees prefer digital learning, 20% prefer classroom learning, and 10% prefer coaching",
-            "The model applies to leadership development only and does not apply to operational roles"
+            {
+              "text": "70% of the L&D budget should go to formal training programmes, 20% to individual coaching and mentoring, and 10% to self-directed learning initiatives, reflecting the relative cost and organisational impact of each development modality",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Approximately 70% of effective learning comes from on-the-job experience, 20% from social learning and relationships with colleagues and mentors, and 10% from formal structured training programmes and courses",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "70% of employees prefer digital learning delivery, 20% prefer classroom or in-person learning, and 10% prefer individual coaching \u2014 a distribution that should guide the channel mix in any effective organisational learning strategy",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The model applies exclusively to leadership development programmes and does not apply to technical, operational, or role-specific learning for individual contributors in non-leadership positions within the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4825,10 +5197,22 @@
           "difficulty": "medium",
           "question": "A high-potential team member tells you they are considering leaving because they feel their potential is not being recognised and they have been passed over for stretch assignments. They are correct \u2014 you have not advocated strongly enough for them. What do you do?",
           "options": [
-            "Acknowledge the situation but manage expectations \u2014 not every stretch opportunity can go to every high potential",
-            "Own your part in the situation directly and without qualification, articulate specifically what you will do differently, take immediate action to create a visible stretch opportunity, and follow through with consistent advocacy \u2014 demonstrating that your commitment is behavioural, not rhetorical",
-            "Conduct a career conversation and update their development plan",
-            "Recommend they apply for an internal transfer to a team where more opportunities exist"
+            {
+              "text": "Acknowledge the situation but manage expectations since not every stretch opportunity can go to every high-potential and the team member needs to develop patience with the timeline of their own career development within the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Own your part in the situation directly and without qualification, articulate specifically what you will do differently, take immediate action to create a visible stretch opportunity, and follow through with consistent advocacy demonstrating that your commitment is behavioural not rhetorical",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Conduct a formal career conversation and update their development plan to document the development commitment you are now making, creating a written record that signals seriousness and provides accountability for the commitments being made",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Recommend they apply for an internal transfer to a team where more development opportunities currently exist, since their frustration is understandable and a lateral move to a more development-rich environment serves their interests better than waiting for opportunities to open up here",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4838,10 +5222,22 @@
           "difficulty": "medium",
           "question": "What is the primary risk of an HR function that measures its own performance only through activity metrics such as number of trainings delivered, cases closed, and policies updated?",
           "options": [
-            "Activity metrics are difficult to collect consistently across different HR teams",
-            "Activity metrics measure effort and volume rather than impact \u2014 an HR function that closes cases quickly, delivers many trainings, and updates many policies can still be failing to move the needle on the outcomes that matter: retention, capability, engagement, and organisational performance",
-            "Activity metrics create perverse incentives for HR teams to prioritise quantity over quality",
-            "Activity metrics do not translate well into financial reporting for board purposes"
+            {
+              "text": "Activity metrics are difficult to collect consistently across different HR teams and geographies, creating comparability issues that make it hard to use the data for performance management or for benchmarking against other organisations",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Activity metrics measure effort and volume rather than impact \u2014 an HR function can close cases quickly, deliver many trainings, and update many policies while still failing to move the needle on retention, capability, engagement, and organisational performance",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Activity metrics create perverse incentives for HR teams to prioritise the quantity of their output over the quality, since being measured on volume naturally drives behaviour toward completing activities as quickly as possible rather than as effectively as possible",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Activity metrics do not translate well into the financial language that board members and senior executives use, making it difficult for the HR function to demonstrate its contribution in the terms that matter most to the people who make investment decisions about HR",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4851,10 +5247,22 @@
           "difficulty": "hard",
           "question": "The board has asked the CHRO to present the people risk register at the next board meeting. You have been asked to prepare the content. What are the four people risks most likely to warrant board-level attention in a mid-sized global company?",
           "options": [
-            "Employee satisfaction scores, HR headcount ratios, training completion rates, and grievance volumes",
-            "Critical role vacancy risk, succession depth for the top 20 roles, skills obsolescence in strategically critical functions, and culture or conduct risks that could create regulatory, legal, or reputational exposure",
-            "Payroll error rates, employment tribunal numbers, D&I metrics, and manager effectiveness scores",
-            "Attrition rates, time to fill, cost per hire, and headcount versus budget variance"
+            {
+              "text": "Employee satisfaction scores, HR headcount ratios compared to industry benchmarks, mandatory training completion rates, and the volume of formal grievance submissions received by HR across all operating jurisdictions in the past 12 months",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Critical role vacancy risk, succession depth for the top 20 roles, skills obsolescence in strategically critical functions, and culture or conduct risks that could create regulatory, legal, or reputational exposure for the organisation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Payroll error rates compared to industry standards, employment tribunal claim volumes and outcomes, diversity and inclusion metric trends, and manager effectiveness scores from the most recent 360-degree feedback cycle",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Overall attrition rates compared to sector benchmarks, average time to fill open positions, cost per hire compared to the previous year, and headcount versus approved budget variance across all business units",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -4864,10 +5272,22 @@
           "difficulty": "hard",
           "question": "You are leading an HR team of 12 people. One team member is consistently excellent but is working unsustainably long hours and showing early signs of burnout. They are reluctant to reduce their workload because they fear being seen as less committed. How do you address this?",
           "options": [
-            "Respect their autonomy \u2014 they are an adult and can manage their own workload",
-            "Have a direct and caring conversation that names what you are observing, challenge the belief that long hours equal commitment by reframing what sustainable high performance looks like, take specific steps to redistribute workload with their involvement, and model the behaviour yourself so the team culture does not reward unsustainable work",
-            "Formally reduce their workload by removing responsibilities without discussion",
-            "Recommend they take annual leave to recover before addressing the structural workload issue"
+            {
+              "text": "Respect their autonomy since they are a capable adult who can assess and manage their own workload, and intervening without being asked risks being paternalistic and damaging the trust and independence that makes the working relationship effective",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Have a direct and caring conversation that names what you are observing, challenge the belief that long hours equal commitment by reframing what sustainable high performance looks like, take specific steps to redistribute workload with their involvement, and model the behaviour yourself",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Formally reduce their workload by removing specific responsibilities without consultation, since their reluctance to act means you must intervene decisively as their manager to protect their health regardless of their preference for maintaining current commitments",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Recommend they take annual leave to recover before the situation deteriorates further, since a period of genuine rest is the most immediate and effective intervention for someone showing early burnout signs before addressing the structural workload issue",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         }
