@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/start.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "@vercel/node@5.0.0"
     },
     "api/submit.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "@vercel/node@5.0.0"
     }
   }
 }
