@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const SECRET = process.env.ENCRYPTION_SECRET;
+const SECRET = 'tarkesh-hr-assessment-secret-2025-xk9p';
 
 // Section labels for results display
 const SECTION_LABELS = {

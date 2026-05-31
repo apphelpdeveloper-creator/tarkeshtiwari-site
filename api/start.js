@@ -2,7 +2,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-const SECRET = process.env.ENCRYPTION_SECRET;
+const SECRET = 'tarkesh-hr-assessment-secret-2025-xk9p';
 const QUESTIONS_PER_SESSION = 75;
 const QUESTIONS_PER_SECTION = Math.floor(QUESTIONS_PER_SESSION / 7);
 
