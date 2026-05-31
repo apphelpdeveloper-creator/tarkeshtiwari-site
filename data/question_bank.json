@@ -2660,10 +2660,22 @@
           "difficulty": "medium",
           "question": "What does total rewards mean in a modern HR context?",
           "options": [
-            "The sum of base salary and annual bonus for an employee",
-            "The complete package of monetary and non-monetary value an employer provides, including base pay, variable pay, benefits, wellbeing, development, and the employee experience",
-            "The financial cost of the remuneration package per employee",
-            "The combination of salary and equity compensation offered to senior leaders"
+            {
+              "text": "The combined monetary value of base salary and annual bonus paid to an employee in a given year, used as the primary basis for benchmarking individual total compensation against external market rates for comparable roles",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The complete package of monetary and non-monetary value an employer provides, including base pay, variable pay, benefits, wellbeing support, development opportunities, and the overall quality of the employee experience",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The total financial cost per employee to the organisation, calculated as the sum of salary, employer social contributions, benefits-in-kind, and the allocated employment overhead associated with each headcount position",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The combination of base salary and long-term equity compensation offered specifically to senior leaders, designed to create alignment between individual financial interests and long-term business performance outcomes",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2673,10 +2685,22 @@
           "difficulty": "hard",
           "question": "A talent acquisition team is struggling to fill senior technical roles. Hiring managers say compensation offers are consistently being rejected. HR Ops data shows offer acceptance rates have fallen from 74% to 52% in six months. What is the most rigorous diagnostic approach?",
           "options": [
-            "Increase all offers by 15% and monitor acceptance rates",
-            "Conduct exit interviews with candidates who declined offers",
-            "Conduct a structured analysis of declined offer feedback, benchmark compensation bands against current market data for those specific roles, assess whether non-compensation factors are also driving declines, and present findings before making any pay changes",
-            "Recommend a signing bonus policy to make offers more competitive without adjusting base salary bands"
+            {
+              "text": "Increase all offers by 15% across the affected role categories immediately and monitor acceptance rates over the next quarter to establish whether compensation is genuinely the primary driver of the decline in offer acceptance",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Conduct exit interviews with candidates who declined offers in the past six months to understand directly from them what drove the decision and whether compensation was the primary or a secondary contributing factor",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Conduct a structured analysis of declined offer feedback, benchmark compensation bands against current market data for those specific roles, assess whether non-compensation factors are also driving declines, and present findings before making any changes",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Introduce a signing bonus policy for all senior technical roles to make offers more financially competitive without requiring changes to base salary bands that would have broader compensation structure implications across the organisation",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -2686,10 +2710,22 @@
           "difficulty": "medium",
           "question": "What is the difference between job evaluation and market benchmarking in compensation management?",
           "options": [
-            "Job evaluation assesses external pay competitiveness; market benchmarking determines internal equity",
-            "Job evaluation determines the internal relative value of roles based on responsibilities and impact; market benchmarking assesses how compensation compares to external pay rates for equivalent roles",
-            "Job evaluation is performed by HR; market benchmarking is performed by Finance",
-            "They are equivalent terms used interchangeably in different organisations"
+            {
+              "text": "Job evaluation assesses how competitively an organisation's pay compares to external market rates; market benchmarking determines the relative internal equity of roles based on their responsibilities and impact within the grading structure",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Job evaluation determines the internal relative value of roles based on scope, responsibility, and impact; market benchmarking assesses how that internal value compares to external pay rates for equivalent roles in the relevant talent market",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Job evaluation is conducted by HR and determines pay band placement; market benchmarking is conducted by Finance and determines whether the overall compensation budget is sustainable relative to revenue and the cost structure of the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Job evaluation and market benchmarking are equivalent analytical processes using different methodologies to arrive at the same outcome \u2014 a defensible pay level for each role \u2014 and organisations typically choose one rather than using both simultaneously",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2699,10 +2735,22 @@
           "difficulty": "hard",
           "question": "During an annual compensation review, you identify that women in a particular job family are on average paid 11% less than men at the same grade with equivalent performance ratings and tenure. What do you do?",
           "options": [
-            "Flag the finding in the compensation report and recommend a review in the following cycle",
-            "Escalate immediately with a quantified remediation proposal, identify the root cause of the gap, prioritise corrections for the most severe cases in the current review cycle, and recommend a structural audit of the entire compensation framework to prevent recurrence",
-            "Seek Legal advice before communicating the finding to the CHRO",
-            "Adjust the data cut to control for additional variables before concluding there is a genuine gap"
+            {
+              "text": "Flag the finding in the compensation review report and recommend that a dedicated pay equity review be conducted in the following annual cycle, allowing adequate time for a thorough analysis before any remediation action is taken",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Escalate immediately with a quantified remediation proposal, identify the root cause of the gap, prioritise corrections for the most severe cases in the current review cycle, and recommend a structural compensation audit to prevent recurrence",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Seek Legal advice before communicating the finding to the CHRO or any business leaders, since a pay equity gap of this nature creates potential legal liability that requires legal assessment before HR determines the appropriate next steps",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Apply additional statistical controls for factors such as team, location, and function before concluding a genuine gap exists, since the 11% figure may reduce significantly when the full range of relevant compensation variables is properly accounted for",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -2712,10 +2760,22 @@
           "difficulty": "easy",
           "question": "What is a compa-ratio and what does it indicate?",
           "options": [
-            "A comparison of an employee's performance rating against their peer group average",
-            "A ratio comparing an employee's actual salary to the midpoint of their pay band, indicating their position within the band and relative pay competitiveness",
-            "The ratio of total compensation cost to revenue, used to assess workforce affordability",
-            "A compliance metric measuring the percentage of employees within grade"
+            {
+              "text": "A ratio comparing an employee's performance rating in a given year to the average performance rating for their peer group at the same grade, indicating whether an individual is performing above or below the cohort norm",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A ratio comparing an employee's actual salary to the midpoint of their pay band, indicating where they sit within their compensation range and how their pay relates to the market-referenced midpoint for their role",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The ratio of total compensation cost to total revenue for a business unit or the whole organisation, used by Finance and HR together to assess whether people costs are proportionate to the value being generated by the workforce",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A workforce planning metric that tracks the percentage of employees in each grade whose compensation falls within the defined pay band rather than above or below it, used to measure the governance of the compensation framework",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2725,10 +2785,22 @@
           "difficulty": "medium",
           "question": "A high-performing employee tells you they have a competing offer 30% above their current salary and will leave unless matched. The market data you have does not support a 30% increase for the role. How do you advise the business?",
           "options": [
-            "Match the offer \u2014 losing a high performer is more costly than the salary increase",
-            "Decline \u2014 matching counteroffers sets a dangerous precedent",
-            "Conduct a rapid market analysis for the specific role, assess the total cost of replacement against the retention investment, explore whether the full gap can be bridged through a combination of base, bonus, and non-monetary levers, and make a transparent recommendation to the business with a clear view of both the precedent risk and the replacement risk",
-            "Negotiate the employee down to a 15% increase as a compromise"
+            {
+              "text": "Match the offer in full since the cost of losing a demonstrably high performer \u2014 including recruitment, onboarding, and productivity loss \u2014 almost certainly exceeds the annual cost of the salary increase being requested by the employee",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Decline to match the offer as a matter of policy since accepting counteroffers sets a precedent that incentivises employees to generate competing offers as a salary negotiation tactic and creates pay equity problems across the broader team",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Conduct a rapid market analysis for the specific role, model the total cost of replacement against the retention investment, explore whether the gap can be bridged through a combination of levers, and make a transparent recommendation with a view of both risks",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Negotiate the employee down to an increase of 15% as a practical compromise that demonstrates goodwill and partial responsiveness to the market signal without fully matching a figure that exceeds what the available data supports",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -2738,10 +2810,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a performance calibration process in a pay-for-performance model?",
           "options": [
-            "To reduce the time managers spend writing performance reviews",
-            "To ensure that performance ratings are applied consistently across teams and that distribution reflects genuine performance differentiation rather than manager leniency or severity bias",
-            "To identify which employees should receive a performance improvement plan",
-            "To align individual performance ratings with business unit financial results"
+            {
+              "text": "To reduce the administrative time managers spend writing performance review narratives by providing a structured group process that replaces the need for detailed individual written assessments for every employee in the business",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To ensure performance ratings are applied consistently across teams, reflecting genuine performance differentiation rather than individual manager leniency or severity bias that would undermine the fairness of pay decisions",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To identify which specific employees should be placed on performance improvement plans in the next cycle, using the calibration discussion to build a shared leadership view of who is not meeting the required performance standard",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To ensure that individual performance ratings across the business unit are distributed in a way that aligns with the overall financial performance of the unit, linking individual assessments to collective business outcomes",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2751,10 +2835,22 @@
           "difficulty": "hard",
           "question": "An organisation is moving from an annual performance review to a continuous feedback model. Several senior managers are resisting, saying the new approach lacks rigour and makes compensation decisions harder to justify. How do you respond to this concern?",
           "options": [
-            "Revert to the annual review model \u2014 senior manager buy-in is essential for any performance process to work",
-            "Acknowledge the legitimate concern about compensation linkage, design a summary calibration mechanism that aggregates continuous feedback into a defensible rating for compensation purposes, and work with resistant managers to demonstrate how the new model captures more evidence, not less",
-            "Mandate the new approach and manage resistance through performance management of non-compliant managers",
-            "Run both models in parallel for a year before deciding which to retain"
+            {
+              "text": "Revert to the annual review model since senior manager engagement is a prerequisite for any performance process to work effectively and implementing a model that key leaders actively distrust will produce worse outcomes than maintaining a familiar one",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Acknowledge the legitimate concern about compensation linkage, design a calibration mechanism that aggregates continuous feedback into a defensible summary rating for compensation purposes, and demonstrate that the new model captures more evidence not less",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Mandate the new approach through a policy update and address resistance through the performance management process if managers consistently fail to comply with the new framework expectations within the defined transition timeline",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Run both the annual and continuous models simultaneously for a full year before making a final decision, allowing managers to use either approach and gathering comparative data on which produces more accurate and useful performance assessments",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -2764,10 +2860,22 @@
           "difficulty": "hard",
           "question": "What is a long-term incentive plan (LTIP) designed to achieve, and what is its primary retention risk?",
           "options": [
-            "To reward employees for long service; the retention risk is that some employees stay beyond their productive years solely to vest",
-            "To align senior employees' financial interests with long-term business performance by granting equity or cash instruments that vest over time; the retention risk is that employees leave once a tranche vests, creating cyclical attrition",
-            "To supplement pension contributions for senior employees; the risk is tax complexity",
-            "To compensate for below-market base salaries; the risk is that the LTIP does not vest if business targets are missed"
+            {
+              "text": "To reward employees for sustained long service and institutional loyalty; the primary retention risk is that some employees remain in roles beyond their productive peak solely to reach a vesting milestone rather than because they are adding genuine value",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To align senior employees' financial interests with long-term business performance by granting equity or cash instruments that vest over time; the primary retention risk is that cyclical attrition spikes occur as each vesting tranche is released",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To supplement pension and retirement contributions for senior employees as a tax-efficient deferred compensation mechanism; the primary risk is that tax complexity deters participation and reduces the plan's effectiveness as a retention instrument",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To compensate for below-market base salaries by offering significant long-term upside; the primary retention risk is that the LTIP does not vest if business performance targets are missed, making it an unreliable retention mechanism in downturns",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2777,10 +2885,22 @@
           "difficulty": "medium",
           "question": "The finance team asks HR to cut the L&D budget by 40% to meet a cost reduction target. The L&D plan supports three business-critical capability gaps identified in the strategic workforce plan. How do you respond?",
           "options": [
-            "Agree to the cut \u2014 finance decisions take precedence over HR plans",
-            "Protect the full L&D budget \u2014 workforce capability is a strategic investment",
-            "Quantify the business risk of each capability gap, calculate the cost of the cut against the risk of the unmet capability needs, propose a prioritised reduced plan that protects the highest-risk investments, and present a joined-up view to the CFO and CHRO rather than accepting a blanket cut",
-            "Move the L&D spend to department budgets to take it off the HR cost line"
+            {
+              "text": "Agree to the cut since Finance decisions on budget allocation take precedence over HR's internal plans and demonstrating fiscal discipline during a cost reduction exercise is an important part of HR's organisational credibility with leadership",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Protect the full L&D budget in its entirety and present the workforce plan as the business case, since capability investment is a strategic commitment that should not be subject to the same cost reduction logic as discretionary operational spend",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Quantify the business risk of each capability gap, calculate the cost of unmet development needs against the saving proposed, offer a prioritised reduced plan protecting the highest-risk investments, and present a joined-up case to the CFO and CHRO",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Negotiate to move the L&D spend to individual business unit budgets rather than the central HR budget line, keeping the total investment intact while technically accommodating the Finance request to reduce the central HR cost base",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -2790,10 +2910,22 @@
           "difficulty": "medium",
           "question": "What is the primary limitation of using employee engagement survey scores as the sole measure of organisational health?",
           "options": [
-            "Engagement surveys are too expensive to run frequently enough to be useful",
-            "Survey scores measure sentiment at a point in time and can be influenced by recent events, do not capture performance or retention risk, and can mask important sub-group differences when only reported at an aggregate level",
-            "Employees rarely complete engagement surveys honestly when they know their manager will see the results",
-            "Engagement is not a reliable predictor of business performance"
+            {
+              "text": "Employee engagement surveys are too expensive to commission and administer frequently enough to provide useful trend data, meaning organisations that rely on them are typically working from information that is 12 or more months out of date",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Survey scores measure sentiment at a point in time, can be influenced by recent events, do not capture performance or retention risk, and can mask important sub-group differences when reported only at an aggregate organisational level",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Employees rarely answer engagement surveys honestly when they believe their manager or business unit leadership will see the results, making the data unreliable in cultures where psychological safety is low and candour feels professionally risky",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Engagement is not a reliable predictor of business performance because highly engaged employees in dysfunctional organisations can produce poor commercial outcomes while disengaged employees in well-run businesses sometimes perform at a high level",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2803,10 +2935,22 @@
           "difficulty": "hard",
           "question": "A new CEO announces they want to move to a fully variable compensation model where all employees have a significant portion of pay at risk tied to company performance. HR is asked to design and implement this within six months. What are the critical risks you must surface before design begins?",
           "options": [
-            "The six-month timeline is too short \u2014 recommend 12 months",
-            "Surface legal risks around varying existing contractual terms, the behavioural impact of high pay-at-risk on psychological safety and risk-taking, the potential for the model to disadvantage lower-paid employees disproportionately, the need for transparent and credible performance metrics, and the likelihood of increased attrition during transition \u2014 all before design decisions are made",
-            "Conduct a market benchmarking exercise to validate the model against industry practice",
-            "Model the financial cost of the variable pay pool under different performance scenarios"
+            {
+              "text": "The six-month implementation timeline is the primary risk since designing, consulting on, and implementing a fundamental compensation model change across the organisation cannot be done responsibly within that compressed period",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Surface the legal risks of varying existing contractual terms without consent, the impact on lower-paid employees of placing income at risk, the psychological safety implications of pay uncertainty, the need for credible metrics, and the likely attrition during transition",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Commission an immediate market benchmarking exercise to establish whether fully variable compensation is used by competitors and whether the model is likely to make the organisation more or less attractive in the relevant talent markets",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Model the financial cost of the variable pay pool under different performance scenarios to establish the maximum and minimum total compensation liability and present those figures to the CEO and CFO before any design work begins",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2816,10 +2960,22 @@
           "difficulty": "medium",
           "question": "What is the difference between voluntary and involuntary attrition, and why does the distinction matter for talent management?",
           "options": [
-            "Voluntary attrition is managed exits; involuntary attrition is unmanaged. The distinction affects HR workload planning",
-            "Voluntary attrition reflects employees choosing to leave; involuntary is employer-initiated. The distinction matters because voluntary attrition \u2014 especially among high performers \u2014 signals something about the employee experience, culture, or leadership, while involuntary attrition reflects the organisation's performance management health",
-            "The distinction is primarily a payroll and benefits administration consideration",
-            "Voluntary attrition is measured quarterly; involuntary attrition is measured annually"
+            {
+              "text": "Voluntary attrition refers to managed exits planned in advance with HR involvement; involuntary attrition refers to unplanned departures that catch the organisation off guard, and the distinction primarily affects workforce planning and backfill timing",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Voluntary attrition reflects employees choosing to leave; involuntary is employer-initiated. The distinction matters because voluntary attrition \u2014 especially among high performers \u2014 signals something about the employee experience, while involuntary reflects the health of performance management",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The distinction is primarily relevant for payroll and benefits administration since voluntary and involuntary exits trigger different notice period requirements, final pay calculations, and statutory entitlement obligations that HR must manage correctly",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Voluntary attrition is measured monthly and drives short-term resourcing decisions; involuntary attrition is measured annually and informs longer-term organisational design decisions about team structure and future capability requirements",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2827,12 +2983,24 @@
           "id": "S4Q014",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "A manager rates an employee as exceptional (top 5%) but when asked to provide specific examples of exceptional performance, cannot give any beyond vague statements like they just get it. How do you handle this in a calibration session?",
+          "question": "A manager rates an employee as exceptional (top 5%) but when asked to provide specific examples of exceptional performance, cannot give any beyond vague statements like 'they just get it.' How do you handle this in a calibration session?",
           "options": [
-            "Accept the rating \u2014 managers know their teams and should be trusted",
-            "Challenge the rating constructively in the session, ask for specific behavioural evidence, and if none can be provided, apply the calibration group's standard that ratings must be evidenced \u2014 downgrading where the evidence does not support the top rating",
-            "Accept the rating but note the lack of evidence in the calibration record",
-            "Ask the employee to provide a self-assessment to supplement the manager's view"
+            {
+              "text": "Accept the rating since managers know their teams far better than HR does and the inability to articulate specific examples in a group calibration session does not mean the assessment is inaccurate or that the employee does not deserve the rating",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Challenge the rating constructively in the session, ask for specific behavioural examples, and if none can be provided apply the calibration standard that ratings must be evidence-based \u2014 adjusting downward where the evidence does not support the exceptional designation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Accept the rating for the current cycle but note the absence of specific supporting evidence in the calibration record, requiring the manager to provide documented examples before the rating can be confirmed in the final talent output",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Request that the employee complete a detailed self-assessment to supplement the manager's view, using the self-assessment to identify the specific achievements and behaviours that support the exceptional rating the manager has given",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -2842,10 +3010,22 @@
           "difficulty": "hard",
           "question": "What is the concept of pay transparency and what are the primary arguments for and against it in an organisational context?",
           "options": [
-            "Pay transparency means publishing all salary data publicly. It is argued to improve equity and reduce negotiation gaps but opposed due to privacy concerns and potential team conflict",
-            "Pay transparency refers to sharing pay band information with employees. Arguments for include reducing perceived inequity and improving trust; arguments against include risk of creating pay compression anxiety and increased administrative burden managing exceptions",
-            "Pay transparency is a legal requirement in all OECD countries. The debate is about implementation, not principle",
-            "Pay transparency is the same as pay equity \u2014 both refer to eliminating gender and race pay gaps"
+            {
+              "text": "Pay transparency means disclosing all individual salaries publicly to all employees and externally; it is argued to improve equity and eliminate pay gaps but opposed primarily because of concerns about employee privacy and the potential for interpersonal conflict",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Pay transparency refers to making pay ranges and the logic behind pay decisions visible to employees; arguments for include reduced perceived inequity and improved trust, arguments against include pay compression anxiety and the complexity of managing exceptions at scale",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Pay transparency is a legal requirement in all OECD member countries following recent equal pay legislation; the debate among HR practitioners is about implementation approach and timing rather than whether transparency is an appropriate principle",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Pay transparency and pay equity are equivalent concepts used interchangeably, both referring to the systematic elimination of gender, ethnicity, and other demographic pay gaps through regular compensation auditing and evidenced remediation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2855,10 +3035,22 @@
           "difficulty": "hard",
           "question": "Your organisation's onboarding satisfaction scores have declined for three consecutive quarters despite no change to the onboarding programme. New hire turnover in the first six months has increased. What is the most rigorous analytical approach to diagnosing the root cause?",
           "options": [
-            "Redesign the onboarding programme \u2014 the content has clearly become stale",
-            "Segment the data by hiring cohort, hiring manager, business unit, and role level to identify whether the decline is uniform or concentrated \u2014 then conduct structured new hire interviews to understand which specific onboarding elements are failing and whether external factors such as role clarity, manager quality, or team dynamics are the real drivers",
-            "Increase the length of the onboarding programme to provide more support",
-            "Survey existing employees about their onboarding experience retrospectively"
+            {
+              "text": "Redesign the onboarding programme since three consecutive quarters of decline while the programme itself remains unchanged is clear evidence that the content and format have become outdated and are no longer meeting new hire expectations",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Segment the data by cohort, hiring manager, business unit, and role level to identify whether the decline is uniform or concentrated, then conduct structured new hire interviews to understand which specific elements are failing and what external factors may be driving early attrition",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Increase the length of the onboarding programme by adding additional content and touchpoints across the first 90 days, since the decline in satisfaction suggests new hires are not receiving sufficient support and structured guidance during the critical early employment period",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Survey employees who have been with the organisation for 12 to 24 months about their retrospective onboarding experience, using the longer-tenured employees as a control group to establish which onboarding elements have declined in quality over recent cohorts",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2868,10 +3060,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a salary band structure in compensation management?",
           "options": [
-            "To limit the maximum salary the organisation will pay for any given role",
-            "To create a framework that supports internal pay equity, ensures external competitiveness within a defined range, and provides a structure for pay progression that is transparent and consistently applied",
-            "To make annual pay review administration more efficient",
-            "To ensure compliance with national minimum wage legislation"
+            {
+              "text": "To establish an absolute ceiling on the maximum salary the organisation will pay for any role regardless of individual performance, market movement, or retention pressures, providing a hard limit that maintains compensation cost predictability",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To create a framework that supports internal pay equity, maintains external market competitiveness within a defined range, and provides a transparent structure for pay progression that can be consistently applied and explained to employees",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To make the annual pay review administration process more efficient by reducing the number of individual compensation decisions that require senior approval and creating a self-service framework managers can apply within defined parameters",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To ensure the organisation meets its statutory obligations under national minimum wage legislation by establishing grade-level pay floors that are set above the legal minimum and reviewed annually in line with legislative changes",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2881,10 +3085,22 @@
           "difficulty": "medium",
           "question": "A business leader wants to recognise an entire team with a special bonus for delivering a high-stakes project under pressure. The bonus would be outside the normal cycle and above the approved budget. How do you advise?",
           "options": [
-            "Decline \u2014 out-of-cycle bonuses set a precedent and are outside policy",
-            "Support the bonus \u2014 recognising team effort is important for culture",
-            "Explore the recognition intent, advise on the right mechanism \u2014 whether a formal bonus, a non-monetary team recognition, or an accelerated in-cycle award \u2014 ensure proper approval authority is sought, and document the decision with clear criteria so it does not become an informal precedent",
-            "Recommend individual performance letters as a non-monetary alternative"
+            {
+              "text": "Decline to support the bonus since out-of-cycle awards above the approved budget require a budget exception that Finance is unlikely to approve and HR should not create expectations with the team before financial approval is formally confirmed",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Support the bonus without qualification since recognising exceptional team effort is a cultural investment that pays back in engagement and retention and the cost of the recognition is small relative to the value the project delivered to the business",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Explore the recognition intent, advise on the right mechanism whether formal bonus, non-monetary recognition, or accelerated in-cycle award, ensure proper approval authority is obtained, and document the decision with clear criteria to prevent it becoming an informal precedent",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend individual performance letters of recognition to each team member as a non-monetary alternative that formally acknowledges the contribution without requiring a budget exception or creating a precedent for future out-of-cycle financial awards",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -2894,10 +3110,22 @@
           "difficulty": "hard",
           "question": "What does skills-based talent management mean, and how does it differ from role-based talent management?",
           "options": [
-            "Skills-based talent management focuses on technical skills; role-based focuses on leadership behaviours",
-            "Skills-based talent management organises workforce planning, hiring, development, and deployment around specific skill sets rather than fixed job roles, enabling more fluid allocation of talent to work \u2014 as opposed to role-based management which anchors people to static job descriptions",
-            "Skills-based talent management uses competency frameworks; role-based uses job families",
-            "They are equivalent approaches with different terminology used in different industries"
+            {
+              "text": "Skills-based talent management focuses on technical and hard skills; role-based management incorporates leadership behaviours and cultural competencies \u2014 the distinction matters for how development programmes are designed and measured across the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Skills-based management organises workforce planning, hiring, development, and deployment around specific skill sets rather than fixed job roles, enabling more fluid allocation of talent to work as business needs evolve over time",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Skills-based talent management uses formal competency frameworks to assess and develop employees; role-based management uses job families and grade levels as the primary organising principle for people decisions across the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The two approaches are equivalent in practice with terminology varying by industry sector \u2014 technology companies tend to use skills-based language while professional services firms use role-based language to describe the same underlying talent philosophy",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2905,12 +3133,24 @@
           "id": "S4Q020",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You are presenting talent review outcomes to the executive team. One executive asks why a candidate they personally sponsored for the high-potential list was not included. The candidate's data clearly shows they do not meet the criteria. How do you handle this?",
+          "question": "You are presenting talent review outcomes to the executive team. One executive asks why a candidate they personally sponsored for the high-potential list was not included. The candidate's data clearly shows they do not meet the criteria. What is your response?",
           "options": [
-            "Add the candidate to the list \u2014 executive sponsorship is a valid talent indicator",
-            "Agree to review the candidate again after the meeting",
-            "Acknowledge the executive's view directly, present the specific evidence against the criteria transparently, offer to discuss what development would close the gap and what timeline is realistic \u2014 holding the data-based decision while treating the executive's input with respect",
-            "Include the candidate in a separate emerging talent category to satisfy the executive without changing the high-potential criteria"
+            {
+              "text": "Add the candidate to the high-potential list since executive sponsorship is itself a meaningful talent signal and the executive's direct knowledge of the candidate's capabilities may be capturing dimensions the formal assessment criteria do not fully reflect",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Agree to review the candidate again after the meeting with the executive's input incorporated, presenting a revised assessment at a follow-up session before the final talent output is formally signed off and distributed",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Acknowledge the executive's view with respect, present the specific evidence against the criteria transparently, offer to discuss what development would realistically close the gap and in what timeframe, and hold the evidence-based decision",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Create a separate emerging talent category for candidates who are not yet high-potential but have senior sponsorship, allowing the executive's candidate to be recognised without changing the high-potential criteria or the integrity of the core list",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -2920,10 +3160,22 @@
           "difficulty": "easy",
           "question": "What does the term employee value proposition (EVP) describe?",
           "options": [
-            "The total financial cost of an employee to the organisation",
-            "The set of unique benefits, opportunities, and experiences an employer offers in exchange for an employee's skills, contributions, and commitment",
-            "The contractual terms offered to a new hire during the offer stage",
-            "The performance targets set for an employee during the annual review cycle"
+            {
+              "text": "The total annual financial cost of employing an individual calculated as the sum of base salary, employer social contributions, benefits cost, and the allocated overhead associated with each headcount position in the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The complete set of benefits, opportunities, culture, and experiences an employer offers in exchange for an employee's skills, time, and commitment \u2014 the reason an employee chooses and stays with a particular employer over alternatives",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The specific contractual terms and total compensation package offered to a new hire at the point of offer acceptance, including salary, bonus target, benefits, and any one-time payments such as signing bonuses or relocation allowances",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The annual performance targets and contribution expectations set for an employee during the objective-setting cycle, defining the value the organisation expects the employee to deliver in exchange for their total compensation package",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2933,10 +3185,22 @@
           "difficulty": "medium",
           "question": "Employee engagement scores in one business unit are 12 points below the company average, but the unit is hitting all its commercial targets. The business unit leader dismisses the scores, saying the team performs well and engagement surveys are not meaningful. How do you respond?",
           "options": [
-            "Agree with the leader \u2014 commercial performance is the ultimate measure of team health",
-            "Accept the dismissal and monitor the situation next year",
-            "Acknowledge the commercial performance but present the evidence that sustained low engagement is a leading indicator of higher attrition, knowledge loss, and performance risk \u2014 particularly for teams operating in high-skill domains \u2014 and recommend targeted action rather than a full engagement programme",
-            "Escalate to the CHRO to put the business unit under formal focus"
+            {
+              "text": "Agree with the leader's assessment that commercial performance is the primary indicator of team health, since a team that consistently delivers results is demonstrably more effective than engagement scores suggest and HR should be led by outcomes not sentiment data",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Accept the dismissal for the current cycle and include the engagement gap in the next annual people risk report, ensuring it is formally visible to senior leadership even if the immediate business leader has chosen not to prioritise it",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Acknowledge the commercial performance but present evidence that sustained low engagement is a leading indicator of higher attrition, knowledge risk, and performance decline \u2014 recommending targeted action without imposing a full engagement programme",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate the engagement gap to the CHRO as a formal organisational risk requiring executive attention, since a business unit 12 points below the company average on engagement while hitting targets is creating a people risk that cannot be managed at the HRBP level",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -2946,10 +3210,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a total compensation statement provided to employees?",
           "options": [
-            "To meet regulatory disclosure requirements in jurisdictions with pay transparency legislation",
-            "To make the full value of the employment package visible to employees \u2014 including benefits, pension, insurance, and non-cash elements \u2014 improving perceived value of total remuneration and reducing attrition driven by incomplete salary comparisons",
-            "To provide a basis for salary negotiations during the annual review",
-            "To document the compensation package agreed at hire for legal purposes"
+            {
+              "text": "To meet regulatory disclosure requirements in jurisdictions that have enacted pay transparency legislation requiring employers to provide employees with a detailed annual breakdown of their total remuneration package",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To make the full value of the employment package visible to employees including benefits, pension, and insurance contributions, improving perceived value and reducing attrition driven by employees comparing only base salary to external offers",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To provide employees with a documented basis for salary negotiation during the annual review cycle, ensuring compensation conversations are grounded in a shared understanding of current package value rather than assumptions or partial information",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To create a formal legal record of the compensation package agreed with an employee at each review cycle, providing documentation that can be referenced in the event of a pay dispute or employment tribunal claim against the organisation",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2959,10 +3235,22 @@
           "difficulty": "hard",
           "question": "Your organisation uses a forced distribution performance rating model where exactly 10% of employees must be rated at the bottom tier. A manager tells you they genuinely do not have any bottom-tier performers on their team and refuses to apply the distribution. What is your advice?",
           "options": [
-            "Enforce the distribution \u2014 the model is company policy and must be applied consistently",
-            "Agree with the manager \u2014 forced distribution is widely discredited and should not be applied if it misrepresents performance",
-            "Acknowledge the tension, present the manager with the calibration evidence for their team relative to peers, advise on the company's official position, and \u2014 if the team's performance genuinely does not support bottom-tier ratings \u2014 escalate the concern about the model's application to HR leadership rather than asking the manager to falsify ratings",
-            "Apply the distribution by rating the lowest performer on the team at the bottom tier regardless of their absolute performance level"
+            {
+              "text": "Enforce the distribution since it is company policy applied consistently across all teams and a manager who refuses to apply it creates a fairness problem for the broader organisation by exempting their team from a framework everyone else must follow",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Agree with the manager that forced distribution is a discredited approach and support their refusal, since HR should not be asking managers to falsify performance assessments to meet a distributional target that does not reflect the team's actual performance reality",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Acknowledge the tension, use calibration evidence to assess the team's performance relative to peers, advise on the company's position, and if the evidence genuinely does not support bottom-tier ratings escalate the concern about the model rather than asking the manager to falsify ratings",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Apply the bottom-tier rating to the lowest performer on the team regardless of their absolute performance level, since the model exists to create performance differentiation and even in a strong team someone must occupy the lower end of the required distribution",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 2
         },
@@ -2972,10 +3260,22 @@
           "difficulty": "medium",
           "question": "What is the primary risk of setting overly aggressive short-term performance metrics in a variable pay plan?",
           "options": [
-            "Employees will feel the targets are unachievable and disengage from the plan",
-            "Short-term metric pressure can incentivise behaviours that optimise for immediate results at the expense of longer-term value, risk management, customer relationships, and team development",
-            "The plan will be too expensive to fund if all employees hit their targets",
-            "Performance metrics become difficult to calibrate across different business units"
+            {
+              "text": "Employees will perceive the targets as unachievable and disengage from the plan entirely, reducing its effectiveness as a motivational tool and its value as a mechanism for aligning individual effort with business outcomes",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Short-term metric pressure can incentivise behaviours that optimise for immediate results at the expense of longer-term value creation, risk management, customer relationship quality, and investment in team development",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The variable pay pool will become unaffordably large if targets are set aggressively and all employees achieve them simultaneously, creating a financial liability that the business has not adequately stress-tested in its compensation planning cycle",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Performance metrics become difficult to calibrate consistently across business units with different operating contexts, creating a perception of inequity among employees whose targets are objectively harder to achieve than those of colleagues in other functions",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2985,10 +3285,22 @@
           "difficulty": "medium",
           "question": "Three of your top performers have recently been passed over for promotion and are now showing signs of disengagement. The business has a policy of minimum two years in role before promotion eligibility. How do you advise the business?",
           "options": [
-            "Enforce the policy \u2014 exceptions undermine consistency and fairness",
-            "Ignore the policy in this case \u2014 losing top performers is too costly",
-            "Assess whether the two-year rule is creating a retention risk that outweighs the consistency benefit, work with the business to explore whether the policy has a legitimate rationale or is an administrative default, and recommend a structured exception process for demonstrably promotion-ready talent rather than either ignoring or blindly applying the rule",
-            "Recommend retention bonuses as an alternative to promotion"
+            {
+              "text": "Enforce the policy consistently across all cases since promotional policies exist to ensure fairness and creating exceptions for individuals who display disengagement as a response to a policy decision rewards behaviour that HR should not encourage",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Ignore the policy in these cases since the retention risk posed by losing three proven high performers clearly outweighs the consistency benefit of applying a two-year minimum that may not have been designed with this specific situation in mind",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Assess whether the two-year rule has a legitimate rationale or is an administrative default, explore a structured exception process for demonstrably promotion-ready talent, and make a recommendation that balances policy integrity with genuine retention risk",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend retention bonuses tied to 12-month service commitments as an alternative to early promotion, addressing the immediate attrition risk without requiring a policy exception and buying time for the employees to meet the two-year threshold naturally",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -2998,10 +3310,22 @@
           "difficulty": "hard",
           "question": "What does it mean to benchmark compensation at the 50th, 75th, or 90th percentile, and when would targeting each level be appropriate?",
           "options": [
-            "These percentiles represent pay grades within a salary band; the choice depends on employee performance",
-            "The percentile target indicates how the organisation's pay compares to the market distribution \u2014 50th is median (pay to market), 75th is a premium strategy for talent attraction, 90th is reserved for highly competitive or scarce roles. The choice depends on the organisation's talent strategy, role criticality, and budget",
-            "Targeting the 90th percentile is always best practice to attract top talent",
-            "Percentile benchmarking only applies to base salary and is not relevant for total compensation"
+            {
+              "text": "These percentiles represent fixed pay grades within the internal salary band structure; the choice of which percentile to target depends on an employee's performance rating and their years of experience in the current role",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The percentile target indicates where the organisation's pay sits relative to the market distribution \u2014 50th is median, 75th is a premium talent strategy, 90th is reserved for highly scarce or strategically critical roles where market competition is intense",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Targeting the 90th percentile is always the preferred practice since it maximises talent attraction across all role types and the additional cost of higher pay is consistently offset by the performance uplift that comes from hiring and retaining top-quartile talent",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Percentile benchmarking applies exclusively to base salary decisions and is not relevant to total compensation since variable pay, benefits, and non-monetary elements cannot be meaningfully compared using market percentile data across organisations",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -3011,10 +3335,22 @@
           "difficulty": "hard",
           "question": "You are asked to design a retention strategy for a GCC that has been experiencing 28% annual attrition in its first year of operation. Initial exit interview data cites better compensation elsewhere as the primary reason. What is your diagnostic and design approach?",
           "options": [
-            "Conduct a market compensation benchmarking study and adjust all salaries upward",
-            "Treat compensation as one potential cause rather than the confirmed cause \u2014 analyse whether attrition is concentrated in specific roles, managers, or cohorts, cross-reference exit data with engagement and tenure data, validate whether compensation is genuinely non-competitive or whether other factors are driving exits and compensation is a socially safe reason to cite, then design a targeted multi-lever retention strategy",
-            "Introduce a retention bonus scheme tied to 12-month service commitments",
-            "Benchmark against local competitors and match the top quartile for all roles"
+            {
+              "text": "Conduct an immediate market compensation benchmarking study and adjust all salaries to be competitive before taking any other retention action, since exit interview data consistently citing compensation as the primary reason should be treated as a reliable and actionable signal",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Treat compensation as one potential cause rather than the confirmed cause, analyse whether attrition concentrates in specific roles or managers, cross-reference exit data with engagement data, validate whether pay is genuinely non-competitive, then design a targeted multi-lever strategy",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Introduce a retention bonus scheme tied to 12-month service commitments for all employees, creating an immediate financial incentive to stay while the underlying causes of attrition are investigated and addressed through longer-term structural changes",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Benchmark compensation against the top quartile in the local market for all roles and move all salaries to that level as the most straightforward and evidence-based response to the competitive pay concern raised consistently in exit interviews",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3024,10 +3360,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of an onboarding programme from a talent management perspective, beyond administrative induction?",
           "options": [
-            "To ensure new hires complete all mandatory compliance training within their first week",
-            "To accelerate time-to-productivity, build a sense of belonging and connection to the organisation's culture and purpose, and reduce early attrition by ensuring new hires have the relationships, clarity, and support to perform effectively from the start",
-            "To provide new hires with a comprehensive overview of all HR policies and procedures",
-            "To assess whether new hires are a cultural fit during their probationary period"
+            {
+              "text": "To ensure new hires complete all mandatory compliance and regulatory training within their first week of employment, protecting the organisation from the legal and regulatory risk of employees performing roles without the required certifications",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To accelerate time-to-productivity, build belonging and connection to culture and purpose, and reduce early attrition by ensuring new hires have the relationships, role clarity, and support they need to perform effectively from the start",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To provide new hires with a comprehensive overview of all HR policies and employee benefits, ensuring they understand their rights and obligations from day one and have access to the information they need to manage their employment experience",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To assess whether new hires are genuinely a cultural and performance fit during their probationary period, providing structured touchpoints at which the organisation can make an informed decision about confirming or ending the employment relationship",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3037,10 +3385,22 @@
           "difficulty": "medium",
           "question": "A senior leader is lobbying to exclude their team from a company-wide salary freeze, arguing their team's roles are market-scarce and they will lose people. Every other business unit is subject to the freeze. What is your position?",
           "options": [
-            "Support the exclusion \u2014 market scarcity is a valid business reason",
-            "Refuse \u2014 policy exceptions undermine the integrity of the freeze",
-            "Assess the market data for the specific roles claimed to be scarce, evaluate the attrition risk against the precedent risk of a visible exception, recommend a structured exception process through the right governance channel if the case is legitimate \u2014 and be consistent in applying the same standard to any other leader who requests an exception",
-            "Recommend a non-monetary retention package instead of a pay exception"
+            {
+              "text": "Support the exclusion since market scarcity is a legitimate and well-documented business reason for treating a specific role category differently, and the risk of losing scarce talent during a freeze justifies the exception without requiring extensive governance",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refuse the exception as a matter of policy consistency since a salary freeze that applies to some business units but not others based on lobbying effort rather than objective criteria undermines the fairness of the freeze across the organisation",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Assess the market data for the specific roles claimed to be scarce, evaluate the retention risk against the precedent risk of a visible exception, recommend a structured exception process through appropriate governance, and apply the same standard to any future request",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend a non-monetary retention package such as development opportunities, flexible working, or enhanced benefits as an alternative that addresses the retention concern without requiring a departure from the salary freeze policy",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -3050,10 +3410,22 @@
           "difficulty": "easy",
           "question": "What is the difference between a merit increase and a cost of living adjustment (COLA)?",
           "options": [
-            "Merit increases are given annually; COLAs are given quarterly",
-            "A merit increase rewards individual performance and contribution; a COLA adjusts pay to maintain purchasing power in line with inflation and is not linked to individual performance",
-            "Merit increases apply to base salary; COLAs apply only to allowances and benefits",
-            "They are equivalent terms used differently in different countries"
+            {
+              "text": "Merit increases are awarded annually as part of the performance review cycle; COLAs are awarded quarterly in response to inflation data published by the relevant national statistics authority for each operating jurisdiction",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A merit increase rewards individual performance and contribution above the baseline; a COLA adjusts pay to maintain purchasing power in line with inflation and is applied uniformly regardless of individual performance or contribution",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Merit increases apply to base salary only; COLAs apply to allowances, benefits, and non-salary compensation elements rather than to base pay, which is typically adjusted only through the formal annual merit review process",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Merit increases and COLAs are equivalent mechanisms used by different organisations to describe the same annual pay review adjustment, with the terminology varying by sector and the size of the company's employee population",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3063,10 +3435,22 @@
           "difficulty": "hard",
           "question": "Your organisation's learning and development function has historically focused on classroom training. You are asked to modernise the L&D strategy for a 5,000-person global workforce. What are the three most critical strategic shifts you would recommend?",
           "options": [
-            "Move all training online, introduce a learning management system, and reduce L&D headcount",
-            "Shift from scheduled event-based learning to embedded continuous learning; move from function-defined training catalogues to business-need-driven capability investments; and build manager capability as the primary vehicle for day-to-day development rather than relying on formal programmes",
-            "Invest in a new LMS platform, create a mentoring programme, and introduce mandatory learning hours for all employees",
-            "Partner with external universities to provide accredited programmes for all employees"
+            {
+              "text": "Move all training delivery online to reduce costs, implement a single global learning management system to track completion, and reduce L&D headcount by transitioning content creation to external vendors who can produce content more efficiently",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Shift from event-based to embedded continuous learning; move from function-defined catalogues to business-need-driven capability investment; and build manager capability as the primary vehicle for day-to-day development rather than formal programmes",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Invest in a new learning management system, create a structured mentoring programme pairing senior leaders with high-potentials, and introduce mandatory minimum annual learning hours for all employees to embed a learning culture",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Partner with two or three leading universities to provide accredited degree and certificate programmes for all employees, creating a tangible externally recognised credential that enhances both individual development and the organisation's employer brand",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3076,10 +3460,22 @@
           "difficulty": "medium",
           "question": "What is career pathing and why has its importance increased in the current talent market?",
           "options": [
-            "A tool for planning individual training calendars \u2014 important because employees want more structured development",
-            "A framework that makes visible the possible trajectories \u2014 vertical, lateral, and cross-functional \u2014 an employee might take within an organisation, and the capabilities required at each step; its importance has increased because employees in a tighter talent market increasingly choose organisations that offer visible growth and clear development stories over those that do not",
-            "A succession planning method for identifying high-potential employees \u2014 important because leadership pipelines are thinning",
-            "A compensation tool linking pay bands to career levels \u2014 important for pay equity compliance"
+            {
+              "text": "A structured tool for planning individual annual training and development calendars, which has become more important as employees expect their employers to invest in their skill development in response to the pace of technological and market change",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A framework that makes visible the possible trajectories \u2014 vertical, lateral, and cross-functional \u2014 available to employees within an organisation, increasingly important because employees choose employers that offer visible growth and clear development narratives",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A succession planning methodology for identifying and developing high-potential employees for future leadership roles, which has become more critical as leadership pipelines have thinned following the volume of senior departures since 2020",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A compensation tool linking pay band progression to defined career levels and capability milestones, increasingly important for pay equity compliance as regulators look more closely at the consistency of pay progression across demographic groups",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -3089,10 +3485,22 @@
           "difficulty": "medium",
           "question": "You receive exit interview feedback from five departing employees in the same team all citing their manager as the primary reason for leaving. The manager is not aware. The manager's line manager says the exits are coincidental. How do you proceed?",
           "options": [
-            "Accept the line manager's assessment \u2014 five departures may be coincidental",
-            "Treat a cluster of five manager-attributed exits as a significant signal, present the anonymised pattern to the business unit leader and the manager's line manager with the data, recommend a structured diagnostic conversation with the manager, and if the pattern is confirmed, design a specific intervention rather than a generic management development programme",
-            "Share the exit interview feedback directly with the manager",
-            "Wait for the next engagement survey to see if the pattern is confirmed before acting"
+            {
+              "text": "Accept the line manager's assessment that the exits are coincidental since a sample of five is too small to draw systemic conclusions and the line manager who has direct oversight is better placed than HR to assess whether a pattern genuinely exists",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Treat five manager-attributed exits as a significant signal, present the anonymised pattern to the business unit leader with the exit data, recommend a structured diagnostic conversation with the manager, and design a specific intervention if the pattern is confirmed",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Share the exit interview feedback directly with the manager since they are entitled to understand the reasons their team members gave for leaving and direct feedback is more developmental than a filtered summary delivered through the management chain",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Wait for the results of the next employee engagement survey to establish whether the management concern is confirmed by a broader data set before taking action, since engagement survey data from a larger sample is more statistically reliable than five exit interviews",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -3102,10 +3510,22 @@
           "difficulty": "hard",
           "question": "What is the concept of return on human capital investment (ROHCI) and what are the challenges of measuring it?",
           "options": [
-            "A ratio of HR department cost to total employee headcount; difficult to measure because HR cost allocation is inconsistent across organisations",
-            "A framework for quantifying the business value generated by people investments \u2014 including learning, development, and capability building \u2014 relative to their cost; the challenge is attributing business outcomes to specific people interventions when many other variables simultaneously affect performance",
-            "The relationship between employee tenure and productivity; difficult to measure because productivity definitions vary by role",
-            "A metric tracking the ratio of internal promotions to external hires; challenging because internal mobility data is often incomplete"
+            {
+              "text": "A simple ratio of HR department operating cost to total headcount indicating how efficiently the HR function is resourced; the measurement challenge is that HR cost allocation methodologies vary significantly across organisations making benchmarking unreliable",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A framework for quantifying the business value generated by people investments relative to their cost; the core challenge is attributing business outcomes to specific HR interventions when multiple variables simultaneously influence performance",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A metric tracking the relationship between employee tenure and individual productivity within specific role categories; the challenge is that productivity definitions and data availability vary too significantly across roles to enable consistent calculation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A ratio comparing internal promotion rates to external hiring volumes as a measure of how effectively the organisation develops its own talent; the challenge is that the right balance between internal development and external infusion varies by strategy and context",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         }
