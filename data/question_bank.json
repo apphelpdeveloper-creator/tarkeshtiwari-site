@@ -898,10 +898,22 @@
           "difficulty": "medium",
           "question": "An HR Operations team is receiving repeated complaints from employees that tickets are being closed without resolution. Which of the following root causes is most likely to be systemic rather than individual?",
           "options": [
-            "One specialist consistently closing tickets prematurely",
-            "SLA targets measured on ticket closure speed rather than resolution quality",
-            "Employees raising tickets incorrectly categorised by the self-service portal",
-            "A recent increase in headcount creating temporary backlog"
+            {
+              "text": "One specialist consistently closing tickets prematurely to manage their personal workload, suggesting an individual performance issue that should be addressed through direct line management rather than any structural intervention at the team level",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "SLA targets measured on ticket closure speed rather than resolution quality, creating a systemic incentive for the whole team to close tickets quickly regardless of whether the underlying issue has actually been resolved for the employee",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Employees raising tickets with incorrect categorisation through the self-service portal, resulting in queries being routed to the wrong specialist and resolved against the wrong criteria without anyone in the team identifying the misalignment",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A recent surge in headcount creating a temporary volume backlog that is forcing the team to process tickets faster than quality standards allow, which will naturally resolve itself once additional recruitment catches up with the increased demand",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -911,10 +923,22 @@
           "difficulty": "hard",
           "question": "Your HR Operations team is transitioning from a regional delivery model to a centralised global service centre. Stakeholders in three countries are resisting, claiming local nuance will be lost. How do you manage this?",
           "options": [
-            "Proceed with the global model \u2014 local resistance to centralisation is a standard change management challenge to be managed through communication",
-            "Pause the transition and commission a local needs assessment in each country before proceeding",
-            "Acknowledge the concern as legitimate, map specific local requirements that must be preserved, build those into the global model design, and establish local liaison points within the central team",
-            "Offer each country the option to remain on a regional model if they fund it from their own budget"
+            {
+              "text": "Proceed with the global model on the agreed timeline and manage local resistance through a structured change communication programme, since stakeholder reluctance to centralisation is a predictable and manageable feature of shared services transitions",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Pause the transition and commission a formal local needs assessment in each of the three resisting countries before the design is finalised, since proceeding without a full picture of local requirements risks building a model that fails in practice",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Acknowledge the concern as legitimate, map the specific local requirements that must be preserved, build those requirements into the global model design, and establish local liaison points within the central team to maintain continuity and trust",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Offer each resisting country the option to fund and maintain their own regional model if they can demonstrate a business case, giving local stakeholders ownership of the decision rather than imposing a model they have indicated they do not want",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 2
         },
@@ -924,10 +948,22 @@
           "difficulty": "easy",
           "question": "What is the primary purpose of a service level agreement (SLA) in an HR Operations context?",
           "options": [
-            "To set legally binding commitments with employees about HR response times",
-            "To establish agreed response and resolution timeframes between HR Operations and its internal customers, creating accountability and enabling performance measurement",
-            "To document the scope of HR services excluded from the shared service model",
-            "To provide a basis for charging business units for HR services consumed"
+            {
+              "text": "To establish legally binding contractual commitments between HR and individual employees about the maximum time HR will take to respond to any query they raise through the formal HR contact channels available to them",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To establish agreed response and resolution timeframes between HR Operations and its internal customers, creating mutual accountability and enabling consistent measurement of service performance across the function over time",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To formally document the categories of HR service that fall outside the shared service model scope so that stakeholders understand which queries to direct to specialist teams rather than the operations function directly",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To provide a contractual and financial basis for charging individual business units for the volume and complexity of HR services they consume, enabling cost allocation and encouraging more efficient use of HR resources",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -937,10 +973,22 @@
           "difficulty": "medium",
           "question": "Your team's first-contact resolution rate has dropped from 78% to 61% over two months. The team size and volume have not changed. What is your first diagnostic step?",
           "options": [
-            "Issue a performance improvement plan to the lowest-performing team members",
-            "Analyse ticket data to identify whether the drop is concentrated in specific query types, team members, or time periods, and then investigate the root cause of that pattern",
-            "Increase team training hours across the board",
-            "Raise the issue with the HRIS vendor as a potential system problem"
+            {
+              "text": "Issue performance improvement plans to the team members with the lowest individual resolution rates, since a sustained drop in a key metric points to individual underperformance that needs to be addressed through a formal performance management process",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Analyse the ticket data systematically to identify whether the drop is concentrated in specific query types, team members, or time periods, then investigate the root cause of whichever pattern the data reveals before taking any action",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Increase training hours and learning content available to all team members across the board, since a drop in resolution rate of this magnitude typically reflects a knowledge or capability gap that investment in development will progressively address",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Raise the issue with the HRIS vendor as a potential system or data quality problem, since resolution rates are often impacted by system changes or data errors that make it harder for specialists to find and apply the right information quickly",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -950,10 +998,22 @@
           "difficulty": "medium",
           "question": "You are asked to lead a process to digitise the entire hire-to-retire employee lifecycle, replacing manual document filing and wet signatures. The project will eliminate several administrative tasks currently performed by two team members. How do you approach the people impact?",
           "options": [
-            "Proceed with the digitisation and manage the headcount reduction through natural attrition",
-            "Pause the project until you can guarantee no role reductions",
-            "Plan the digitisation in parallel with a capability development plan for the affected team members, exploring how their capacity can be redeployed to higher-value work, and manage any headcount impact transparently and in line with policy",
-            "Limit the scope of digitisation to avoid impacting existing roles"
+            {
+              "text": "Proceed with the digitisation and manage any resulting headcount reduction through natural attrition, since no one will be made redundant against their will and the business benefit of digitisation outweighs the disruption of an explicit people process",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Pause the project until you can provide a guarantee to the affected team members that their roles will not be eliminated, since proceeding without that assurance creates a damaging trust deficit that will undermine engagement throughout the project",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Design the digitisation in parallel with a capability development plan for affected team members, actively exploring how freed capacity can be redeployed to higher-value work, and managing any headcount impact transparently and in line with policy",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Limit the scope of the digitisation to processes that do not overlap with the current responsibilities of the two affected team members, redesigning the project to achieve automation benefits without triggering any people impact at all",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -963,10 +1023,22 @@
           "difficulty": "medium",
           "question": "In a tiered HR service delivery model (Tier 0, 1, 2, 3), what type of query should ideally be handled at Tier 0?",
           "options": [
-            "Complex employee relations cases requiring HR specialist input",
-            "Self-service queries resolved through FAQs, chatbots, or employee portals without human intervention",
-            "Payroll escalations requiring payroll team involvement",
-            "Cross-border mobility cases requiring COE expertise"
+            {
+              "text": "Complex employee relations cases that require a trained HR specialist to assess the facts, apply legal knowledge, and make a judgment about the appropriate course of action in a situation that has no standard or templated answer",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Self-service queries that employees can resolve through FAQs, chatbots, or employee portals without any human HR intervention, reducing avoidable inbound contact volume and freeing specialist capacity for genuinely complex work",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Payroll escalations that require input from both the payroll team and HR simultaneously, since the dual-function nature of these queries means they cannot be resolved at a single tier and require coordinated handling across two service areas",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Cross-border mobility and international assignment cases that require COE expertise and specialist knowledge of tax, immigration, and social security implications across multiple jurisdictions and regulatory environments",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -976,10 +1048,22 @@
           "difficulty": "hard",
           "question": "A business leader complains that their team always receives templated, unhelpful responses from HR Operations and that the team feels like a call centre rather than an HR function. What does this feedback tell you and how do you respond?",
           "options": [
-            "Thank the leader for the feedback and remind them that standardised responses ensure consistency and compliance",
-            "Use the feedback as a signal to review whether scripts and templates are being used as a substitute for judgment, assess the complexity of queries being handled, and explore whether the team needs upskilling or empowerment to provide more contextualised responses",
-            "Reassign the leader's team to a dedicated HR Business Partner with no Operations involvement",
-            "Conduct a satisfaction survey before taking any action"
+            {
+              "text": "Thank the leader for the feedback and reiterate that standardised responses are a deliberate feature of the shared service model, ensuring all employees receive consistent and legally defensible information regardless of which business unit they belong to",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Use the feedback as a signal that templates and scripts are being used as a substitute for judgment rather than a starting point, and assess whether the team needs upskilling or greater empowerment to provide contextualised and genuinely helpful responses",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Reassign the leader's team to a dedicated HR Business Partner who can provide more personalised support, removing the shared service model from the equation for this particular stakeholder group to resolve their specific experience",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Commission a formal employee satisfaction survey across all business units before taking any action, to establish whether the concern is isolated to this leader's team or reflects a broader dissatisfaction with the shared service model overall",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -989,10 +1073,22 @@
           "difficulty": "hard",
           "question": "Which of the following is the most significant risk of having HR data managed across multiple disconnected systems without a master data management strategy?",
           "options": [
-            "Increased licensing costs from maintaining multiple platforms",
-            "Inconsistent employee records leading to payroll errors, compliance failures, and unreliable workforce analytics",
-            "Duplication of HR team effort in maintaining separate systems",
-            "Difficulty benchmarking HR metrics against industry standards"
+            {
+              "text": "Increased licensing and maintenance costs from running multiple platforms simultaneously, creating a financial inefficiency that could be addressed through system consolidation or a unified platform investment with appropriate business case approval",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Inconsistent employee records across systems leading to payroll errors, compliance failures, and unreliable workforce analytics, undermining every downstream decision that depends on people data being accurate, current, and internally consistent",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Duplication of effort across the HR Operations team who must maintain separate data entry processes for each system, increasing administrative burden and creating conditions for human error that a single integrated system would eliminate",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Difficulty benchmarking HR metrics against industry standards because the organisation's data cannot be easily compiled into the format required by external benchmarking frameworks, survey instruments, and regulatory reporting requirements",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1002,10 +1098,22 @@
           "difficulty": "medium",
           "question": "You inherit an HR Operations team where morale is low, processes are undocumented, and the team has a reputation for being slow and difficult. What is your priority in the first 30 days?",
           "options": [
-            "Immediately redesign all processes and implement new SLAs to signal change",
-            "Listen first \u2014 conduct structured one-to-ones with each team member to understand the root causes, build trust, and identify quick wins before making structural changes",
-            "Present a full transformation roadmap to the business within two weeks",
-            "Replace the lowest performers to send a clear signal about new expectations"
+            {
+              "text": "Immediately redesign the core processes and implement new SLAs with measurable targets, since visible structural change in the first 30 days signals to the business that a new leader has arrived and the problems of the past will not continue",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Conduct structured one-to-one conversations with each team member to understand the root causes of the current state, build individual trust, and identify quick wins before making any structural or process changes that affect the team",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Present a comprehensive transformation roadmap to senior business stakeholders within the first two weeks, demonstrating strategic thinking and commitment to change before the team has had a chance to form a view of the new leader's direction",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Identify and remove the lowest-performing team members quickly to send a clear signal about new performance expectations, since the credibility of a new leader often depends on decisive early action on visible underperformance",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1015,10 +1123,22 @@
           "difficulty": "hard",
           "question": "During a payroll audit you discover that 14 employees have been paid incorrectly for three months due to a data entry error made during a system migration. The errors range from underpayments of USD 200 to USD 1,800. What is your immediate course of action?",
           "options": [
-            "Correct the errors in the next payroll cycle and send a standard notification to affected employees",
-            "Notify all affected employees immediately with a clear explanation, correct underpayments via an off-cycle payment within 48 hours, document the root cause, and implement a control to prevent recurrence",
-            "Conduct an internal review before notifying employees to ensure accuracy of the correction",
-            "Escalate to Legal before communicating with employees given the potential liability"
+            {
+              "text": "Correct the errors in the next regular payroll cycle and send a standard notification to all affected employees explaining what happened, since processing corrections through the normal cycle minimises system disruption and is the most operationally efficient approach",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Notify all affected employees immediately with a transparent explanation, correct all underpayments via an off-cycle payment within 48 hours, document the root cause fully, and implement a control to prevent recurrence of the same class of error",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Complete a thorough internal review to verify the accuracy of all corrections before communicating with any employee, since sending notifications before corrections are fully confirmed risks having to communicate again with revised and potentially different figures",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Escalate to Legal before communicating with any affected employees, since payroll errors of this scale and duration create potential legal liability that requires legal assessment before HR determines what to say and when to say it",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1028,10 +1148,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a RACI matrix in an HR Operations context?",
           "options": [
-            "To document employee performance expectations across HR roles",
-            "To clarify who is Responsible, Accountable, Consulted, and Informed for each process step, reducing ambiguity and preventing duplication",
-            "To assign risk ratings to HR operational processes",
-            "To map HR processes to regulatory compliance requirements"
+            {
+              "text": "To document the performance expectations and output standards for each role within the HR Operations team, providing a clear basis for assessing individual contribution and making decisions about pay, promotion, and performance management",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To clarify who is Responsible, Accountable, Consulted, and Informed for each step in an HR process, reducing ambiguity about ownership, preventing duplication, and enabling faster and more consistent decision-making across the team",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To assign risk ratings to each HR operational process based on the compliance, financial, and reputational consequences of failure, enabling the team to prioritise quality assurance and audit activity on the highest-risk process areas",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To map each HR process to the specific regulatory and legislative requirements it must comply with, creating an auditable record of how each process is designed to meet its compliance obligations across relevant jurisdictions",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1041,10 +1173,22 @@
           "difficulty": "medium",
           "question": "A new global HR system is being implemented and your team is responsible for data migration. The IT project lead tells you the timeline requires your team to migrate data over a weekend with no dry run. What do you do?",
           "options": [
-            "Agree \u2014 weekends are operationally low-risk periods for migrations",
-            "Push back on the absence of a dry run, citing data integrity risk, and negotiate a phased migration or at minimum a parallel run period to validate data accuracy before cutover",
-            "Agree but document your objection in the project log",
-            "Escalate to the CHRO to resolve the timeline conflict with IT"
+            {
+              "text": "Agree to proceed since weekend migrations are operationally lower-risk given reduced system usage, and the overall implementation timeline pressure means a dry run is a luxury the project cannot afford at this stage",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Push back formally on the absence of a dry run, citing the data integrity risk of a single-pass migration without validation, and negotiate for either a phased migration approach or a parallel run period before full cutover",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Agree to proceed with the migration as planned but formally document your objection in the project risk log, creating a record that HR raised concerns about the timeline so that accountability for any data issues is shared with IT",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Escalate the timeline conflict to the CHRO and ask them to intervene with IT leadership to negotiate more appropriate migration conditions, since this is a risk decision that sits above what HR Operations can resolve at the project level",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1054,10 +1198,22 @@
           "difficulty": "hard",
           "question": "Your HR Operations function supports employees across 12 countries. A compliance audit reveals that employment records in three countries are incomplete and in one case contain errors that create legal exposure. What does this situation indicate about your operating model?",
           "options": [
-            "The team members responsible for those countries need performance management",
-            "The operating model lacks sufficient controls, standardised documentation requirements, and audit-readiness protocols \u2014 and requires a structural fix, not just individual accountability",
-            "The compliance audit standard is too high for a lean HR Operations team",
-            "External legal counsel should manage compliance records going forward"
+            {
+              "text": "The team members with responsibility for those three countries need to be placed on performance improvement plans, since documentation gaps of this nature represent an individual failure of accountability rather than a systemic problem requiring structural change",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The operating model lacks sufficient controls, standardised documentation requirements, and audit-readiness protocols \u2014 this is a structural failure requiring a systemic fix and not just individual accountability for the visible symptoms",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The compliance audit standard being applied is too stringent for a lean HR Operations team operating across 12 jurisdictions with limited resource, and the findings should be contextualised against what is realistically achievable at the current investment level",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Employment records in high-risk jurisdictions should be managed by external legal counsel going forward, since the compliance risk of internal HR managing legally sensitive documentation across 12 countries without specialist support is too high to sustain",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1067,10 +1223,22 @@
           "difficulty": "easy",
           "question": "Which metric is most useful for measuring the efficiency of an HR Operations shared service centre?",
           "options": [
-            "Employee Net Promoter Score across the whole business",
-            "Cost per HR transaction, combined with first-contact resolution rate and customer satisfaction score",
-            "Total HR headcount as a percentage of total employee population",
-            "Number of HR policies reviewed and updated annually"
+            {
+              "text": "Employee Net Promoter Score measured across the whole business, since overall employee sentiment is the most direct indicator of whether HR is contributing positively to the organisation's people experience and cultural health",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Cost per HR transaction combined with first-contact resolution rate and customer satisfaction score, providing a balanced view of efficiency, quality, and experience that no single metric can capture on its own",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Total HR headcount as a percentage of total employee population, since the ratio of HR staff to employees is the most widely used and externally benchmarkable measure of HR operational efficiency across industries",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The number of HR policies reviewed and updated annually, reflecting the team's commitment to keeping the policy framework current and compliant with legislative changes across all operating jurisdictions and employment categories",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1080,10 +1248,22 @@
           "difficulty": "hard",
           "question": "You are building an HR Operations function from scratch in a new Global Capability Centre. The business wants the team live in 90 days. You have been given budget for 12 FTEs, but no documented processes, no HRIS access, and no handover from the existing regional team who are resistant to the transition. What is your first priority?",
           "options": [
-            "Hire all 12 FTEs immediately to meet the 90-day target",
-            "Secure HRIS access, begin a structured knowledge transfer process with the regional team regardless of their resistance, document critical processes in parallel with recruitment, and align with the business on a phased go-live that prioritises highest-volume transactions first",
-            "Push back on the 90-day timeline entirely \u2014 it is not achievable",
-            "Begin hiring and use the first 30 days to shadow the regional team before building any processes"
+            {
+              "text": "Hire all 12 FTEs immediately to meet the 90-day headcount target, since having the full team in place before processes are documented gives you the resource to absorb volume and build capability from the first day of go-live",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Secure HRIS access, begin structured knowledge transfer despite regional resistance, document critical processes in parallel with recruitment, and negotiate a phased go-live that prioritises highest-volume transactions first within the timeline",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Formally push back on the 90-day timeline entirely and present the business with a revised 180-day plan that allows for proper process documentation, HRIS readiness, and an orderly knowledge transfer before any go-live commitment is made",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Begin hiring and spend the first 30 days shadowing the regional team in their current locations before building local processes, since process documentation without first-hand operational knowledge will produce frameworks that do not reflect practical reality",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1093,10 +1273,22 @@
           "difficulty": "medium",
           "question": "Which of the following best describes a knowledge management system in the context of HR Operations?",
           "options": [
-            "A database of employee training records and certifications",
-            "A centralised repository of HR policies, process guides, FAQs, and decision trees that enables consistent, self-service resolution of common queries",
-            "A performance management tool tracking HR team competencies",
-            "An HRIS module for managing succession planning data"
+            {
+              "text": "A database of employee training records, certification completions, and learning history that enables HR to track compliance with mandatory training requirements and identify gaps in the organisation's capability profile across all teams",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A centralised repository of HR policies, process guides, FAQs, and decision trees that enables consistent and self-service resolution of common queries, reducing avoidable contact volume and improving the quality and speed of responses",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A performance management tool that tracks the competency development of individual HR Operations team members against defined capability frameworks for each role within the shared service structure",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "An HRIS module specifically designed to manage succession planning data, talent pipeline information, and leadership readiness assessments for senior positions within the HR function itself",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1106,10 +1298,22 @@
           "difficulty": "medium",
           "question": "A senior stakeholder tells you that HR Operations has become a bottleneck and that the business would be better served by embedding HR administrators directly into each business unit. How do you respond?",
           "options": [
-            "Agree to pilot the embedded model in one business unit to test the concept",
-            "Dismiss the suggestion \u2014 centralised shared services are recognised best practice",
-            "Engage seriously with the concern, present data on current service performance, explore whether the issue is structural or execution-related, and make a fact-based case for or against the centralised model",
-            "Escalate the conversation to the CHRO to defend the shared services model"
+            {
+              "text": "Agree to pilot the embedded model in one business unit for six months to test whether it produces better outcomes, since stakeholder feedback of this nature deserves a genuine empirical test rather than a purely defensive response from HR",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Dismiss the suggestion and defend the shared services model as recognised best practice, since embedding administrators into business units would reverse years of investment in centralisation and recreate the inconsistency the model was designed to eliminate",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Engage seriously with the concern, present current service performance data, explore whether the issue is structural or execution-related, and make a fact-based recommendation rather than defending the status quo without evidence",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate the conversation to the CHRO and ask them to engage with the senior stakeholder directly, since a fundamental challenge to the HR operating model requires executive-level dialogue rather than a response from the functional lead alone",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -1119,10 +1323,22 @@
           "difficulty": "medium",
           "question": "An employee contacts HR Operations with a query that falls outside your team's defined scope \u2014 it requires input from three different COEs and has a legal dimension. The employee has been bounced between teams twice already. What do you do?",
           "options": [
-            "Direct the employee to the appropriate COE and close the ticket",
-            "Own the case as a complex query, coordinate across the relevant teams, provide the employee with a single point of contact and a clear timeline, and use the case to flag a process gap that is creating a poor employee experience",
-            "Escalate to your manager before taking any ownership of an out-of-scope case",
-            "Advise the employee to contact their HRBP who can navigate the internal landscape"
+            {
+              "text": "Direct the employee to the most relevant COE and close the ticket formally, since HR Operations' responsibility is to route correctly within its defined scope and the employee's frustration does not extend HR's accountability beyond those boundaries",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Own the case as a complex query, coordinate across the relevant internal teams to produce a joined-up response, give the employee a single point of contact and a clear timeline, and flag the process gap that allowed this situation to arise",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to your manager before taking ownership of any out-of-scope case, since accepting accountability for queries outside your team's defined remit without approval sets a precedent that is difficult to manage consistently at scale",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Advise the employee to contact their HRBP who is better placed to coordinate a response across multiple HR teams, since complex multi-team queries with a legal dimension are exactly what the HRBP model is designed to navigate",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1132,10 +1348,22 @@
           "difficulty": "hard",
           "question": "What is the most significant governance risk of allowing individual HR Operations team members to make ad-hoc exceptions to HR policy without a documented approval process?",
           "options": [
-            "Inconsistent employee experience across the organisation",
-            "Precedent-setting without oversight, creating legal exposure, claims of preferential treatment, and undermining the integrity of the policy framework",
-            "Increased workload for senior HR Operations staff reviewing exceptions",
-            "Reduced employee trust in the self-service portal"
+            {
+              "text": "Inconsistent employee experience across business units, since employees who receive different outcomes to the same type of request may feel that HR applies policy unevenly, which over time damages trust in the function and its objectivity",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Precedent-setting without oversight, creating legal exposure, enabling claims of preferential treatment, and gradually undermining the integrity of the policy framework the team is supposed to apply with consistency and fairness",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Increased workload for senior HR Operations staff who must spend time reviewing and correcting ad-hoc exceptions made by junior team members, diverting their capacity from higher-value work and creating a management overhead that is difficult to sustain",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Reduced employee trust in the self-service portal as a reliable source of HR information, since ad-hoc exceptions signal that the standard answers available through self-service may not reflect what HR will actually do in practice",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1145,10 +1373,22 @@
           "difficulty": "hard",
           "question": "Three months after your team took over a process from a regional HR team, an error is discovered that was actually introduced by the previous team before the transition. The regional team lead is publicly attributing the error to your team in a senior leadership forum. What is your response?",
           "options": [
-            "Correct the record publicly in the same forum with the evidence",
-            "Let it go \u2014 defending your team publicly will create more reputational damage than the error itself",
-            "Address the misattribution privately with the regional team lead, present the evidence showing the error predated your team's ownership, and agree on how to communicate the correction to the senior leadership forum",
-            "Escalate to HR leadership and let them manage the reputational issue"
+            {
+              "text": "Correct the public misattribution immediately in the same forum using the evidence that the error predated your team's ownership, since allowing a false attribution to stand damages your team's credibility and sets a harmful precedent for future accountability",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Let the misattribution stand in the short term since publicly defending your team in a senior forum risks creating more reputational damage than the error itself, and the facts will emerge through the normal course of business in due time",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Address the misattribution privately with the regional team lead, present the evidence showing the error predated the transition, and agree on how to correct the record with senior leadership in a way that is accurate without being adversarial",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to HR leadership and request they manage the reputational issue directly, since a cross-functional accountability dispute that has surfaced in a senior leadership forum is above what individual team leads should resolve bilaterally",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -1158,10 +1398,22 @@
           "difficulty": "medium",
           "question": "Which of the following is the most effective way to reduce avoidable inbound contact volume to an HR Operations shared service centre?",
           "options": [
-            "Reducing the SLA response time to discourage repeat contacts",
-            "Improving the quality and accessibility of self-service content so employees can resolve common queries without contacting HR",
-            "Adding more FTEs to manage volume more quickly",
-            "Limiting the scope of queries the team will handle"
+            {
+              "text": "Reducing SLA response times so that queries are resolved more quickly, discouraging repeat contacts from employees who follow up because they have not received a timely initial response from the HR Operations team",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Improving the quality, accuracy, and accessibility of self-service content so employees can resolve common queries independently without needing to contact HR at all, addressing the root cause of avoidable volume rather than managing its symptoms",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Adding FTEs to the HR Operations team to absorb current contact volume more efficiently, improving response times so that employees feel less need to follow up on outstanding queries that are taking too long to be resolved",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Narrowing the scope of queries the team will formally handle and redirecting out-of-scope contacts to managers or other HR teams, reducing the total volume of queries that reach the shared service centre through scope restriction",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1171,10 +1423,22 @@
           "difficulty": "hard",
           "question": "You discover that a long-standing informal workaround used by your team to process a certain transaction type is technically non-compliant with the company's data governance policy. The workaround has been in use for two years with no adverse incidents. What do you do?",
           "options": [
-            "Leave it \u2014 it has worked for two years and fixing it creates unnecessary disruption",
-            "Document the workaround, assess the compliance risk, remediate it with a compliant process, and report it through the appropriate governance channel as a self-identified issue",
-            "Fix the workaround quietly without reporting it to avoid scrutiny",
-            "Report it immediately to Legal and pause all related processing until cleared"
+            {
+              "text": "Leave it in place since it has functioned without incident for two years and the risk of disrupting a working process for a theoretical compliance concern outweighs the benefit of fixing something that has caused no practical harm",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Document the workaround fully, assess the compliance risk it creates, remediate it with a compliant process, and self-report through the appropriate governance channel as a self-identified compliance gap rather than waiting for it to be discovered externally",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Fix the workaround quietly by updating the process without formal reporting, since a self-identified issue that has caused no harm and has now been corrected does not need to be reported through governance channels and doing so creates unnecessary scrutiny",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Report it immediately to Legal and pause all related transaction processing until Legal provides explicit written clearance to resume, since any compliance gap involving data governance must be managed through legal oversight before remediation begins",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1184,10 +1448,22 @@
           "difficulty": "medium",
           "question": "Your team is responsible for producing monthly HR dashboards for the business. The HRIS data is consistently incomplete because managers are not updating employee records promptly. How do you address this?",
           "options": [
-            "Add a disclaimer to each dashboard noting that data completeness depends on manager inputs",
-            "Identify the specific data fields with the highest incompleteness rates, work with HRBPs to understand the root cause, build manager accountability through reporting line visibility, and consider system nudges or workflow gates to enforce timely updates",
-            "Escalate to IT to build automated data validation rules",
-            "Remove the affected metrics from the dashboard until data quality improves"
+            {
+              "text": "Add a standard disclaimer to each dashboard noting that data completeness depends on timely manager inputs and that users should interpret metrics with this caveat in mind when making decisions based on the data provided",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Identify which specific data fields have the highest incompleteness rates, work with HRBPs to understand the root cause, build manager accountability through reporting line visibility, and consider system nudges or workflow gates to enforce timely updates",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to IT to build automated data validation rules that prevent managers from completing other system tasks until overdue record updates have been actioned, using system-level constraints to enforce the behaviour change at scale",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Remove the affected metrics from the dashboard entirely until data quality reaches an acceptable threshold, since publishing metrics based on incomplete data creates misleading insights that are worse than providing no data at all on those dimensions",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -1197,10 +1473,22 @@
           "difficulty": "medium",
           "question": "What is the primary purpose of a process control framework in HR Operations?",
           "options": [
-            "To document who in HR has authority to approve salary changes",
-            "To establish systematic checks that prevent errors, ensure compliance, and create an auditable record of key HR transactions",
-            "To set performance targets for HR Operations team members",
-            "To define escalation paths for unresolved employee queries"
+            {
+              "text": "To document the approval authority levels within HR Operations, specifying which roles have the authority to approve salary changes, contract variations, and other consequential employment decisions at each level of the function",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To establish systematic checks that prevent errors, ensure compliance with applicable requirements, and create an auditable record of how key HR transactions have been processed, reviewed, and approved across the function",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To set measurable performance targets for individual HR Operations team members that can be used as the basis for performance reviews, pay decisions, and structured development planning conversations throughout the year",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To define the escalation paths and decision thresholds that determine when HR Operations should refer a query or issue to a senior colleague, specialist team, or external adviser rather than resolving it at the first point of contact",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1210,10 +1498,22 @@
           "difficulty": "hard",
           "question": "During an internal audit, it is discovered that your team has been storing sensitive employee medical records in a shared drive accessible to the entire HR department. No breach has occurred, but the storage practice violates data protection policy. What are your immediate and medium-term actions?",
           "options": [
-            "Move the files to a restricted folder and inform the team not to repeat the practice",
-            "Immediately restrict access to the files, conduct a data mapping exercise to identify all non-compliant storage, notify your Data Protection Officer, remediate all instances, retrain the team, and implement an ongoing control to prevent recurrence",
-            "Report the issue to Legal and await their guidance before taking any action",
-            "Delete the files and close the issue \u2014 no breach occurred so formal reporting is unnecessary"
+            {
+              "text": "Move the files immediately to a restricted folder and brief the team not to repeat the practice going forward, since a swift practical correction that prevents future recurrence is proportionate to an issue that has caused no actual harm to any employee",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Restrict access to the files immediately, conduct a data mapping exercise to identify all non-compliant storage, notify your Data Protection Officer, remediate all instances, retrain the team, and implement an ongoing control to prevent recurrence",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Report the issue to Legal before taking any remediation action, since a data governance violation involving sensitive medical records requires legal assessment of the organisation's notification obligations before any corrective steps are taken",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Delete the files from the shared drive and close the issue since no breach occurred and no data was accessed by unauthorised parties, making a formal reporting and remediation process disproportionate given the absence of any measurable harm",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1223,10 +1523,22 @@
           "difficulty": "medium",
           "question": "Your HR Operations team has high technical accuracy but consistently receives low satisfaction scores from employees who say interactions feel cold and unhelpful. What does this gap indicate and how do you address it?",
           "options": [
-            "Technical accuracy is the priority \u2014 satisfaction scores are subjective and not a reliable performance measure",
-            "The gap signals that process compliance and human experience are being treated as separate, when they should be integrated \u2014 upskill the team on communication quality, empathy, and resolution ownership rather than just process adherence",
-            "Hire team members with stronger customer service backgrounds to replace technically-focused staff",
-            "Introduce a response template library to standardise communication tone"
+            {
+              "text": "Technical accuracy is the correct primary measure of HR Operations performance and satisfaction scores reflect subjective preferences that vary significantly across employee populations and are not a reliable indicator of functional quality",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The gap signals that process compliance and human experience are being treated as separate rather than integrated, and that the team needs development on communication quality, empathy, and resolution ownership rather than process adherence alone",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Hire customer-service-experienced professionals to replace technically-focused team members, since the satisfaction gap reflects a fundamental recruitment mismatch between the skills needed for the role and those the current team was selected for",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Develop a library of warmer and more personalised response templates for common query types so that the team can maintain process consistency while improving the tone and perceived helpfulness of their written communications to employees",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1236,10 +1548,22 @@
           "difficulty": "hard",
           "question": "In a global HR Operations model, what is the most significant challenge of applying a single global SLA to all employee queries regardless of geography?",
           "options": [
-            "Different time zones make global SLAs operationally difficult to monitor",
-            "Legal requirements, cultural expectations, and query complexity vary significantly by jurisdiction, meaning a uniform SLA may be simultaneously too slow for some markets and non-compliant in others",
-            "Global SLAs are difficult to communicate to employees in multiple languages",
-            "Senior stakeholders in different regions will have conflicting views on what constitutes an acceptable response time"
+            {
+              "text": "Different time zones make global SLAs operationally difficult to monitor and report consistently, since the start and end of the SLA clock will fall at different local times for different employees and teams across the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Legal requirements, cultural expectations, and query complexity vary significantly by jurisdiction, meaning a uniform SLA may be simultaneously too slow for some markets and non-compliant in others where statutory response timeframes apply",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Communicating a global SLA to employees in multiple languages introduces translation complexity and the risk that the same commitment is understood differently in different markets despite the underlying metric being expressed identically",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Senior stakeholders in different regions will have conflicting views on what constitutes an acceptable response time, creating political tension around SLA setting that is difficult to resolve without disappointing at least some key markets",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1249,10 +1573,22 @@
           "difficulty": "medium",
           "question": "You are asked to present the ROI of your HR Operations digitisation project to the CFO. The project eliminated physical document storage, removed manual signature processes, and freed up 2.3 FTE of capacity. How do you frame the business case?",
           "options": [
-            "Focus on the employee experience improvements and satisfaction score uplift",
-            "Quantify the cost reduction from eliminated storage costs, calculate the FTE capacity value at fully-loaded cost, and translate the freed capacity into revenue-enabling activities the team has been redeployed to, alongside the compliance risk reduction",
-            "Present the project as a compliance investment rather than a cost play",
-            "Ask Finance to build the ROI model \u2014 HR should not be presenting financial cases to the CFO"
+            {
+              "text": "Focus the presentation on employee experience improvements and the uplift in satisfaction scores, since CFOs respond better to evidence of cultural and engagement benefits than to operational metrics that can be challenged on methodology and attribution",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Quantify the storage cost elimination, calculate the FTE capacity value at fully-loaded cost, translate freed capacity into the revenue-enabling activities the team has been redeployed to, and include the compliance risk reduction as a risk-adjusted financial value",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Present the project primarily as a compliance investment rather than a cost play, framing the digitisation as a necessary response to audit findings and regulatory expectations rather than a discretionary efficiency initiative with measurable financial return",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Ask Finance to build the ROI model on HR's behalf and present it jointly, since HR should not be presenting standalone financial cases to the CFO without Finance validation of the methodology, assumptions, and projected financial outcomes",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1262,10 +1598,22 @@
           "difficulty": "medium",
           "question": "Which of the following is the most important factor in ensuring a successful HR system implementation from an HR Operations perspective?",
           "options": [
-            "Selecting the vendor with the highest analyst ranking",
-            "Ensuring robust data migration, change management, user training, and a hypercare period post-go-live, alongside clear process ownership and system governance",
-            "Completing the implementation within the original project budget",
-            "Involving the IT department as the primary implementation lead"
+            {
+              "text": "Selecting the vendor with the highest analyst ranking and the largest existing client base, since market-leading platforms offer the greatest functional breadth, vendor stability, and access to a peer community of practitioners for ongoing support",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Ensuring robust data migration, comprehensive change management, thorough user training, and a structured hypercare period post-go-live, alongside clear process ownership and system governance from the first day of operation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Completing the implementation within the original project budget and timeline, since cost and schedule adherence are the primary measures by which the business will judge the success of the implementation and the capability of the HR team",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Placing IT as the primary implementation lead with HR in a stakeholder role, since technical system implementations require technical project management expertise that HR typically does not have in-house and cannot develop quickly enough",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1275,10 +1623,22 @@
           "difficulty": "hard",
           "question": "The HR Operations team in your GCC has grown rapidly from 4 to 19 people in 12 months. Quality metrics have declined slightly and two team members have flagged they feel stretched and unsupported. What does this tell you about your operating model and what do you prioritise?",
           "options": [
-            "Rapid growth always causes temporary performance dips \u2014 monitor for another quarter before acting",
-            "The growth has outpaced your management infrastructure \u2014 prioritise structured onboarding, clear role accountabilities, team-level capacity planning, a quality assurance mechanism, and regular one-to-ones to stabilise the team before focusing on further growth",
-            "Increase SLA targets to create performance pressure that will naturally drive quality improvement",
-            "Hire a deputy team lead to manage day-to-day operations while you focus on strategic projects"
+            {
+              "text": "Rapid growth always produces temporary performance dips as new team members develop proficiency, and the right response is to monitor metrics for a further quarter before intervening to avoid making structural changes based on a transient adjustment period",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The growth has outpaced your management infrastructure \u2014 prioritise structured onboarding, clear role accountabilities, team-level capacity planning, a quality assurance mechanism, and regular one-to-ones to stabilise the team before focusing on further growth",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Increase SLA targets across the board to create performance pressure that will naturally drive quality improvement, since teams held to higher standards typically rise to meet them when expectations are clearly communicated and consistently reinforced",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Hire a deputy team lead immediately to manage day-to-day team operations while you redirect your focus to the strategic and stakeholder management aspects of the role, which require your personal attention more than operational oversight does",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1288,10 +1648,22 @@
           "difficulty": "easy",
           "question": "What is meant by a hypercare period in the context of an HR system go-live?",
           "options": [
-            "An extended handholding period for employees who struggle with self-service technology",
-            "An intensive post-go-live support window where additional resources are deployed to monitor system performance, resolve issues rapidly, and support users before transitioning to business-as-usual",
-            "A period during which all HR system changes are frozen to ensure stability",
-            "A structured review of the implementation vendor's performance against contract"
+            {
+              "text": "An extended support arrangement for employees who struggle with self-service technology, providing additional human-assisted guidance for a defined period until they are comfortable using the new system independently without HR intervention",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "An intensive post-go-live support window where additional resources are deployed to monitor system performance, resolve emerging issues rapidly, and support users before transitioning to a steady-state business-as-usual operating model",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A period during which all changes to system configuration, data structures, and workflows are frozen to allow the system to stabilise before the team begins the optimisation and enhancement work planned for the second implementation phase",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A structured contractual review of the implementation vendor's delivery performance against agreed project milestones, used as the basis for signing off the final payment and transitioning to a standard ongoing support arrangement",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1301,10 +1673,22 @@
           "difficulty": "medium",
           "question": "A stakeholder requests a custom HR report that would require your team to extract and combine data from three different systems. The request is urgent and for a board presentation tomorrow. How do you handle it?",
           "options": [
-            "Decline \u2014 ad-hoc data requests outside your standard reporting suite are not HR Operations' responsibility",
-            "Assess feasibility immediately, be transparent about the time required and any data quality caveats, deliver what is achievable within the timeline with clear caveats, and follow up post-board with a higher-quality version",
-            "Build the report regardless of the time required \u2014 board requests take priority",
-            "Direct the stakeholder to the HRIS vendor's support team"
+            {
+              "text": "Decline the request and explain that ad-hoc data extractions outside the standard reporting suite are not within HR Operations' remit and that future reporting needs should be submitted through the formal process with adequate lead time",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Assess feasibility immediately, be transparent about timeline constraints and data quality caveats, deliver what is achievable within the available window with clear limitations noted, and follow up with a higher-quality version after the board meeting",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Build the report regardless of the time required and without flagging constraints, since a board-level request must be treated as the highest priority and any limitations in the output should be left for the stakeholder to identify themselves",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Direct the stakeholder to the HRIS vendor's support team since cross-system data extractions require system-level access and technical expertise that falls outside what HR Operations can safely provide without risking data integrity",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1314,10 +1698,22 @@
           "difficulty": "hard",
           "question": "You are leading an HR Operations function that is delivering well against its KPIs. Your CHRO asks you to take on additional scope covering a region that is currently unserviced, with no additional headcount and a six-week transition timeline. What is your response?",
           "options": [
-            "Accept the scope and find a way to make it work \u2014 demonstrating agility is important at this level",
-            "Decline \u2014 taking on additional scope without headcount will compromise current service quality",
-            "Accept in principle, present a clear risk assessment showing the impact on current SLAs, propose a phased transition timeline with specific headcount requirements, and request a decision from the CHRO on whether to proceed on those terms or adjust the scope",
-            "Agree to a temporary 12-week pilot with no commitments beyond that"
+            {
+              "text": "Accept the additional scope and find a way to deliver it within the existing team's capacity, since demonstrating agility and willingness to stretch when the business needs it is an important part of building credibility as an HR Operations leader",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Decline the additional scope entirely since accepting it without headcount will predictably compromise current service quality and create a failure that damages the function's reputation more than saying no upfront would",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Accept in principle, present a clear risk assessment showing the specific impact on current SLAs, propose a phased transition with defined headcount requirements, and ask the CHRO to make an informed decision on whether to proceed on those terms",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Agree to a time-limited 12-week pilot with no long-term commitments, treating the expanded scope as an experiment that can be assessed and either extended or discontinued based on what the pilot reveals about feasibility and impact",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -1327,10 +1723,22 @@
           "difficulty": "medium",
           "question": "What does a high volume of repeat contacts on the same query type typically indicate in an HR Operations context?",
           "options": [
-            "Employees are not using the self-service portal correctly",
-            "The initial resolution is not addressing the root cause of the query, pointing to a knowledge, process, or communication gap that requires systemic attention",
-            "The query type is inherently complex and cannot be resolved at first contact",
-            "The SLA for that query type is set too low"
+            {
+              "text": "Employees are not using the self-service portal correctly and need additional training on how to navigate the system and locate answers to common questions without needing to contact HR directly for standard transactional queries",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The initial resolution is not addressing the root cause of the query, pointing to a knowledge gap, process gap, or communication gap in that specific area that requires a systemic fix rather than continued individual case management",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The query type is inherently complex and cannot reliably be resolved at first contact, making repeat contacts a structural feature of that category rather than a signal of team underperformance or a process failure requiring intervention",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The SLA target for that query type is set too low relative to actual resolution complexity, creating unrealistic expectations that result in employees chasing progress before the team has had adequate time to investigate and fully resolve the issue",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1340,10 +1748,22 @@
           "difficulty": "hard",
           "question": "You are three months into running an HR Operations team that was previously led by someone who built strong personal loyalty but left undocumented processes, inconsistent practices, and an over-reliance on individual knowledge. How do you build a sustainable operating model without alienating the team?",
           "options": [
-            "Implement new processes quickly and decisively \u2014 the team will adapt",
-            "Spend the first month observing without making any changes to build trust",
-            "Co-create the documentation and process standardisation with the team, positioning it as building on what they already know rather than replacing it, while being clear that undocumented single-points of failure are a risk the team itself carries",
-            "Identify the key knowledge holders and create formal deputy roles to reduce dependency"
+            {
+              "text": "Implement new processes quickly and decisively in the first 90 days before the team's loyalty to the previous leader has time to crystallise into active resistance, since the window for change is narrowest once the new leader has settled in",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Spend the first three months observing without making any changes, allowing the team to see you as safe and trustworthy before beginning the harder work of standardisation that will inevitably feel like criticism of what came before",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Co-create the documentation and process standardisation with the team, framing it as building on what they already know and protecting their expertise, while being honest that undocumented single points of failure are a risk the team itself carries",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Identify the key knowledge holders within the team and create formal deputy lead roles for them, giving them ownership of documenting their areas and a status recognition that compensates for any loss of informal power they held previously",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 2
         }
