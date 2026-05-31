@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disclaimer — Competency Self-Assessment · Tarkesh Tiwari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#16161a;
+    --ink-soft:#3a3a42;
+    --muted:#76767f;
+    --line:#e6e6e6;
+    --line-soft:#f0f0f0;
+    --accent:#1a1a1a;
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Source Sans 3', -apple-system, sans-serif;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* ---------- top nav ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.88);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--maxw);margin:0 auto;
+    padding:0 32px;height:64px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .brand{
+    font-family:var(--serif);
+    font-size:18px;font-weight:500;letter-spacing:.01em;
+    text-decoration:none;color:var(--ink);
+  }
+  .brand span{color:var(--muted);font-weight:400}
+  .tabs{display:flex;gap:4px}
+  .tab{
+    font-family:var(--sans);font-size:14px;font-weight:500;
+    letter-spacing:.01em;color:var(--ink-soft);
+    text-decoration:none;padding:8px 16px;border-radius:999px;
+    transition:all .2s ease;border:1px solid transparent;
+  }
+  .tab:hover{background:#f5f5f5;color:var(--ink)}
+  .tab.primary{background:var(--accent);color:#fff}
+  .tab.primary:hover{background:#000}
+  .tab.active{background:#f5f5f5;color:var(--ink)}
+
+  /* ---------- page ---------- */
+  main{
+    max-width:var(--maxw);margin:0 auto;
+    padding:72px 32px 96px;
+  }
+  .page-head{
+    margin-bottom:56px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:32px;
+  }
+  .page-eyebrow{
+    font-size:13px;font-weight:500;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:12px;
+  }
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(30px,4vw,44px);letter-spacing:-.01em;
+    margin-bottom:16px;
+  }
+  .page-intro{
+    font-size:18px;line-height:1.7;color:var(--ink-soft);
+    font-weight:300;max-width:72ch;
+  }
+
+  /* ---------- sections ---------- */
+  .disc-section{
+    padding:40px 0;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .disc-section:last-child{border-bottom:none}
+  .disc-section h2{
+    font-family:var(--serif);font-weight:400;
+    font-size:22px;letter-spacing:-.01em;
+    margin-bottom:18px;color:var(--ink);
+  }
+  .disc-section p{
+    font-size:16px;line-height:1.75;color:var(--ink-soft);
+    font-weight:300;max-width:80ch;margin-bottom:14px;
+  }
+  .disc-section p:last-child{margin-bottom:0}
+  .disc-section ul{
+    margin:12px 0 14px 20px;
+  }
+  .disc-section li{
+    font-size:16px;line-height:1.75;color:var(--ink-soft);
+    font-weight:300;margin-bottom:6px;
+  }
+  .disc-section strong{color:var(--ink);font-weight:600}
+  .note-box{
+    background:#f9f9f9;border-left:3px solid var(--ink);
+    padding:18px 22px;border-radius:0 8px 8px 0;
+    margin-top:18px;
+  }
+  .note-box p{
+    font-size:15px;color:var(--ink-soft);margin-bottom:0;
+  }
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);background:#fcfcfc}
+  .foot-inner{
+    max-width:var(--maxw);margin:0 auto;
+    padding:28px 32px;
+    display:flex;align-items:center;justify-content:space-between;
+    flex-wrap:wrap;gap:12px;
+  }
+  .foot-copy{font-size:13px;color:var(--muted)}
+  .foot-link{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:500;color:var(--ink-soft);
+    text-decoration:none;padding:7px 14px;border-radius:999px;
+    border:1px solid var(--line);transition:all .2s ease;
+  }
+  .foot-link:hover{background:#f5f5f5;border-color:#d0d0d0}
+  .foot-link svg{width:15px;height:15px;fill:currentColor}
+
+  @media(max-width:860px){
+    .topbar-inner{padding:0 18px}
+    main{padding:48px 24px 72px}
+  }
+  @media(max-width:520px){
+    .tab.disclaimer-tab{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Tarkesh&nbsp;Tiwari <span>· Global HR Leader</span></a>
+    <nav class="tabs">
+      <a class="tab primary" href="#" id="assessment-tab">Competency Self-Assessment</a>
+      <a class="tab active disclaimer-tab" href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="page-eyebrow">Competency Self-Assessment</div>
+    <h1>Disclaimer &amp; Methodology</h1>
+    <p class="page-intro">This page explains what the Competency Self-Assessment is, how it was constructed, what it can reasonably tell you, and what it cannot. Please read this before taking the assessment.</p>
+  </div>
+
+  <div class="disc-section">
+    <h2>What this assessment is</h2>
+    <p>The Competency Self-Assessment is a <strong>professional development tool</strong> designed to help HR practitioners reflect on their knowledge, judgment, and situational decision-making across the core competencies of the HR profession. It was built by an HR leader as a resource for the HR community — not as a clinical instrument, a hiring tool, or a substitute for professional evaluation.</p>
+    <p>The assessment draws on the <strong>SHRM Competency Framework</strong> as a structural reference, combined with Situational Judgement Test (SJT) methodology and scenario-based items influenced by the style of established leadership and personality frameworks (Hogan, Korn Ferry, among others). The items are <strong>original and purpose-written</strong>; no licensed, proprietary, or copyrighted assessment content has been reproduced.</p>
+  </div>
+
+  <div class="disc-section">
+    <h2>Methodology</h2>
+    <p>The assessment uses a multi-method approach:</p>
+    <ul>
+      <li><strong>Knowledge items</strong> — SHRM-SCP-style questions testing HR policy, law, operations, and best practice across domains including Employee Relations, HR Operations, Talent Management, Total Rewards, and Compliance.</li>
+      <li><strong>Situational Judgement Tests (SJTs)</strong> — scenario-based items presenting realistic workplace situations and asking you to identify the most effective response. These assess professional judgment rather than recall.</li>
+      <li><strong>Behavioural-style items</strong> — questions exploring leadership tendencies, decision-making style, and interpersonal effectiveness, inspired by established frameworks but written independently.</li>
+    </ul>
+    <p>Each session draws <strong>75 questions</strong> from a larger randomised bank of 200–300 items, with answer options shuffled. This means no two sessions are identical, and the bank is weighted across competency domains to ensure balanced coverage.</p>
+    <p>Scoring maps responses to competency clusters, producing a profile of relative strengths and areas for development — not a pass/fail grade.</p>
+  </div>
+
+  <div class="disc-section">
+    <h2>Limitations</h2>
+    <p>This assessment has meaningful limitations that you should understand before drawing conclusions from your results:</p>
+    <ul>
+      <li><strong>Not a validated psychometric instrument.</strong> The assessment has not been subjected to formal psychometric validation (factor analysis, test-retest reliability studies, criterion validity research, or normative benchmarking). Its items reflect professional judgment and domain expertise, not a validated measurement framework.</li>
+      <li><strong>Self-reported results.</strong> Scores reflect how you respond to items under self-assessment conditions, not independent observation of your behaviour or performance.</li>
+      <li><strong>No clinical or diagnostic value.</strong> Results do not diagnose competence, fitness for a role, suitability for promotion, or any clinical or psychological characteristic.</li>
+      <li><strong>Context dependency.</strong> HR practice varies significantly by industry, geography, organisation size, and regulatory environment. Items reflect a broadly international, corporate HR context and may not map precisely to your specific setting.</li>
+      <li><strong>Not a hiring tool.</strong> This assessment is not designed, validated, or appropriate for use in recruitment, selection, performance management, or any employment decision.</li>
+    </ul>
+    <div class="note-box">
+      <p>Results are shown on-screen only and are not stored, transmitted, or recorded. No personally identifiable information beyond the name, job title, company, and email address you provide at the start is collected, and this is used only to personalise your results display — not for any other purpose.</p>
+    </div>
+  </div>
+
+  <div class="disc-section">
+    <h2>Intellectual property &amp; framework references</h2>
+    <p>The SHRM Competency Model, Hogan Assessments, Korn Ferry Leadership Architect, and other named frameworks are the intellectual property of their respective owners. This assessment references their <strong>published, publicly available structural concepts</strong> (competency domains, item style conventions) as a professional reference point only. No proprietary item content, scoring algorithms, or licensed material from any third party has been used or reproduced.</p>
+    <p>All assessment items, scenarios, and scoring logic on this site are original works created by Tarkesh Tiwari and are protected accordingly.</p>
+  </div>
+
+  <div class="disc-section">
+    <h2>Legal note</h2>
+    <p>This assessment is provided <strong>as is, for informational and professional development purposes only</strong>. No warranty is made regarding the accuracy, completeness, or fitness for any particular purpose of the assessment or its results. By taking the assessment, you acknowledge that results are for personal reflection only and do not constitute professional HR advice, legal advice, or any form of certified evaluation.</p>
+    <p>The creator accepts no liability for decisions made on the basis of assessment results. If you are seeking a validated psychometric assessment for professional or organisational use, please consult a licensed occupational psychologist or an accredited assessment provider.</p>
+  </div>
+
+  <div class="disc-section">
+    <h2>Questions or feedback</h2>
+    <p>If you have questions about the assessment methodology or want to provide feedback, you can reach out via LinkedIn.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span class="foot-copy">© 2025 Tarkesh Tiwari</span>
+    <a class="foot-link" href="https://linkedin.com/in/tarkesh-tiwari" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      LinkedIn
+    </a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('assessment-tab').addEventListener('click', e=>{
+    e.preventDefault();
+    alert('The Competency Self-Assessment will be built in the next phase.');
+  });
+</script>
+</body>
+</html>

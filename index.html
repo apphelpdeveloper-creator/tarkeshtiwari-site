@@ -464,14 +464,16 @@
   document.getElementById('chips').innerHTML =
     comps.map(c => `<span class="chip">${icon}<span>${c}</span></span>`).join('');
 
-  // Placeholder tab handlers (assessment + disclaimer come in later phases)
+  // Tab handlers — disclaimer goes to its own page; assessment placeholder for next phase
   document.querySelectorAll('.tab').forEach(t=>{
     t.addEventListener('click', e=>{
       e.preventDefault();
       const which = t.dataset.tab;
-      alert(which === 'assessment'
-        ? 'The Competency Self-Assessment will be built in the next phase.'
-        : 'The Disclaimer page will be built in a later phase.');
+      if(which === 'disclaimer'){
+        window.location.href = 'disclaimer.html';
+      } else {
+        alert('The Competency Self-Assessment will be built in the next phase.');
+      }
     });
   });
 </script>
