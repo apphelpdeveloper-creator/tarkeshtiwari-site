@@ -1777,12 +1777,24 @@
           "id": "S3Q001",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "A business leader asks you as their HRBP to help them manage out a poor performer without going through a formal performance process because it will take too long. They want to make the role redundant instead. What do you do?",
+          "question": "A business leader asks you as their HRBP to help them manage out a poor performer without going through a formal performance process because it will take too long. They want to make the role redundant instead.",
           "options": [
-            "Support the redundancy \u2014 it is a legitimate business decision and faster than a PIP",
-            "Refuse entirely and insist on a full performance management process",
-            "Explain the legal and ethical risks of using redundancy as a substitute for performance management, explore the genuine business case for the role if redundancy is real, and if there is no genuine case, guide the manager through a proportionate performance process",
-            "Escalate to the CHRO before engaging with the manager"
+            {
+              "text": "Support the redundancy as a legitimate business decision since leaders have authority over their own structures and the business rationale for eliminating the role does not need to be validated externally by HR to be considered genuine",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refuse to support any process that bypasses the formal performance management framework, since the integrity of the company's people processes depends on HR insisting the right route is followed regardless of how inconvenient the timeline may be",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Explain the legal and ethical risks of using redundancy as a disguised performance exit, explore whether there is a genuine structural business case for eliminating the role, and if not guide the leader through a proportionate performance process",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to the CHRO before engaging further with the leader, since a request to engineer a redundancy as a performance exit creates legal exposure that requires HR leadership sign-off before any next steps are agreed or communicated",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -1792,10 +1804,22 @@
           "difficulty": "medium",
           "question": "Which of the following best describes the primary value an effective HRBP provides to a business unit?",
           "options": [
-            "Ensuring all HR policies are consistently applied across the business unit",
-            "Translating people strategy into business outcomes by aligning HR interventions with business priorities and acting as a trusted advisor to senior leaders",
-            "Acting as the primary escalation point for employee relations issues in the business unit",
-            "Managing the operational HR processes for the business unit's employees"
+            {
+              "text": "Ensuring that all HR policies are consistently applied across the business unit, acting as the compliance guardian who catches policy breaches before they create legal or reputational exposure for the organisation and its leadership",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Translating people strategy into business outcomes by aligning HR interventions with business priorities and acting as a trusted adviser to senior leaders on the people dimensions of commercial decisions that affect the organisation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Serving as the primary escalation point for all employee relations issues arising in the business unit, managing the relationship between employees and the organisation when direct manager relationships have broken down irreparably",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Managing the operational HR processes for the business unit's employees including recruitment administration, onboarding, offboarding, and payroll queries, freeing the shared service centre to focus on more complex and higher-risk cases",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1805,10 +1829,22 @@
           "difficulty": "hard",
           "question": "Your business unit leader consistently makes people decisions that are technically within policy but are creating a pattern of excluding certain demographic groups from high-visibility projects and development opportunities. No formal complaint has been made. What do you do?",
           "options": [
-            "Take no action \u2014 no policy has been breached and no complaint has been raised",
-            "Wait until a complaint is made and then investigate",
-            "Name the pattern directly with the leader, present the data, explain the legal and cultural risk of the emerging pattern, and work with them to make more equitable allocation decisions \u2014 documenting your conversations",
-            "Escalate to Legal immediately as the pattern may constitute discrimination"
+            {
+              "text": "Take no action since no policy has been breached and no formal complaint has been raised, and acting on patterns rather than specific incidents risks overstepping the HRBP role and damaging the relationship with the leader unnecessarily",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Wait until a formal complaint or grievance is submitted before acting, since intervening without a documented employee concern means operating on assumption and the case for HR involvement is strongest when there is a formal trigger",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Name the pattern directly with the leader using data, explain the legal and cultural risk of the emerging demographic gap in opportunity allocation, and work with them to make more equitable decisions going forward while documenting your advice",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to Legal immediately since the pattern you have identified may constitute indirect discrimination and HR cannot continue to support a business unit whose decision-making creates this level of unmanaged legal exposure",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -1818,10 +1854,22 @@
           "difficulty": "medium",
           "question": "A business unit leader asks you to conduct stay interviews with their top talent because three high performers have resigned in four months. The leader is surprised and attributes the departures to compensation. What is your approach?",
           "options": [
-            "Proceed with stay interviews focused on compensation benchmarking",
-            "Conduct qualitative stay interviews exploring multiple retention drivers including management, growth, recognition, and work design \u2014 and present the findings with data, not just themes, to give the leader an honest picture even if it implicates their own leadership",
-            "Review compensation data first before conducting stay interviews",
-            "Recommend an employee engagement survey before conducting individual interviews"
+            {
+              "text": "Proceed with stay interviews focused primarily on compensation benchmarking since this is what the leader believes is driving departures and the most useful contribution HR can make is to validate or disprove that specific hypothesis with data",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Conduct qualitative stay interviews exploring multiple retention drivers \u2014 management, growth, recognition, autonomy, and work design \u2014 and present findings honestly to the leader even if they implicate the leader's own behaviours as a contributing factor",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Complete a compensation benchmarking review before conducting any stay interviews, since establishing whether pay is genuinely non-competitive should be the diagnostic first step before investing time in qualitative conversations with employees",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Recommend an organisation-wide employee engagement survey before conducting individual stay interviews, since broader survey data provides a more statistically reliable picture of retention drivers than a small sample of qualitative individual conversations",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1831,10 +1879,22 @@
           "difficulty": "medium",
           "question": "What is the primary difference between an HRBP and an HR generalist in a mature HR operating model?",
           "options": [
-            "HRBPs handle more complex employee relations cases",
-            "HRBPs operate at a strategic level, advising senior leaders and shaping organisational capability, while HR generalists typically manage a broader operational case-load",
-            "HRBPs have line management responsibility for HR Operations staff",
-            "HRBPs are senior in grade but perform the same function as HR generalists"
+            {
+              "text": "HRBPs handle more complex and senior employee relations cases while HR generalists manage the routine day-to-day ER caseload across a broader population of employees at lower grades and seniority levels within the organisation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "HRBPs operate at a strategic level advising senior leaders and shaping organisational capability, while HR generalists typically manage a broader operational caseload across the full range of HR service areas for a defined employee population",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "HRBPs have line management responsibility for the HR Operations and shared service staff who support their allocated business unit, while HR generalists have no formal people management accountability within the HR function",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "HRBPs are more senior in grade and compensation but perform substantially the same function as HR generalists, with the title reflecting seniority and the scope of the business unit supported rather than a fundamentally different role design",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1844,10 +1904,22 @@
           "difficulty": "hard",
           "question": "You are partnering a business unit that is planning a major reorganisation. The business leader shares the proposed structure with you confidentially before any announcement. You immediately recognise that the new structure creates a significant risk of discrimination claims based on the demographic profile of those at risk. What do you do?",
           "options": [
-            "Respect the confidentiality of the briefing and wait to see whether the concern materialises",
-            "Flag the risk immediately and directly with the business leader, quantify the demographic impact, recommend design changes before the structure is finalised, and document your advice",
-            "Brief your CHRO before speaking to the business leader",
-            "Raise the concern with Legal before flagging it to the business"
+            {
+              "text": "Respect the confidentiality of the briefing and monitor the situation as the restructure progresses, intervening only if the demographic concern materialises into a specific complaint or legal challenge after the structure has been announced",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Flag the risk immediately and directly with the business leader, quantify the demographic impact with data, recommend specific design changes before the structure is finalised, and document your advice as a formal record of HR's counsel",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Brief your CHRO about the concern before raising it with the business leader, ensuring you have HR leadership backing before challenging a senior leader's restructure design in what may become a difficult and politically sensitive conversation",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Raise the concern with Legal before taking it to the business leader, since a restructure that creates potential discrimination risk requires legal assessment of the exposure before HR frames its advice and makes any recommendations",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -1855,12 +1927,24 @@
           "id": "S3Q007",
           "type": "behavioural",
           "difficulty": "medium",
-          "question": "A business leader regularly contacts you at short notice for HR advice but rarely acts on your recommendations. Over time you notice they use HR as a sounding board rather than as a decision partner. How do you shift the dynamic?",
+          "question": "A business leader regularly contacts you at short notice for HR advice but rarely acts on your recommendations. Over time you notice they use HR as a sounding board rather than a decision partner. How do you shift the dynamic?",
           "options": [
-            "Accept the dynamic \u2014 being a sounding board still adds value",
-            "Reduce your availability to signal that your time should be used more purposefully",
-            "Have a direct conversation with the leader about how they are using HR, share your observation about the pattern of advice not being acted upon, and agree on a more structured approach to your partnership with clear accountabilities",
-            "Escalate to the CHRO to request a different business unit assignment"
+            {
+              "text": "Accept the dynamic as valuable since being a trusted sounding board is a legitimate and important HR function, and pushing for more decision-making influence risks disrupting a relationship that is working well for the leader personally",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Reduce your availability for short-notice calls to signal that your time and input are worth more than they are currently being treated and that a more structured engagement model would better serve both parties going forward",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Have a direct conversation with the leader about the pattern you have observed, share your perspective on what a more effective partnership would look like, and agree a model that treats HR input as a genuine input to decisions rather than validation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate to the CHRO to request a different business unit assignment since a leader who consistently disregards HR advice creates a context in which effective HRBP work is structurally impossible and personal time investment cannot be justified",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -1870,10 +1954,22 @@
           "difficulty": "hard",
           "question": "What is organisational design in the context of HRBP work, and what is the HRBP's role in it?",
           "options": [
-            "Redesigning the HR function's own operating model to improve service delivery",
-            "Shaping how a business unit is structured \u2014 spans and layers, role accountabilities, decision rights, and reporting lines \u2014 to optimise performance, and advising the business leader on design options and trade-offs",
-            "Managing headcount planning and workforce forecasting for the business unit",
-            "Coordinating job evaluation and grading exercises to ensure pay equity"
+            {
+              "text": "Redesigning the HR function's own operating model and service delivery structure to improve the efficiency and quality of HR services provided to the business unit in response to stakeholder feedback about the current HR experience",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Shaping how a business unit is structured \u2014 spans and layers, role accountabilities, decision rights, and reporting lines \u2014 to optimise performance, advising the leader on design options and the organisational trade-offs of each",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Managing the annual headcount planning and workforce forecasting processes for the business unit, ensuring that the people resource plan is aligned with the business unit's strategic and operational objectives for the coming year",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Coordinating job evaluation and grading exercises to ensure internal pay equity and that role descriptions accurately reflect current accountabilities for the purposes of compensation benchmarking and regulatory reporting requirements",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1881,12 +1977,24 @@
           "id": "S3Q009",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You discover through a data analysis that a particular manager's team has a significantly higher attrition rate and lower engagement scores than peers. The manager is a top commercial performer and is well liked by senior leadership. How do you approach this?",
+          "question": "You discover through data analysis that a particular manager's team has significantly higher attrition and lower engagement scores than peers. The manager is a top commercial performer and is well liked by senior leadership. How do you approach this?",
           "options": [
-            "Share the data with senior leadership and let them decide how to address it",
-            "Raise the data directly with the manager as a people leadership issue, frame it as a risk to the business, work with them to understand the root causes, and create an action plan with clear accountability and timelines \u2014 escalating if the pattern does not improve",
-            "Monitor for another quarter before taking action \u2014 the data may be an anomaly",
-            "Recommend a team engagement survey before meeting with the manager"
+            {
+              "text": "Share the data with senior leadership and let them decide how to respond, since a manager who is well liked at senior level is best challenged by their own leadership chain rather than by HR raising the issue directly with the individual",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Raise the data directly with the manager, frame it as a business risk rather than a personal criticism, work with them to understand root causes, and create a people leadership action plan with clear accountability and a defined review timeline",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Monitor for a further quarter before taking action since attrition and engagement data can reflect external market factors rather than management behaviour, and intervening prematurely risks damaging a relationship with a high-value commercial performer",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Recommend a formal team engagement survey to gather additional qualitative data before approaching the manager, since presenting engagement and attrition metrics alone may not give the manager sufficient specific and actionable feedback to act on",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -1896,10 +2004,22 @@
           "difficulty": "medium",
           "question": "A business leader tells their HRBP they want to restructure their team to remove a layer of management. What should the HRBP's first question be?",
           "options": [
-            "How many roles will be affected and what is the redundancy cost?",
-            "What business outcome is this restructure intended to achieve, and have other structural options been explored?",
-            "Has Legal been consulted about the consultation process?",
-            "What is the timeline for the restructure to be completed?"
+            {
+              "text": "How many roles will be affected and what is the total redundancy cost including both statutory and contractual entitlements, so that a financial case can be constructed and approved before any further restructure planning proceeds",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "What business outcome is this restructure intended to achieve, and have alternative structural options been explored, so that the design decision is grounded in a clear purpose rather than an assumption about the right answer",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Has Legal been consulted about the statutory consultation requirements and the redundancy selection process, since any restructure involving role eliminations creates legal obligations that must be factored in from the very outset",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "What is the desired timeline for completing the restructure, since the implementation timeline drives the sequencing of consultation, selection, and communication activities that HR will need to plan, resource, and support",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1909,10 +2029,22 @@
           "difficulty": "hard",
           "question": "A business leader tells you they want to give their highest-performing team member a 25% salary increase, significantly above the compensation band, because they are worried about losing them. What is your role in this situation?",
           "options": [
-            "Support the increase \u2014 retaining top talent is the priority and the leader knows their team",
-            "Refuse \u2014 salary increases above band require executive approval and cannot be recommended by HR",
-            "Explore the full retention risk picture, assess the compensation data for the role and market, advise on the equity implications for peers at similar performance levels, present options including a structured out-of-band exception process, and ensure the decision is made transparently with the right approvals",
-            "Recommend a non-monetary retention package to avoid the compensation band issue"
+            {
+              "text": "Support the increase without qualification since retaining top talent is a legitimate business priority and the leader who manages this person directly is best placed to assess their value and the genuine risk of losing them to a competitor",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refuse to support any out-of-band salary increase since compensation band exceptions undermine the integrity of the grading and pay framework and set a precedent that is difficult to manage equitably across the broader employee population",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Explore the full retention picture, assess current market data for the role, advise on the equity implications for peers at similar performance levels, present multiple options including a structured exception process, and ensure a transparent approval decision",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend a non-monetary retention package such as additional leave, flexible working, or a development opportunity as an alternative to a pay exception that avoids the complications of taking someone permanently outside their compensation band",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -1922,10 +2054,22 @@
           "difficulty": "medium",
           "question": "A business unit is planning to hire 15 people in Q1 but the HRBP's workforce data shows the team already has capacity issues due to management overhead and unclear role accountabilities. The hiring plan has executive approval. What do you do?",
           "options": [
-            "Support the hiring plan \u2014 it has executive approval and is not HR's decision to challenge",
-            "Raise the capacity and role clarity concerns with the business leader before hiring begins, present the data, and recommend resolving the structural issues in parallel with or ahead of hiring to avoid adding headcount into a dysfunctional team design",
-            "Pause the hiring plan until the team structure is resolved",
-            "Flag the concern in the hiring plan documentation and proceed"
+            {
+              "text": "Support the hiring plan as approved since it has executive sign-off and it is not the HRBP's role to challenge decisions that have been made at the right level of authority with full business awareness of the operational context",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Raise the capacity and role clarity concerns with the business leader before hiring begins, present the supporting data, and recommend resolving the structural issues in parallel with or ahead of hiring to avoid embedding dysfunction at scale",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Pause the hiring plan unilaterally and escalate the structural concerns to the CHRO, since adding 15 people to a team with existing capacity problems creates an organisational risk that overrides the executive-approved hiring decision",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Flag the structural concern in the HRBP quarterly business review but allow the hiring to proceed in the interim, since the business has made a commercial decision and HR's role is to support rather than obstruct approved plans",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1935,10 +2079,22 @@
           "difficulty": "medium",
           "question": "What is the 9-box grid used for in talent management, and what is its primary limitation?",
           "options": [
-            "A tool for setting individual performance targets; its limitation is that it does not account for team performance",
-            "A framework for assessing employees on performance and potential to identify talent tiers and succession candidates; its primary limitation is that potential ratings are often subjective and can embed bias",
-            "A succession planning matrix for senior leadership roles; its limitation is that it only applies to director-level and above",
-            "A performance review calibration tool; its limitation is that calibration sessions are time-consuming"
+            {
+              "text": "A tool for setting individual performance targets and development objectives; its primary limitation is that it focuses on individual outcomes rather than team performance, creating a competitive dynamic that can undermine collaboration",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A framework for assessing employees on performance and potential to identify talent tiers and succession candidates; its primary limitation is that potential ratings are inherently subjective and can systematically embed manager bias",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "A succession planning matrix designed specifically for senior leadership and director-level roles; its limitation is that it does not apply below director level and creates a two-tier talent approach that disadvantages junior high-potentials",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "A performance review calibration tool used to achieve a consistent rating distribution across teams; its primary limitation is that calibration sessions are time-consuming and tend to favour employees with more visible or vocal advocates",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1948,10 +2104,22 @@
           "difficulty": "hard",
           "question": "You are partnering a leader who is highly directive, does not delegate, and consistently makes decisions without consulting their team. Engagement in the team is declining. The leader does not see their behaviour as a problem. How do you approach the coaching conversation?",
           "options": [
-            "Avoid the conversation \u2014 coaching leaders on their style is not within HRBP scope",
-            "Present the engagement data as a business risk, share specific behavioural observations, connect the leadership style to the business impact, and invite the leader into a conversation about what they want the team's performance to look like \u2014 rather than leading with a critique of their style",
-            "Recommend a 360-degree feedback process before having the conversation",
-            "Escalate to the leader's line manager and let them address the behaviour"
+            {
+              "text": "Avoid a direct coaching conversation since unsolicited feedback on leadership style is outside the HRBP role and risks damaging a relationship that depends on the leader seeing HR as a business ally rather than as a performance assessor",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Present the engagement data as a business risk, share specific behavioural observations with examples, connect the leadership style directly to the team performance impact, and invite the leader into a conversation about what they want the team to look like",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend a formal 360-degree feedback process before having any direct coaching conversation, since the leader is more likely to engage constructively with style feedback when it comes from multiple sources rather than solely from the HRBP",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Escalate the leadership concern to the leader's line manager and let them address the behaviour directly, since a leader who does not see their style as problematic is unlikely to respond constructively to feedback delivered by their HR business partner",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -1961,10 +2129,22 @@
           "difficulty": "medium",
           "question": "You are asked by a business leader to recommend which of two equally-performing candidates should be promoted. You have limited direct observation of either candidate. What is your approach?",
           "options": [
-            "Make a recommendation based on the leader's preference \u2014 they know the candidates better",
-            "Recommend a structured assessment approach \u2014 a clear capability framework for the role, evidence-based evaluation from multiple observers, and a consistent set of criteria applied to both candidates \u2014 rather than making a personal recommendation from limited data",
-            "Recommend the more senior-tenured candidate as a default",
-            "Suggest both candidates be placed on a development plan and the promotion decision delayed"
+            {
+              "text": "Make a recommendation based on the leader's stated preference since they have significantly more direct exposure to both candidates than HR does and their judgment about readiness should carry more weight than an HR view made from a distance",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Recommend a structured assessment approach using a clear capability framework for the role, evidence gathered from multiple observers, and consistent criteria applied to both candidates rather than offering a personal recommendation from limited data",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend the more senior-tenured candidate as a default since length of time in role and accumulated institutional knowledge are reliable indicators of readiness that are unlikely to lead to a promotion decision that fails quickly",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Recommend that both candidates be placed on structured development plans and the decision be deferred by six months until there is more evidence to differentiate between them and a stronger basis for making the choice",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -1974,10 +2154,22 @@
           "difficulty": "hard",
           "question": "Which of the following best describes strategic workforce planning in an HRBP context?",
           "options": [
-            "Planning the annual headcount budget in alignment with finance",
-            "Analysing the gap between the current workforce capability and the future workforce needed to deliver the business strategy, and designing interventions \u2014 build, buy, borrow, or automate \u2014 to close that gap",
-            "Producing monthly headcount reports for the business unit",
-            "Managing the talent pipeline for critical roles identified in the succession plan"
+            {
+              "text": "Planning and managing the annual headcount budget for the business unit in alignment with Finance, ensuring that recruitment spend is within approved parameters and that any variance is explained and approved through the finance governance process",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Analysing the gap between the current workforce capability and the workforce needed to deliver the future business strategy, and designing interventions to close that gap through build, buy, borrow, or automate approaches",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Producing monthly headcount and attrition reports for the business unit leadership team, providing the data visibility that enables leaders to make informed decisions about recruitment, retention, and team structure going forward",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Managing the talent pipeline for critical roles identified in the business unit's succession plan, ensuring that each critical role has at least one identified successor who is actively being developed toward readiness for that position",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -1987,10 +2179,22 @@
           "difficulty": "medium",
           "question": "A business leader asks for your opinion on whether to dismiss a long-tenured employee who has been underperforming for over a year. The leader has done nothing formal about the performance issue until now. What is your honest assessment?",
           "options": [
-            "Support the dismissal \u2014 the leader is in the best position to judge performance",
-            "Be direct: the absence of any documented performance management process significantly weakens the employer's legal position, and proceeding to dismissal now without a proper process creates substantial unfair dismissal risk \u2014 recommend a structured capability process before any termination decision",
-            "Recommend a settlement agreement to avoid the process entirely",
-            "Tell the leader to document three recent performance incidents and proceed"
+            {
+              "text": "Support the dismissal since the leader is in the best position to assess whether the employee's performance has genuinely been inadequate and their judgment about the right outcome should take precedence over HR's procedural concerns",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Be direct: the absence of any documented performance management process significantly weakens the employer's legal position, and proceeding to dismissal now without a proper prior process creates substantial unfair dismissal risk that must be addressed first",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend a settlement agreement as the most pragmatic route since it achieves the business outcome quickly while avoiding the reputational and operational risk of a formal capability process that will take time and management attention",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Advise the leader to document three recent specific performance incidents as a retrospective foundation and then proceed to a disciplinary hearing, since documented examples provide sufficient legal cover for a performance-related dismissal decision",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -1998,12 +2202,24 @@
           "id": "S3Q018",
           "type": "behavioural",
           "difficulty": "hard",
-          "question": "You are the HRBP for a business unit whose leader is well-connected but is regularly described by their team as inconsistent, politically motivated in their decisions, and difficult to trust. The leader has strong upward relationships. How do you build credibility and navigate this?",
+          "question": "You are the HRBP for a business unit whose leader is well-connected but is regularly described by their team as inconsistent, politically motivated, and difficult to trust. The leader has strong upward relationships. How do you navigate this?",
           "options": [
-            "Align with the leader's agenda \u2014 your effectiveness depends on having a strong relationship with the person you support",
-            "Build direct relationships with the team and bypass the leader where necessary",
-            "Maintain a professional relationship with the leader while building independent trust with the team, raise concerns with the leader directly when you observe specific problematic behaviour, and use data to make people risk visible to senior leadership where the pattern is causing organisational harm",
-            "Request a reassignment \u2014 the dynamic makes effective HRBP work impossible"
+            {
+              "text": "Align with the leader's agenda and priorities since your effectiveness as an HRBP depends on maintaining a productive working relationship with the person you directly support, and challenging a well-connected leader creates more risk than it resolves",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Build direct relationships with the team and bypass the leader where necessary, using your independent access to team members to provide support and gather intelligence without the leader's knowledge or explicit approval",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Maintain a professional relationship with the leader, build independent credibility with the team, raise concerns with the leader directly when you observe specific problematic behaviour, and use people data to make organisational risk visible to senior leadership where warranted",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Request a reassignment to a different business unit since the combination of a politically complex leader and a team with low trust creates a dynamic in which effective HRBP work is structurally impossible and personal credibility is at unacceptable risk",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 2
         },
@@ -2011,12 +2227,24 @@
           "id": "S3Q019",
           "type": "knowledge",
           "difficulty": "medium",
-          "question": "What does it mean for an HRBP to be a credible activist according to established HR competency frameworks?",
+          "question": "What does it mean for an HRBP to be a credible activist in a professional HR context?",
           "options": [
-            "Being willing to challenge business decisions that breach employment law",
-            "Being trusted by the business and willing to take a position on people issues even when it is uncomfortable, combining deep business knowledge with a clear point of view on what is right for the organisation and its people",
-            "Advocating for employees in disputes with management",
-            "Actively promoting HR initiatives in the business unit through internal communications"
+            {
+              "text": "Being willing to challenge business decisions that breach employment law or expose the organisation to significant legal liability, ensuring that HR's primary function is to protect the company from legal and regulatory risk",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Being trusted by the business and willing to take a clear position on people issues even when it is uncomfortable, combining deep business knowledge with a point of view on what is right and the courage to express it clearly",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Advocating for employees in disputes with management, acting as an employee representative who ensures the employee's perspective is heard and fairly considered in all HR processes and significant business decisions",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Actively promoting HR initiatives and programmes within the business unit through internal communications and stakeholder engagement, ensuring that people-focused projects receive the visibility and buy-in they need to succeed",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2024,12 +2252,24 @@
           "id": "S3Q020",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "Your business unit is going through significant change and the leader asks you to help design a communications plan that frames all changes positively and does not mention any downsides. You know some of the changes will have a genuine negative impact on a portion of the team. What do you do?",
+          "question": "Your business unit is going through significant change and the leader asks you to help design a communications plan that frames all changes positively and does not mention any downsides. You know some changes will have a genuine negative impact on a portion of the team. What do you do?",
           "options": [
-            "Help design the plan as requested \u2014 the leader controls the message",
-            "Refuse to help design any communications plan that is not fully transparent",
-            "Advise the leader that communications that avoid or minimise real impacts tend to damage trust more than the changes themselves, propose a plan that acknowledges the impact honestly while framing what support is being provided, and explain the reputational risk of communications employees will see through",
-            "Present two versions of the plan and let the leader choose"
+            {
+              "text": "Help design the communications plan as requested since controlling the narrative during change is a legitimate leadership prerogative and the leader is entitled to decide how to frame organisational changes to their own team",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Refuse to help design any communications plan that is not immediately and fully transparent about every negative impact, since HR's credibility depends on never being associated with communications that employees will later perceive as misleading",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise the leader that communications which minimise real impacts tend to damage trust more than the changes themselves, propose a plan that acknowledges impact honestly while communicating the support available, and explain the reputational risk of communications employees will see through",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Prepare two alternative versions of the communications plan and present both to the leader, letting them choose which approach to take and ensuring HR has fulfilled its advisory role regardless of which option the leader ultimately selects",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 2
         },
@@ -2039,10 +2279,22 @@
           "difficulty": "easy",
           "question": "What is the primary purpose of succession planning in an organisation?",
           "options": [
-            "To identify employees who are ready to be promoted immediately",
-            "To ensure the organisation has a pipeline of capable individuals ready to fill critical roles when they become vacant, reducing dependency on external hiring for key positions",
-            "To manage the transition of senior leaders who are approaching retirement",
-            "To document the development plans of high-potential employees"
+            {
+              "text": "To identify employees who are immediately promotion-ready so that vacancies at senior levels can be filled quickly from the internal talent pool without the cost and disruption of external recruitment processes for critical positions",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "To ensure the organisation has a pipeline of capable individuals who can fill critical roles when they become vacant, reducing dependency on external hiring and building long-term organisational resilience and continuity",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "To manage the planned transition of senior leaders who are approaching retirement, ensuring that knowledge transfer occurs systematically and in a structured way before the departure happens and institutional knowledge is lost",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "To document the individual development plans of high-potential employees, creating a visible record of the organisation's investment in its future leaders and demonstrating commitment to internal career progression",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2052,10 +2304,22 @@
           "difficulty": "medium",
           "question": "A manager tells you they want to put a team member on a formal performance improvement plan (PIP). When you review the background, you find the manager has never given the employee any documented feedback about their performance concerns. What is your advice?",
           "options": [
-            "Support the PIP \u2014 formal processes are more impactful than informal feedback",
-            "Advise the manager that moving directly to a PIP without prior documented feedback is procedurally weak and could constitute unfair process \u2014 recommend a structured informal performance conversation first, clearly documented, with a reasonable improvement timeline before escalating to a formal PIP",
-            "Draft the PIP and include a section acknowledging that prior feedback was not formally documented",
-            "Decline to support a PIP until the manager has given feedback for at least three months"
+            {
+              "text": "Support the PIP since formal performance processes are more impactful and motivating than informal feedback conversations and the employee is more likely to take their performance seriously when the situation is escalated to a formal level",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise that moving directly to a PIP without prior documented feedback creates a legally weak process and is likely to feel procedurally unfair \u2014 recommend a structured documented informal conversation first before any formal step is taken",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Draft the PIP but include an explanatory section acknowledging that prior feedback was not formally documented, framing the PIP as the starting point for a structured improvement process rather than the culmination of a documented prior process",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Decline to support a formal PIP until the manager has conducted and documented at least three formal feedback conversations over a minimum three-month period, ensuring the process is procedurally robust before escalating to formal action",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -2065,10 +2329,22 @@
           "difficulty": "medium",
           "question": "A business leader asks you to justify the value of HR Business Partnering. They say they can get most HR support from the shared service centre and do not see what additional value you add. How do you respond?",
           "options": [
-            "Present your activity log showing the volume of HR support you have provided",
-            "Acknowledge the challenge directly, make a specific case using examples of people decisions you have influenced, risks you have identified, and commercial outcomes you have contributed to \u2014 and offer to be more explicit going forward about the business impact of your interventions",
-            "Escalate to the CHRO to defend the HRBP model",
-            "Offer to reduce your involvement and let the leader trial running without a dedicated HRBP for a quarter"
+            {
+              "text": "Present your activity log showing the volume of HR interactions, advice provided, and issues resolved over the past quarter, demonstrating through the quantity of output that the HRBP role is actively used and therefore valuable to the business",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Acknowledge the challenge directly, make a specific evidence-based case using examples of people decisions influenced, risks identified, and commercial outcomes contributed to, and offer to be more explicit going forward about the impact of your interventions",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Escalate the challenge to the CHRO and ask them to engage with the leader to defend the HRBP model, since a senior leader questioning the value of the HRBP function is a structural issue that should be addressed at the HR leadership level",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Offer to reduce your involvement and let the leader trial managing without dedicated HRBP support for a quarter, since the best way to demonstrate value is to allow the leader to experience what is absent when that support is removed",
+              "tendency": "AVOIDER"
+            }
           ],
           "correct": 1
         },
@@ -2078,10 +2354,22 @@
           "difficulty": "hard",
           "question": "An HRBP is preparing for a talent review for their business unit. Which data set is most important to include to make the conversation strategically useful?",
           "options": [
-            "A list of all employees with their current performance ratings",
-            "An integrated view of performance ratings, potential assessments, flight risk indicators, critical role vacancy risk, and development readiness \u2014 mapped against the business unit's strategic capability needs",
-            "The top 10 percent of performers by grade level",
-            "Succession candidates nominated by the business unit leader"
+            {
+              "text": "A complete list of all employees in the business unit with their current performance ratings and grade levels, providing the talent review panel with a full population view from which to make talent tiering and development decisions",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "An integrated view of performance, potential assessments, flight risk indicators, critical role vacancy risk, and development readiness mapped against the business unit's strategic capability needs over the next 12 to 24 months",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The top 10 percent of performers by grade level within the business unit, focusing the talent review conversation on the employees most likely to be identified as high-potential and succession candidates rather than reviewing the whole population",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Succession candidates already nominated by the business unit leader in the prior cycle, updated to reflect any changes in performance or development status, providing continuity with previous talent review decisions and nominations",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2091,10 +2379,22 @@
           "difficulty": "hard",
           "question": "You are supporting a restructure that will reduce the business unit from 45 to 30 people. The business leader wants to base selection for redundancy purely on performance ratings. You know the ratings process in this business unit has historically been inconsistent and influenced by personal relationships. What do you do?",
           "options": [
-            "Support the ratings-based selection \u2014 performance data is the most defensible selection criterion",
-            "Flag the inconsistency risk in the ratings data, recommend a multi-criteria selection process with objective criteria validated by a calibration panel, and document your recommendation clearly so that if challenged, the selection process can be defended",
-            "Recommend selecting based on role criticality rather than individual performance",
-            "Conduct a fresh performance assessment of all 45 employees before making selections"
+            {
+              "text": "Support the ratings-based selection since performance data is the most legally defensible selection criterion available and the historical inconsistency in ratings is a concern that should be addressed separately from the immediate restructure decision",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Flag the inconsistency risk clearly, recommend a multi-criteria selection process validated by a calibration panel, and document your recommendation formally so the selection process can be defended if challenged legally by affected employees",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend selecting based on role criticality and business need rather than individual performance, since role-based selection avoids the legal and procedural complications of a ratings-based approach where the ratings have known reliability issues",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Conduct a fresh independent performance assessment of all 45 employees before making any selections, commissioning an objective evaluation that is not influenced by the personal relationships that have distorted the historical ratings process",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -2104,10 +2404,22 @@
           "difficulty": "medium",
           "question": "What is the concept of psychological safety in a team context, and why is it relevant to HRBP work?",
           "options": [
-            "The absence of physical safety hazards in the workplace, which HR must monitor",
-            "The belief held by team members that they will not be punished or humiliated for speaking up, asking questions, or making mistakes \u2014 relevant because teams with low psychological safety suppress the honesty and challenge that drive performance and surface risk",
-            "An employee's right to take mental health leave without managerial scrutiny",
-            "A measure of an employee's emotional stability assessed during hiring"
+            {
+              "text": "The absence of physical or psychological safety hazards in the work environment, which HR monitors through health and safety risk assessments and employee wellbeing surveys conducted as part of the annual people planning cycle",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The shared belief among team members that they will not be penalised for speaking up, asking questions, or making mistakes \u2014 relevant because teams without it suppress the honesty and challenge that drive performance and surface organisational risk",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "An employee's individual right to take mental health-related leave without managerial scrutiny or any requirement to provide detailed clinical information as a condition of the leave being approved by HR or occupational health",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "A measure of an individual employee's emotional resilience and their personal capacity to manage workplace stress, assessed as part of the hiring and onboarding process to identify new joiners who may need additional wellbeing support",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2117,10 +2429,22 @@
           "difficulty": "hard",
           "question": "You have been the HRBP for a business unit for 18 months and have built a strong relationship with the leader. You are now observing behaviour from the leader that is creating genuine employee relations risk, but you are concerned that raising it will damage the relationship. How do you approach this?",
           "options": [
-            "Prioritise the relationship \u2014 raising the issue risks losing your access and influence",
-            "Raise the concern clearly and directly, using specific examples and data, explaining the risk in business terms \u2014 and accept that a trusted HRBP relationship must be able to carry challenge, not just support",
-            "Document your observations and let the issue surface organically",
-            "Brief the CHRO first before raising the concern with the leader"
+            {
+              "text": "Prioritise the relationship by not raising the concern directly, instead monitoring the situation and intervening only if the behaviour escalates to the point where a formal HR process becomes unavoidable and the risk cannot be ignored",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Raise the concern clearly and directly with specific examples and data, explain the business and legal risk in concrete terms, and accept that a trusted HRBP relationship must be capable of carrying challenge as well as support",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Document your observations over a further two to three months to build a stronger evidence base before raising the concern, since a well-evidenced single conversation is more likely to land effectively than an earlier conversation the leader can dismiss as premature",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Brief the CHRO about your concern before raising it with the leader, ensuring you have HR leadership support before initiating what may be a difficult conversation with a senior business leader who has strong organisational relationships",
+              "tendency": "ESCALATOR"
+            }
           ],
           "correct": 1
         },
@@ -2128,12 +2452,24 @@
           "id": "S3Q028",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "A senior individual contributor in your business unit tells you they are planning to resign because they have had no development conversation with their manager in over a year and feel invisible. The manager is unaware. What do you do?",
+          "question": "A senior individual contributor tells you they are planning to resign because they have had no development conversation with their manager in over a year and feel invisible. The manager is unaware. What do you do?",
           "options": [
-            "Encourage the employee to have the conversation directly with their manager",
-            "Thank the employee for being candid, explore what would make them stay, facilitate an honest three-way conversation between the employee, the manager, and yourself \u2014 while also addressing the broader pattern with the manager if this reflects a wider development neglect issue across the team",
-            "Raise a formal grievance on the employee's behalf for lack of career support",
-            "Recommend the employee to apply for an internal transfer to a team where development is stronger"
+            {
+              "text": "Encourage the employee to raise their development concerns directly with their manager since the HRBP's role is to enable direct conversations rather than to mediate between employees and managers on matters within the manager's accountability",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Acknowledge the concern, explore what would make the employee stay, facilitate an honest three-way conversation between the employee, manager, and yourself, and address the broader pattern with the manager if it reflects wider development neglect across the team",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Raise a formal grievance on the employee's behalf for lack of career support, since the manager's failure to conduct development conversations over 12 months constitutes a breach of the employee's reasonable expectations of the employment relationship",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Recommend that the employee explore internal transfer opportunities to a team with a more development-focused manager, since the working relationship with the current manager has deteriorated to a point where the development gap cannot realistically be closed",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2143,10 +2479,22 @@
           "difficulty": "medium",
           "question": "What does span of control refer to in organisational design, and what are the risks of spans that are too wide or too narrow?",
           "options": [
-            "The geographic scope of a manager's responsibilities; too wide creates travel burden, too narrow limits cultural integration",
-            "The number of direct reports a manager is responsible for; too wide reduces the quality of management attention and development, too narrow creates excessive hierarchy and management cost",
-            "The range of decision-making authority granted to a manager; too wide creates inconsistency, too narrow slows decisions",
-            "The number of business units an HRBP supports; too wide reduces strategic depth, too narrow is inefficient"
+            {
+              "text": "The geographic scope of a manager's accountability across multiple locations or countries; too wide creates travel and time zone burden that reduces management effectiveness, too narrow limits the cultural integration benefits of a global team",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The number of direct reports a manager is responsible for; too wide reduces management attention and development quality for individuals, too narrow creates unnecessary hierarchy, slows decisions, and inflates management cost across the organisation",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "The range and depth of decision-making authority delegated to a manager within the governance framework; too wide creates inconsistency and risk across the organisation, too narrow slows down decisions and reduces manager accountability for outcomes",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The number of distinct business units or functions an HRBP is expected to support simultaneously; too wide reduces depth of HRBP engagement with each business, too narrow makes the HRBP model operationally inefficient at scale",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2154,12 +2502,24 @@
           "id": "S3Q030",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You are supporting a new business unit leader who is technically excellent but is struggling to build trust with their inherited team. Three months in, two key team members are considering leaving and the rest of the team are disengaged. The leader is not aware of how serious the situation is. How do you approach this?",
+          "question": "You are supporting a new business unit leader who is technically excellent but struggling to build trust with their inherited team. Three months in, two key team members are considering leaving and the rest are disengaged. The leader is not aware of the severity. How do you approach this?",
           "options": [
-            "Wait \u2014 it is too early to intervene in a new leader's settling-in period",
-            "Brief the leader's line manager and let them address the situation",
-            "Meet with the leader, share the data on team sentiment and the specific flight risks, acknowledge the difficulty of inheriting a team, and co-create an accelerated onboarding and trust-building plan \u2014 positioning yourself as a thinking partner rather than a judge",
-            "Conduct a team engagement survey and present the results to both the leader and their line manager simultaneously"
+            {
+              "text": "Wait for the situation to develop further since three months into a new leadership role is too early to intervene and doing so risks undermining the leader's authority before they have had adequate time to establish themselves with the team",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Brief the leader's line manager about the team sentiment data and the specific flight risks and let the line manager address the situation directly, since a new leader hearing difficult feedback responds better when it comes from their own leader",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Meet with the leader, share the team sentiment data and the flight risk information honestly, acknowledge the difficulty of inheriting a team, and co-create an accelerated trust-building plan while positioning yourself as a thinking partner rather than a judge",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Commission a formal team engagement survey and share the results simultaneously with the leader and their line manager, since survey data provides a more objective and defensible basis for the conversation than qualitative intelligence from informal channels",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 2
         },
@@ -2169,10 +2529,22 @@
           "difficulty": "medium",
           "question": "What does it mean to HR business partner at the strategic versus operational level, and why does the distinction matter?",
           "options": [
-            "Strategic HRBP work involves L1 and L2 leaders; operational HRBP work involves individual contributors",
-            "Strategic HRBP work focuses on future-state capability building, organisational design, and people risk at the business unit level; operational work handles transactional HR processes \u2014 the distinction matters because most HRBP time should be invested at the strategic level to generate the highest return",
-            "Strategic HRBP work is performed by senior HRBPs; operational work by junior HRBPs",
-            "The distinction is primarily one of seniority and does not affect the nature of the work"
+            {
+              "text": "Strategic HRBP work is performed with L1 and L2 leaders; operational work is performed with middle managers and individual contributors, and the distinction matters because different seniority levels require different relationship management approaches from HR",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Strategic HRBP work focuses on future-state capability, organisational design, and people risk; operational work handles transactional HR issues \u2014 the distinction matters because HRBP time invested strategically generates substantially higher organisational value",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Strategic HRBP work is performed by senior or principal HRBPs while operational work is the domain of junior HRBPs, and the distinction matters for team structure, grading, and defining the career progression pathway within the HRBP function",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "The distinction is largely semantic and varies by organisation, with most HRBPs in practice performing a blend of strategic and operational work that cannot meaningfully be separated into distinct categories with genuinely different value propositions",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2180,12 +2552,24 @@
           "id": "S3Q032",
           "type": "sjt",
           "difficulty": "hard",
-          "question": "You are leading a talent calibration session with four senior leaders. One leader is consistently rating their own team members higher than the evidence supports, while another is consistently rating theirs lower. The imbalance is creating equity issues in the final talent distribution. How do you manage this?",
+          "question": "You are leading a talent calibration session with four senior leaders. One leader is consistently rating their own team members higher than the evidence supports, while another is consistently rating theirs lower. How do you manage this?",
           "options": [
-            "Accept the ratings as submitted \u2014 leaders are accountable for their own talent assessments",
-            "Name the rating patterns directly in the session using the calibration data, invite the group to apply a consistent evidence-based standard, and facilitate a constructive challenge process where leaders must support ratings with specific behavioural examples",
-            "Adjust the ratings yourself after the session to correct the imbalance",
-            "Hold separate conversations with the outlier leaders outside the session before finalising ratings"
+            {
+              "text": "Accept the ratings as submitted since leaders are accountable for their own talent assessments and challenging their judgments in a group forum risks creating conflict that makes the calibration less productive and more adversarial for everyone",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Name the rating patterns directly in the session using calibration data, invite the group to apply a consistent evidence-based standard, and facilitate a structured challenge process where ratings must be supported by specific behavioural examples",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Adjust the ratings yourself after the session to correct the distributional imbalance before finalising the talent output, since post-session normalisation is a standard calibration technique that ensures fair outcomes without creating unnecessary group confrontation",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Hold separate bilateral conversations with each outlier leader after the session to discuss their rating patterns privately, then reconvene a smaller follow-up session to revisit the affected ratings without the pressure of the full group present",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         },
@@ -2193,12 +2577,24 @@
           "id": "S3Q033",
           "type": "behavioural",
           "difficulty": "medium",
-          "question": "A business leader tells you they want to make a lateral move offer to a high-potential employee to develop them for a future VP role, but they have not told the employee about the VP aspiration and the lateral move looks like a sideways step. How do you advise?",
+          "question": "A business leader wants to make a lateral move offer to a high-potential employee to develop them for a future VP role, but they have not told the employee about the VP aspiration and the lateral move appears to be a sideways step. How do you advise?",
           "options": [
-            "Support the move as planned \u2014 development intentions do not need to be disclosed",
-            "Advise the leader that development moves work best when the employee understands the intent, recommend being transparent with the employee about the VP development trajectory so they can make an informed decision and stay motivated through the lateral step",
-            "Recommend against the lateral move \u2014 high-potential employees should always be moved upward",
-            "Check whether the employee has a competing offer before advising on the approach"
+            {
+              "text": "Support the move as planned since development intentions behind an offer are a business decision and disclosing the full VP aspiration creates formal expectations and obligations the business may not yet be ready to commit to in writing",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Advise the leader that development moves work best when the employee understands the intent, recommend being transparent about the VP development trajectory so the employee can make an informed decision and stay motivated through the lateral step",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Recommend against a lateral move entirely since high-potential employees should be progressed vertically rather than laterally and a sideways move that appears to be a step back risks triggering exactly the attrition risk the leader is trying to manage",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "Check whether the employee has a competing external offer before advising the leader on approach, since if an external offer exists the development framing needs to be stronger and the timeline for transparency needs to be accelerated significantly",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2208,10 +2604,22 @@
           "difficulty": "hard",
           "question": "What is the primary risk of conducting a talent review process where managers complete potential ratings in isolation without calibration?",
           "options": [
-            "The process takes longer than a calibrated review",
-            "Ratings reflect individual manager bias and inconsistent interpretation of potential criteria, producing a talent picture that cannot be meaningfully compared across the organisation and may systematically disadvantage certain groups",
-            "Employees are more likely to be told their rating if managers complete it independently",
-            "The HR system cannot accommodate un-calibrated ratings in succession planning modules"
+            {
+              "text": "The process takes significantly longer than a calibrated review since managers must complete ratings independently before any group discussion occurs, reducing the overall efficiency of the talent management cycle for the year",
+              "tendency": "ROBOT"
+            },
+            {
+              "text": "Ratings reflect individual manager bias and inconsistent interpretation of potential criteria, producing a talent picture that cannot be meaningfully compared across the organisation and may systematically disadvantage certain demographic groups",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Employees are more likely to be informed of their individual ratings when managers complete assessments independently, since the absence of a group calibration removes the social pressure that normally keeps rating conversations confidential",
+              "tendency": "AVOIDER"
+            },
+            {
+              "text": "The HRIS system cannot accommodate un-calibrated individual ratings in its succession planning and talent visualisation modules, creating a data quality problem that requires manual workarounds and reduces the analytical value of the output",
+              "tendency": "PLEASER"
+            }
           ],
           "correct": 1
         },
@@ -2219,12 +2627,24 @@
           "id": "S3Q035",
           "type": "sjt",
           "difficulty": "medium",
-          "question": "The business unit you support has just been told it will not receive the headcount it requested for next year due to a cost reduction exercise. The leader is frustrated and is now considering making existing team members work across roles they were not hired for. What is your role in this conversation?",
+          "question": "The business unit you support has just been told it will not receive the headcount it requested for next year due to a cost reduction exercise. The leader is frustrated and is now considering making existing team members work across roles they were not hired for. What is your role?",
           "options": [
-            "Support the leader's decision \u2014 managing within reduced resources is a line management responsibility",
-            "Acknowledge the resource pressure, help the leader prioritise which work must be done versus which can be deprioritised or automated, assess whether expanding existing roles is contractually and practically viable, and ensure the wellbeing and workload risk to the team is named and managed",
-            "Raise a formal challenge to the headcount decision on behalf of the business unit",
-            "Recommend outsourcing the additional work to avoid contractual complications"
+            {
+              "text": "Support the leader's decision to redistribute work across the existing team since managing within constrained resources is a line management responsibility and HR's role is to support business decisions rather than second-guess the leader's operational judgment",
+              "tendency": "PLEASER"
+            },
+            {
+              "text": "Acknowledge the resource pressure, help the leader prioritise what must be done versus what can be stopped or automated, assess whether expanding roles is contractually viable, and ensure the wellbeing and workload risk to the team is explicitly named and managed",
+              "tendency": "COURAGEOUS"
+            },
+            {
+              "text": "Raise a formal challenge to the headcount decision by building a business case for the CHRO, since an under-resourced team creates people risks that HR has a responsibility to name and escalate to the appropriate decision-making level",
+              "tendency": "ESCALATOR"
+            },
+            {
+              "text": "Recommend outsourcing the additional work to a third-party provider to avoid the contractual and wellbeing complications of asking employees to work significantly outside the scope of what they were contracted and hired to do",
+              "tendency": "ROBOT"
+            }
           ],
           "correct": 1
         }
