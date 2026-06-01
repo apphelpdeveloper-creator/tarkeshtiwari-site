@@ -44,7 +44,8 @@
   .topbar-inner {
     max-width: 1080px; margin: 0 auto;
     padding: 0 32px; height: 64px;
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
   }
   .brand {
     font-family: var(--serif);
@@ -56,6 +57,7 @@
     display: flex; align-items: center; gap: 8px;
     font-size: 14px; font-weight: 600; color: var(--ink);
     font-variant-numeric: tabular-nums;
+    position: absolute; right: 32px; top: 50%; transform: translateY(-50%);
   }
   .timer-bar svg { width: 16px; height: 16px; }
   .timer-bar.warning { color: var(--amber); }
@@ -358,6 +360,8 @@
   /* ---------- responsive ---------- */
   @media(max-width: 640px) {
     .topbar-inner { padding: 0 18px; }
+    .timer-bar { right: 18px; }
+    .brand { font-size: 14px; line-height: 1.15; text-align: center; }
     .intro-wrap, .assessment-wrap, .results-wrap { padding-left: 20px; padding-right: 20px; }
     .form-grid { grid-template-columns: 1fr; }
     .intro-meta { grid-template-columns: 1fr; }
@@ -404,6 +408,10 @@
         <li>Results are displayed on-screen only. Nothing is stored or emailed.</li>
       </ul>
     </div>
+
+    <p style="margin:0 0 26px;font-size:14.5px;color:var(--ink-soft);font-family:var(--sans);">
+      Please read the full <a href="disclaimer.html" style="color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px;">Disclaimer &amp; methodology</a> before you begin.
+    </p>
 
     <div class="form-grid">
       <div class="form-field">
